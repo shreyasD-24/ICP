@@ -4,93 +4,93 @@ function Hero() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    // Ensure canvas element is available before proceeding
+    if (!canvasRef.current) return;
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let animationFrameId;
+
+    // Set canvas size considering device pixel ratio for sharpness on retina screens
+    const setCanvasDimensions = () => {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
+      ctx.scale(dpr, dpr);
+    };
+
+    setCanvasDimensions(); // Initial setup
 
     const dots = [];
     const radius = 230;
-    const numDots = 12000;
+    // OPTIMIZATION 1: Reduce particle count.
+    const numDots = 6500;
     let angleY = 0;
 
     // Generate random dots on a sphere
     for (let i = 0; i < numDots; i++) {
       const theta = Math.random() * 2 * Math.PI;
       const phi = Math.acos(2 * Math.random() - 1);
-
       const x = radius * Math.sin(phi) * Math.cos(theta);
       const y = radius * Math.sin(phi) * Math.sin(theta);
       const z = radius * Math.cos(phi);
-
-      dots.push({ x, y, z, originalZ: z });
+      dots.push({ x, y, z });
     }
 
-    const rotateY = (point, angle) => {
-      const cos = Math.cos(angle);
-      const sin = Math.sin(angle);
-      const x = point.x * cos - point.z * sin;
-      const z = point.x * sin + point.z * cos;
-      return { ...point, x, z };
-    };
-
     const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const centerX = canvas.width / 2;
-      const centerY = canvas.height / 2 - 50; // Shift sphere up
+      // Use device-pixel-ratio-aware dimensions for clearing
+      const dpr = window.devicePixelRatio || 1;
+      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2 - 50;
+      
+      // Pre-calculate rotation values once per frame
+      const cosAngle = Math.cos(angleY);
+      const sinAngle = Math.sin(angleY);
 
-      for (let dot of dots) {
-        const rotated = rotateY(dot, angleY);
-        const scale = 400 / (400 + rotated.z);
-        const x2d = centerX + rotated.x * scale;
-        const y2d = centerY + rotated.y * scale;
+      for (const dot of dots) {
+        // Inlined rotation is slightly faster than a function call in a tight loop
+        const rotatedX = dot.x * cosAngle - dot.z * sinAngle;
+        const rotatedZ = dot.x * sinAngle + dot.z * cosAngle;
 
-        // Calculate distance from center for hollow effect
-        const distanceFromCenter = Math.sqrt(
-          Math.pow(rotated.x, 2) + Math.pow(rotated.y, 2)
-        );
+        const scale = 400 / (400 + rotatedZ);
+        const x2d = centerX + rotatedX * scale;
+        const y2d = centerY + dot.y * scale;
 
-        // Hollow center effect - particles are more transparent in center
-        const hollowEffect = Math.min(
-          1,
-          Math.max(0.02, distanceFromCenter / 180)
-        );
+        // OPTIMIZATION 2: Use `x * x` which is generally faster than `Math.pow`
+        const distanceFromCenter = Math.sqrt(rotatedX * rotatedX + dot.y * dot.y);
+        const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / 180));
+        const edgeDarkening = Math.max(0.3, (Math.abs(rotatedX) / radius) * 1.5);
+        const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
+        
+        const size = Math.max(0.15, 1.2 * scale);
 
-        // Edge darkening effect based on X position (left/right edges)
-        const edgeDistance = Math.abs(rotated.x) / radius;
-        const edgeDarkening = Math.max(0.3, edgeDistance * 1.5);
-
-        // Combine effects
-        const finalOpacity =
-          hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
-
-        ctx.beginPath();
-        // Much smaller particles
-        ctx.arc(x2d, y2d, Math.max(0.15, 0.5 * scale), 0, Math.PI * 2);
-
-        // All black particles with calculated opacity
         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
-        ctx.fill();
+        
+        // OPTIMIZATION 3: Use `fillRect` instead of `arc` for performance.
+        ctx.fillRect(x2d, y2d, size, size);
       }
 
-      angleY += 0.006;
-      requestAnimationFrame(draw);
+      angleY += 0.0025;
+      animationFrameId = requestAnimationFrame(draw);
     };
 
     draw();
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
+    window.addEventListener("resize", setCanvasDimensions);
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    // OPTIMIZATION 4: Cleanup function to prevent memory leaks.
+    return () => {
+      window.removeEventListener("resize", setCanvasDimensions);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []); // Empty dependency array ensures this runs only once
 
   return (
     <div className="relative mt-4 w-full min-h-screen bg-white overflow-hidden">
-      {/* Enhanced Canvas Animation */}
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
@@ -107,21 +107,13 @@ function Hero() {
           <p className="text-slate-400 text-4xl  md:text-5xl lg:text-6xl xl:text-6xl mb-3 sm:mb-4 tracking-wide font-medium">
             ICP Work
           </p>
-
-          {/* Main Heading */}
           <h1 className="text-4xl  md:text-4xl lg:text-5xl xl:text-5xl text-slate-900 mb-4 sm:mb-6 font-medium">
             Unleashing Potential, <br />
             <span>Delivering Excellence</span>
           </h1>
-
-          {/* Description */}
           <p className="text-slate-800 text-base sm:text-lg md:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium">
             Your Gateway to the Elite Freelance Revolution.
           </p>
-
-          {/* CTA Buttons */}
-
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-12">
             <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Join ICP Work
