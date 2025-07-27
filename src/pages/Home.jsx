@@ -9,6 +9,7 @@ import Sect4 from "../components/Sect4";
 import Sect6 from "../components/Sect6";
 import Sect8 from "../components/Sect8";
 import SpecializedServices from "../components/Section5";
+import FAQSection from "../components/Section7";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <Sect2 />
       <Sect4 />
       <Sect6 />
+      <FAQSection />
       <Sect8 />
       <Sect10 />
     </>
