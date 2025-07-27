@@ -1,12 +1,8 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Home() {
-  return (
-    <>
-      <h1>Home</h1>
-      <p>Welcome to the home page!</p>
-    </>
-  );
+  return <></>;
 }
 
 export default Home;
