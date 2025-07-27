@@ -12,9 +12,9 @@ const Sect2 = () => {
   return (
     <>
       <div className="flex px-[15rem] justify-center items-center space-x-[6rem] my-16">
-        <div>
+        <div className="relative">
           <img src={img} alt="Img" className="h-[35rem]" />
-          <div className="bg-white rounded-[18px] py-5 pl-6 pr-3 text-[0.875rem] max-w-[17rem] z-2 absolute bottom-[2rem] left-[29rem] shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
+          <div className="bg-white rounded-[18px] py-5 pl-6 pr-3 text-[0.875rem] max-w-[17rem] z-2 absolute bottom-[-2rem] right-[-2rem] shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
             <img
               src={money}
               alt="Money Icon"
