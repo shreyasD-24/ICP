@@ -8,6 +8,7 @@ import Sect2 from "../components/Sect2";
 import Sect4 from "../components/Sect4";
 import Sect6 from "../components/Sect6";
 import Sect8 from "../components/Sect8";
+import SpecializedServices from "../components/Section5";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Hero />
       <Logos />
       <OrganisedProcess />
+      <SpecializedServices />
       <Sect2 />
       <Sect4 />
       <Sect6 />
