@@ -85,7 +85,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative mt-4 w-full min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+    <div className="relative mt-4 w-full min-h-screen bg-white overflow-hidden">
       {/* Enhanced Canvas Animation */}
       <canvas
         ref={canvasRef}
