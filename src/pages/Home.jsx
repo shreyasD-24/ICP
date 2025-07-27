@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Logos from "../components/Logos";
-import OrganisedProcess from "../components/section3";
+import OrganisedProcess from "../components/Section3";
 import Sect10 from "../components/Sect10";
 import Sect2 from "../components/Sect2";
 import Sect4 from "../components/Sect4";
