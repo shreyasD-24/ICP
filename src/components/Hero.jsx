@@ -49,21 +49,25 @@ function Hero() {
         const distanceFromCenter = Math.sqrt(
           Math.pow(rotated.x, 2) + Math.pow(rotated.y, 2)
         );
-        
+
         // Hollow center effect - particles are more transparent in center
-        const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / 180));
-        
+        const hollowEffect = Math.min(
+          1,
+          Math.max(0.02, distanceFromCenter / 180)
+        );
+
         // Edge darkening effect based on X position (left/right edges)
         const edgeDistance = Math.abs(rotated.x) / radius;
         const edgeDarkening = Math.max(0.3, edgeDistance * 1.5);
-        
+
         // Combine effects
-        const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
-        
+        const finalOpacity =
+          hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
+
         ctx.beginPath();
         // Much smaller particles
         ctx.arc(x2d, y2d, Math.max(0.15, 0.5 * scale), 0, Math.PI * 2);
-        
+
         // All black particles with calculated opacity
         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
         ctx.fill();
@@ -91,44 +95,41 @@ function Hero() {
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background: "radial-gradient(ellipse at center, rgba(255,255,255,0.9) 20%, rgba(248,250,252,0.95) 60%, rgba(241,245,249,1) 100%)",
-          zIndex: 1
+          background:
+            "radial-gradient(ellipse at center, rgba(255,255,255,0.9) 20%, rgba(248,250,252,0.95) 60%, rgba(241,245,249,1) 100%)",
+          zIndex: 1,
         }}
       />
-      
+
       {/* Hero Content - Centered */}
       <div className="relative z-50 flex items-center justify-center min-h-screen px-4 py-4">
         <div className="text-center max-w-4xl mx-auto">
-          
           <p className="text-slate-400 text-4xl  md:text-5xl lg:text-6xl xl:text-6xl mb-3 sm:mb-4 tracking-wide font-medium">
             ICP Work
           </p>
-          
+
           {/* Main Heading */}
           <h1 className="text-4xl  md:text-4xl lg:text-5xl xl:text-5xl text-slate-900 mb-4 sm:mb-6 font-medium">
             Unleashing Potential, <br />
-            <span>
-              Delivering Excellence
-            </span>
+            <span>Delivering Excellence</span>
           </h1>
-          
+
           {/* Description */}
           <p className="text-slate-800 text-base sm:text-lg md:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium">
             Your Gateway to the Elite Freelance Revolution.
           </p>
-          
+
           {/* CTA Buttons */}
-                  
-                  {/* CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-12">
-                    <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                      Join ICP Work
-                    </button>
-                    <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold text-sm transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300">
-                      Learn more →
-                    </button>
-                  </div>
-        
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-12">
+            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              Join ICP Work
+            </button>
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold text-sm transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300">
+              Learn more →
+            </button>
+          </div>
         </div>
       </div>
     </div>

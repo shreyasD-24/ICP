@@ -127,7 +127,7 @@ function Sect4() {
         <Carousel
           cards={carouselCards}
           autoSlide={true}
-          slideInterval={4000}
+          slideInterval={10000}
           cardsPerView={3}
         />
       </div>

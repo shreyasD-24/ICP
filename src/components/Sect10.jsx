@@ -5,7 +5,7 @@ const Sect10 = () => {
     <div className="px-[16rem] flex justify-center">
       <div className="flex justify-center items-center space-x-[2rem] my-16 mb-[12rem]">
         <div className="max-w-[50%]">
-          <div className="bg-gradient-to-br from-purple-300 via-pink-300 to-yellow-200 p-4 rounded-[30px] inline-block text-[0.73rem] font-semibold font-sans mb-8">
+          <div className="bg-gradient-to-br from-purple-300 via-pink-300 to-orange-300 p-4 rounded-[30px] inline-block text-[0.73rem] font-semibold font-sans mb-8">
             Empower your business with unmatched expertise
           </div>
           <h2 className="text-4xl font-bold mb-4">
@@ -41,7 +41,7 @@ const Sect10 = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-pink-300 via-yellow-200 to-purple-300 p-6 rounded-3xl inline-block">
+        <div className="bg-gradient-to-br from-pink-300 via-orange-300 to-purple-300 p-6 rounded-3xl inline-block">
           <img
             src={img}
             alt="Section 10"
