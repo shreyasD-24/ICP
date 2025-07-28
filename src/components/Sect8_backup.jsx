@@ -64,7 +64,7 @@ const Sect8 = () => {
   const current = testimonials[currentTestimonial];
 
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[8rem] 2xl:px-[12rem] 3xl:px-[16rem] mt-[6rem] sm:mt-[8rem] lg:mt-[10rem] xl:mt-[12rem] mb-[6rem] sm:mb-[8rem] lg:mb-[10rem] xl:mb-[12rem]">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[8rem] 2xl:px-[12rem] 3xl:px-[16rem] mb-[4rem] sm:mb-[6rem] lg:mb-[8rem]">
       <div className="bg-gray-100 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 lg:mb-6">
           Why Freelancers Love ICPWork ?
