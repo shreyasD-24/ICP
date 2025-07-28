@@ -17,7 +17,7 @@ const Sect6 = () => {
           alt="Img"
           className="h-[20rem] sm:h-[22rem] md:h-[24rem] lg:h-[26rem] xl:h-[28rem] 2xl:h-[30rem] w-auto"
         />
-        <div className="bg-white rounded-[12px] sm:rounded-[15px] lg:rounded-[18px] py-4 sm:py-5 lg:py-6 pl-5 sm:pl-6 lg:pl-7 pr-6 sm:pr-8 lg:pr-10 text-[0.95rem] sm:text-[1.05rem] lg:text-[1.15rem] max-w-[22rem] sm:max-w-[24rem] lg:max-w-[26rem] absolute top-1/2 -translate-y-1/2 -right-[2rem] sm:-right-[2.5rem] lg:-right-[3rem] shadow-[0_0_2rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
+        <div className="bg-white rounded-[12px] sm:rounded-[15px] lg:rounded-[18px] py-4 sm:py-5 lg:py-6 pl-5 sm:pl-6 lg:pl-7 pr-6 sm:pr-8 lg:pr-10 text-[0.95rem] sm:text-[1.05rem] lg:text-[1.15rem] max-w-[18rem] sm:max-w-[24rem] lg:max-w-[26rem] absolute top-1/2 -translate-y-1/2 -right-[1rem] sm:-right-[2.5rem] lg:-right-[3rem] shadow-[0_0_2rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
           <img
             src={money}
             alt="Money Icon"
