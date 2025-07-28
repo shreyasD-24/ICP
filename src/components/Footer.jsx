@@ -11,7 +11,7 @@ export default function ICPWorkFooter() {
   return (
     <footer className="bg-gradient-to-br from-gray-50 to-gray-100 border-t border-gray-200 text-gray-700">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-12">
+      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-12">
         
         {/* Links Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 text-sm">
@@ -144,7 +144,7 @@ export default function ICPWorkFooter() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-300 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
+        <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
               <div className="text-2xl font-bold text-gray-900">
