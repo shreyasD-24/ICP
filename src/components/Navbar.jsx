@@ -54,7 +54,7 @@ function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full right-0 w-1/2 bg-white shadow-lg border-t border-l z-50">
+        <div className="lg:hidden absolute top-full right-0 w-1/2 bg-white shadow-lg border-t border-l z-65">
           <div className="flex flex-col p-4">
             <div className="text-base font-medium hover:text-gray-600 cursor-pointer py-3 border-b border-gray-200">
               Product
