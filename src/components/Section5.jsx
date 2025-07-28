@@ -73,7 +73,7 @@ export default function SpecializedServices() {
           </div>
 
           {/* Overlapping Black Card - Increased size with proper overlap */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-[40%] md:left-[45%] lg:left-[45%] xl:left-[50%] w-72 sm:w-80 md:w-96 lg:w-[22rem] xl:w-[26rem]">
+          <div className="absolute top-1/2 -translate-y-1/2 left-[25%] md:left-[45%] lg:left-[45%] xl:left-[50%] w-72 sm:w-80 md:w-96 lg:w-[22rem] xl:w-[26rem]">
             <div className="bg-black text-white rounded-xl sm:rounded-2xl px-4 py-5 sm:px-5 sm:py-7 md:px-7 md:py-9 lg:px-9 lg:py-11 xl:px-10 xl:py-12 text-left shadow-2xl">
               <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 {displayFeatures.map((feature, i) => (

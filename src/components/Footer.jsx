@@ -6,7 +6,6 @@ import {
   FaDiscord,
   FaTelegramPlane,
 } from "react-icons/fa";
-import logo from "../assets/logo.png";
 
 export default function ICPWorkFooter() {
   return (
@@ -148,7 +147,9 @@ export default function ICPWorkFooter() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <img src={logo} alt="ICPWork Logo" className="h-32 w-32 object-contain" />
+              <div className="text-2xl font-bold text-gray-900">
+                ICPWork
+              </div>
               <p className="text-gray-600 text-center sm:text-left text-sm">
                 © ICPWork Protocol 2025 • Built fully on-chain with{" "}
                 <span className="text-red-500">❤️</span> by the Internet Computer community.
