@@ -125,7 +125,7 @@ function Hero() {
         className="absolute top-0 left-0 w-full h-full"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(255,255,255,0.9) 20%, rgba(248,250,252,0.95) 60%, rgba(241,245,249,1) 100%)",
+            "white",
           zIndex: 1,
         }}
       />
