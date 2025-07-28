@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center space-x-4 px-[4rem] py-6">
+    <nav className="flex justify-between items-center space-x-4 px-[4rem] py-2">
       <div className="logo">
         <img src={logo} alt="ICP" className="h-10" />
       </div>

@@ -23,21 +23,40 @@ function Hero() {
 
     setCanvasDimensions(); // Initial setup
 
+    // Make sphere responsive to viewport size
+    const getResponsiveValues = () => {
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      const minDimension = Math.min(viewportWidth, viewportHeight);
+      
+      // Base radius scales with viewport size - increased from 0.25 to 0.4 and min from 150 to 250
+      const baseRadius = Math.max(220, minDimension * 0.33);
+      
+      // Adjust dot count based on screen size for performance
+      const baseDotCount = viewportWidth < 768 ? 3000 : 
+                          viewportWidth < 1200 ? 4500 : 6500;
+      
+      return { radius: baseRadius, numDots: baseDotCount };
+    };
+
+    let { radius, numDots } = getResponsiveValues();
     const dots = [];
-    const radius = 230;
-    // OPTIMIZATION 1: Reduce particle count.
-    const numDots = 6500;
     let angleY = 0;
 
     // Generate random dots on a sphere
-    for (let i = 0; i < numDots; i++) {
-      const theta = Math.random() * 2 * Math.PI;
-      const phi = Math.acos(2 * Math.random() - 1);
-      const x = radius * Math.sin(phi) * Math.cos(theta);
-      const y = radius * Math.sin(phi) * Math.sin(theta);
-      const z = radius * Math.cos(phi);
-      dots.push({ x, y, z });
-    }
+    const generateDots = () => {
+      dots.length = 0; // Clear existing dots
+      for (let i = 0; i < numDots; i++) {
+        const theta = Math.random() * 2 * Math.PI;
+        const phi = Math.acos(2 * Math.random() - 1);
+        const x = radius * Math.sin(phi) * Math.cos(theta);
+        const y = radius * Math.sin(phi) * Math.sin(theta);
+        const z = radius * Math.cos(phi);
+        dots.push({ x, y, z });
+      }
+    };
+
+    generateDots();
 
     const draw = () => {
       // Use device-pixel-ratio-aware dimensions for clearing
@@ -45,7 +64,7 @@ function Hero() {
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
       
       const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight / 2 - 50;
+      const centerY = window.innerHeight / 2 - 20; // Reduced from 50 to 20
       
       // Pre-calculate rotation values once per frame
       const cosAngle = Math.cos(angleY);
@@ -80,17 +99,26 @@ function Hero() {
 
     draw();
 
-    window.addEventListener("resize", setCanvasDimensions);
+    const handleResize = () => {
+      setCanvasDimensions();
+      // Regenerate sphere with new responsive values
+      const newValues = getResponsiveValues();
+      radius = newValues.radius;
+      numDots = newValues.numDots;
+      generateDots();
+    };
+
+    window.addEventListener("resize", handleResize);
 
     // OPTIMIZATION 4: Cleanup function to prevent memory leaks.
     return () => {
-      window.removeEventListener("resize", setCanvasDimensions);
+      window.removeEventListener("resize", handleResize);
       cancelAnimationFrame(animationFrameId);
     };
   }, []); // Empty dependency array ensures this runs only once
 
   return (
-    <div className="relative mt-4 w-full min-h-screen bg-white overflow-hidden">
+    <div className="relative  pb-2 w-full min-h-screen bg-white overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
@@ -102,7 +130,7 @@ function Hero() {
       />
 
       {/* Hero Content - Centered */}
-      <div className="relative z-50 flex items-center justify-center min-h-screen px-4 py-4">
+      <div className="relative z-50 flex items-center justify-center min-h-screen px-4 py-2">
         <div className="text-center max-w-4xl mx-auto">
           <p className="text-slate-400 text-4xl  md:text-5xl lg:text-6xl xl:text-6xl mb-3 sm:mb-4 tracking-wide font-medium">
             ICP Work
@@ -114,7 +142,7 @@ function Hero() {
           <p className="text-slate-800 text-base sm:text-lg md:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium">
             Your Gateway to the Elite Freelance Revolution.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Join ICP Work
             </button>
