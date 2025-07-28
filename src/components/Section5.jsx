@@ -1,7 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import {
   FaUsers,
   FaFileContract,
@@ -51,82 +48,59 @@ const features = [
 ];
 
 export default function SpecializedServices() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-  };
-
-  // Split features into chunks of 2 for each slide
-  const slides = [];
-  for (let i = 0; i < features.length; i += 2) {
-    slides.push(features.slice(i, i + 2));
-  }
+  // Only use first 2 features
+  const displayFeatures = features.slice(0, 2);
 
   return (
-        // ...existing code...
-        <section className="px-6 py-12 md:px-16 lg:px-28 bg-white text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-            Specialized Services Crafted for Impact
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto mb-10 lg:mb-24 text-sm md:text-base">
-            Our diverse suite of services addresses the dynamic needs of businesses poised for growth
-            and innovation. Each category is a gateway to specialized talent, ready to catalyze your success.
-          </p>
-    
-          
-          <div className="relative flex flex-col lg:flex-row items-center justify-center lg:mt-8">
-            {/* Left Image - Made smaller */}
-            <div className="w-full max-w-md lg:max-w-none lg:w-2/5 xl:w-1/2">
-              <img
-                src="/section5Img/1.png"
-                alt="Dashboard"
-                className="rounded-2xl shadow-lg w-full h-auto"
-              />
-            </div>
-    
-            {/* Black card - Overlap only on large screens */}
-            <div className="w-full max-w-sm lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 lg:w-1/3 xl:w-1/4 xl:mr-24 mt-6 lg:mt-0">
-              <Slider {...settings}>
-                {slides.map((pair, index) => (
-                  <div
-                    key={index}
-                    className="bg-black text-white rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left shadow-xl min-h-[250px] md:min-h-[350px]"
-                  >
-                    <div className="space-y-6">
-                      {pair.map((feature, i) => (
-                        <div key={i} className="space-y-3">
-                          <div className="flex items-start space-x-3">
-                            <div className="text-purple-400 text-lg md:text-xl shrink-0 mt-1">
-                              {feature.icon}
-                            </div>
-                            <div className="flex-1">
-                              <h3 className="font-semibold text-md md:text-lg lg:text-xl leading-snug mb-2">
-                                {feature.title}
-                              </h3>
-                              <p className="text-gray-300 text-sm md:text-md leading-relaxed">
-                                {feature.description}
-                              </p>
-                            </div>
-                          </div>
-                          {i === 0 && pair.length > 1 && (
-                            <div className="border-t border-gray-700 my-2"></div>
-                          )}
-                        </div>
-                      ))}
+    <section className="px-4 py-8 sm:px-6 sm:py-12 md:px-8 lg:px-16 xl:px-28 bg-white text-center">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+        Specialized Services Crafted for Impact
+      </h2>
+      <p className="text-gray-600 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-24 text-xs sm:text-sm md:text-base">
+        Our diverse suite of services addresses the dynamic needs of businesses poised for growth
+        and innovation. Each category is a gateway to specialized talent, ready to catalyze your success.
+      </p>
+
+      <div className="flex justify-center items-center w-full">
+        <div className="relative">
+          {/* Left Image Container - Reduced size */}
+          <div className="w-88  md:w-[32rem] lg:w-[40rem] xl:w-[44rem]">
+            <img
+              src="/section5Img/1.png"
+              alt="Dashboard"
+              className="rounded-xl sm:rounded-2xl shadow-lg w-full h-auto"
+            />
+          </div>
+
+          {/* Overlapping Black Card - Increased size with proper overlap */}
+          <div className="absolute top-1/2 -translate-y-1/2 left-[40%] md:left-[45%] lg:left-[45%] xl:left-[50%] w-72 sm:w-80 md:w-96 lg:w-[22rem] xl:w-[26rem]">
+            <div className="bg-black text-white rounded-xl sm:rounded-2xl px-4 py-5 sm:px-5 sm:py-7 md:px-7 md:py-9 lg:px-9 lg:py-11 xl:px-10 xl:py-12 text-left shadow-2xl">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6">
+                {displayFeatures.map((feature, i) => (
+                  <div key={i} className="space-y-2 sm:space-y-3">
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <div className="text-purple-400 text-sm sm:text-base md:text-lg lg:text-xl shrink-0 mt-0.5 sm:mt-1">
+                        {feature.icon}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight mb-1 sm:mb-2">
+                          {feature.title}
+                        </h3>
+                        <p className="text-gray-300 text-xs sm:text-xs md:text-sm lg:text-base leading-relaxed">
+                          {feature.description}
+                        </p>
+                      </div>
                     </div>
+                    {i === 0 && (
+                      <div className="border-t border-gray-700 my-2 sm:my-3"></div>
+                    )}
                   </div>
                 ))}
-              </Slider>
+              </div>
             </div>
           </div>
-    
-        </section>
-    // ...existing code...
+        </div>
+      </div>
+    </section>
   );
 }
