@@ -2,9 +2,9 @@ import img from "../assets/Sect10.jpg";
 
 const Sect10 = () => {
   return (
-    <div className="px-[16rem] flex justify-center">
-      <div className="flex justify-center items-center space-x-[2rem] my-16 mb-[12rem]">
-        <div className="max-w-[50%]">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[16rem] flex justify-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-[2rem] my-16 mb-[12rem]">
+        <div className="w-full lg:max-w-[50%]">
           <div className="bg-gradient-to-br from-purple-300 via-pink-300 to-orange-300 p-4 rounded-[30px] inline-block text-[0.73rem] font-semibold font-sans mb-8">
             Empower your business with unmatched expertise
           </div>
