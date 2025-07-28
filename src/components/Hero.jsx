@@ -29,7 +29,7 @@ function Hero() {
       const viewportHeight = window.innerHeight;
       const minDimension = Math.min(viewportWidth, viewportHeight);
       
-      // Base radius scales with viewport size - increased from 0.25 to 0.4 and min from 150 to 250
+      // Restore original sphere size
       const baseRadius = Math.max(220, minDimension * 0.33);
       
       // Adjust dot count based on screen size for performance
@@ -64,7 +64,8 @@ function Hero() {
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
       
       const centerX = window.innerWidth / 2;
-      const centerY = window.innerHeight / 2 - 20; // Reduced from 50 to 20
+      // Center the sphere properly within the Hero component bounds
+      const centerY = window.innerHeight / 2;
       
       // Pre-calculate rotation values once per frame
       const cosAngle = Math.cos(angleY);
@@ -115,7 +116,7 @@ function Hero() {
       window.removeEventListener("resize", handleResize);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []); // Empty dependency array ensures this runs only once
+  }, []);
 
   return (
     <div className="relative  pb-2 w-full min-h-screen bg-white overflow-hidden">

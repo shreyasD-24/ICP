@@ -7,38 +7,38 @@ const Sect8 = () => {
     {
       id: 1,
       name: "Darren Dunlap",
-      position: "CEO & Founder at Flex.co",
+      position: "Product Manager",
       profilePic:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
       quote:
         "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.",
     },
     {
-      id: 2,
-      name: "Sarah Mitchell",
-      position: "Lead Developer at TechCorp",
+      id: 1,
+      name: "Darren Dunlap",
+      position: "Product Manager",
       profilePic:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b0a4?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
       quote:
-        "ICPWork has revolutionized how I manage my freelance projects. The on-chain payments are seamless and transparent.",
+        "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.",
     },
     {
-      id: 3,
-      name: "Alex Johnson",
-      position: "Product Manager at StartupXYZ",
+      id: 1,
+      name: "Darren Dunlap",
+      position: "Product Manager",
       profilePic:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
       quote:
-        "Finally, a platform that puts freelancers first. The decentralized approach gives me complete control over my work.",
+        "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.",
     },
     {
-      id: 4,
-      name: "Emily Chen",
-      position: "UX Designer at Creative Agency",
+      id: 1,
+      name: "Darren Dunlap",
+      position: "Product Manager",
       profilePic:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
       quote:
-        "The community-driven features and censorship resistance make this the future of freelancing platforms.",
+        "The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.",
     },
   ];
 

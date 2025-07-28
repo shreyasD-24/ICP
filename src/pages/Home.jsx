@@ -10,6 +10,7 @@ import Sect8 from "../components/Sect8";
 import SpecializedServices from "../components/Section5";
 import FAQSection from "../components/Section7";
 import ICPWorkFooter from "../components/Footer";
+import WhyChooseICPWork from "../components/Section9";
 
 function Home() {
   return (
@@ -24,7 +25,9 @@ function Home() {
       <Sect6 />
       <FAQSection />
       <Sect8 />
+      <WhyChooseICPWork />
       <Sect10 />
+
       <ICPWorkFooter />
     </>
   );
