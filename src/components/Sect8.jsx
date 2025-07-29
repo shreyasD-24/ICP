@@ -172,10 +172,27 @@ const Sect8 = () => {
           <div className="relative">
             <svg
               className="w-10 h-10 xs:w-12 xs:h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 text-red-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
+              height="200px"
+              width="200px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 19.625 19.625"
             >
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    style={{ fill: "#eb0a0a" }}
+                    d="M18.73,2.645c-0.818-1.074-2.117-1.692-3.969-1.889C14.612,0.74,14.455,0.73,14.295,0.73 c-1.604,0-3.423,0.777-4.483,2.248c-1.06-1.47-2.877-2.247-4.481-2.247c-0.158,0-0.315,0.009-0.465,0.025 c-1.852,0.197-3.151,0.815-3.97,1.889c-0.81,1.062-1.074,2.516-0.778,4.324c0.719,4.385,8.838,11.425,9.183,11.723 c0.158,0.135,0.352,0.203,0.546,0.203c0.196,0,0.393-0.068,0.55-0.206c0.342-0.298,8.394-7.336,9.11-11.721 C19.803,5.163,19.542,3.708,18.73,2.645z M18.349,7.647c0,0-0.314-4.707-4.497-5.334C13.853,2.313,18.873,1.581,18.349,7.647z"
+                  ></path>
+                </g>
+              </g>
             </svg>
           </div>
         </div>
@@ -202,7 +219,7 @@ const Sect8 = () => {
 
           <div className="flex justify-center sm:justify-start">
             <button
-              className="w-full xs:w-full sm:w-[40%] md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%] min-w-[160px] xs:min-w-[180px] sm:min-w-[200px] lg:min-w-[220px] px-6 xs:px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 py-3 xs:py-3.5 sm:py-4 md:py-4.5 lg:py-5 rounded-full text-white text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="w-full xs:w-full sm:w-[35%] md:w-[35%] lg:w-[35%] xl:w-[30%] 2xl:w-[35%] min-w-[140px] xs:min-w-[160px] sm:min-w-[180px] lg:min-w-[200px] px-4 xs:px-6 sm:px-8 md:px-10 lg:px-12 xl:px-12 py-2.5 xs:py-3 sm:py-3.5 md:py-4 lg:py-4 rounded-full text-white text-xs xs:text-sm sm:text-sm md:text-base lg:text-lg font-semibold hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
               style={{ backgroundColor: "#041D37" }}
             >
               Send Feedback
