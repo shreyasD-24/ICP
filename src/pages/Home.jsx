@@ -19,10 +19,10 @@ function Home() {
       <Navbar />
       <Hero />
       <Logos />
-      <OrganisedProcess />
-      <SpecializedServices />
       <Sect2 />
+      <OrganisedProcess />
       <Sect4 />
+      <SpecializedServices />
       <Sect6 />
       <FAQSection />
       <Sect8 />
