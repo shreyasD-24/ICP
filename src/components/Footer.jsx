@@ -9,7 +9,7 @@ import {
 
 export default function ICPWorkFooter() {
   return (
-    <footer className="bg-white text-white">
+    <footer className="bg-white text-black">
       {/* Main Footer Content */}
       <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-12">
         
@@ -143,7 +143,7 @@ export default function ICPWorkFooter() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-300 bg-gray-100">
+      <div className="border-t border-gray-300 bg-white">
         <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
