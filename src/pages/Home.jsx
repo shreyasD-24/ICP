@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Logos from "../components/Logos";
 import OrganisedProcess from "../components/Section3";
 import Sect10 from "../components/Sect10";
+import Vision from "../components/Vision";
 import Sect2 from "../components/Sect2";
 import Sect4 from "../components/Sect4";
 import Sect6 from "../components/Sect6";
@@ -27,6 +28,7 @@ function Home() {
       <Sect8 />
       <WhyChooseICPWork />
       <Sect10 />
+      <Vision />
 
       <ICPWorkFooter />
     </>
