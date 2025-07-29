@@ -18,7 +18,7 @@ const Sect2 = () => {
             alt="Img"
             className="w-full max-w-[20rem] sm:max-w-[25rem] md:max-w-[35rem] lg:w-[45rem]"
           />
-          <div className="bg-white rounded-[18px] py-3 sm:py-4 lg:py-5 pl-4 sm:pl-5 lg:pl-6 pr-2 sm:pr-3 text-[0.75rem] sm:text-[0.875rem] max-w-[14rem] sm:max-w-[15rem] lg:max-w-[17rem] z-2 absolute bottom-[-1rem] sm:bottom-[-1.5rem] lg:bottom-[-2rem] right-[-1rem] sm:right-[-1.5rem] lg:right-[-2rem] shadow-[0_0_2rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
+          <div className="bg-white rounded-[18px] py-3 sm:py-4 lg:py-5 pl-4 sm:pl-5 lg:pl-6 pr-2 sm:pr-3 text-[0.75rem] sm:text-[0.875rem] max-w-[12rem] sm:max-w-[15rem] lg:max-w-[17rem] z-2 absolute bottom-[-1rem] sm:bottom-[-1.5rem] lg:bottom-[-2rem] right-[-0.5rem] sm:right-[-1.5rem] lg:right-[-2rem] shadow-[0_0_2rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_4rem_rgba(0,0,0,0.6)]">
             <img
               src={money}
               alt="Money Icon"
