@@ -30,7 +30,8 @@ function Hero() {
       const minDimension = Math.min(viewportWidth, viewportHeight);
       
       // Restore original sphere size
-      const baseRadius = Math.max(220, minDimension * 0.33);
+      const screenSizeMultiplier = Math.max(0.15, Math.min(0.30, 765 / viewportWidth));
+const baseRadius = Math.max(220, minDimension * screenSizeMultiplier);
       
       // Adjust dot count based on screen size for performance
       const baseDotCount = viewportWidth < 768 ? 3000 : 
