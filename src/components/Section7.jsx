@@ -34,7 +34,7 @@ export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="px-6 py-12 md:px-16 lg:px-28 bg-gray-50">
+    <section className="px-6 py-12 md:px-16 lg:px-28 bg-white">
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">
         Frequently Asked Questions for Freelancers
       </h2>
