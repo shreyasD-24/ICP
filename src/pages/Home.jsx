@@ -29,7 +29,6 @@ function Home() {
       <WhyChooseICPWork />
       <Sect10 />
       <Vision />
-
       <ICPWorkFooter />
     </>
   );
