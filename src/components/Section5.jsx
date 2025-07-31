@@ -53,10 +53,10 @@ export default function SpecializedServices() {
 
   return (
     <section className="px-4 py-8 sm:px-6 sm:py-12 md:px-8 lg:px-16 xl:px-28 bg-white text-center">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+      <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-semibold mb-2">
         Specialized Services Crafted for Impact
       </h2>
-      <p className="text-gray-600 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-24 text-xs sm:text-sm md:text-base">
+      <p className="text-gray-600 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl 3xl:text-3xl mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-24 text-xs sm:text-sm md:text-base">
         Our diverse suite of services addresses the dynamic needs of businesses
         poised for growth and innovation. Each category is a gateway to
         specialized talent, ready to catalyze your success.
