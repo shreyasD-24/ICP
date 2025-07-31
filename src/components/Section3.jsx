@@ -25,7 +25,7 @@ const steps = [
   {
     title: "Work Review & Payment",
     description: "Review deliverables and trigger automatic payment release",
-    img: "/section3Img/1.png",
+    img: "/section3Img/5.png",
   },
 ];
 
