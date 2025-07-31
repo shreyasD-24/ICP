@@ -9,7 +9,7 @@ import {
 
 export default function ICPWorkFooter() {
   return (
-    <footer className="bg-white text-black">
+    <footer className="bg-white text-black mb-8">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
         {/* Links Grid */}
