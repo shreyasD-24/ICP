@@ -380,7 +380,7 @@ function Hero() {
           <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
               style={{ fontSize: "clamp(3.5rem, 8.5vw, 5.5rem)" }}>
             is Decentralized. <br className="hidden sm:block" />
-            <span>Welcome to ICP Work.</span>
+            <span>Welcome to ICPWork.</span>
           </h1>
           
           <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
