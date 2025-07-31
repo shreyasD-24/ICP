@@ -233,7 +233,7 @@ const Sect8 = () => {
       </div>
 
       {/* Feedback Section */}
-      <div className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-24 2xl:mt-28 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-sm xs:shadow-md sm:shadow-lg lg:shadow-xl xl:shadow-2xl pl-4 xs:pl-8 sm:pl-20 md:pl-24 lg:pl-28 xl:pl-32 2xl:pl-40 3xl:pl-48 pr-3 xs:pr-6 sm:pr-12 md:pr-16 lg:pr-18 xl:pr-32 2xl:pr-24 3xl:pr-32 py-3 xs:py-4 sm:py-6 md:py-8 lg:py-9 xl:py-10 2xl:py-12 3xl:py-16">
+      <div className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-24 2xl:mt-28 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)] transition-shadow duration-300 pl-4 xs:pl-8 sm:pl-20 md:pl-24 lg:pl-28 xl:pl-32 2xl:pl-40 3xl:pl-48 pr-3 xs:pr-6 sm:pr-12 md:pr-16 lg:pr-18 xl:pr-32 2xl:pr-24 3xl:pr-32 py-3 xs:py-4 sm:py-6 md:py-8 lg:py-9 xl:py-10 2xl:py-12 3xl:py-16">
         {/* Made with heart */}
         <div className="flex items-center justify-center mb-2 xs:mb-3 sm:mb-5 lg:mb-8 xl:mb-11 opacity-100">
           <span className="text-lg xs:text-xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-400 mr-2 xs:mr-3 sm:mr-4 font-bold">

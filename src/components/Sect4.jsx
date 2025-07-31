@@ -62,7 +62,7 @@ function Sect4() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full"
+              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full"
             >
               {/* Icon Container - Exactly 50% of card height */}
               <div className="h-1/2 w-full flex items-center justify-center mb-2 xs:mb-3 sm:mb-0">
