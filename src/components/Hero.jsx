@@ -371,63 +371,63 @@ function Hero() {
 
       <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 pt-2">
         <div className="text-center max-w-4xl mx-auto w-full">
-          {/* Enhanced text sizing with larger sizes for bigger screens */}
+          {/* Enhanced text sizing with better responsiveness for smaller screens */}
           <p className="text-slate-400 tracking-wide font-medium"
-             style={{ fontSize: "clamp(3.5rem, 8.5vw, 5.5rem)" }}>
+             style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.5rem)" }}>
             The Future of Work
           </p>
           
           <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
-              style={{ fontSize: "clamp(3.5rem, 8.5vw, 5.5rem)" }}>
+              style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.5rem)" }}>
             is Decentralized. <br className="hidden sm:block" />
             <span>Welcome to ICPWork.</span>
           </h1>
           
           <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
-             style={{ fontSize: "clamp(2rem, 3.5vw, 2.3rem)" }}>
+             style={{ fontSize: "clamp(1rem, 2vw, 2.3rem)" }}>
             Your Gateway to the Elite Freelance Revolution.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                    style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}>
+                    style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
               Join ICP Work
             </button>
             <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300"
-                    style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}>
+                    style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
               Learn more →
             </button>
           </div>
           
-          {/* Enhanced Data Insights Counters */}
+          {/* Enhanced Data Insights Counters with better mobile responsiveness */}
           <div className="flex flex-wrap justify-center gap-8 mt-16 sm:mt-16 font-semibold">
             <div className="text-center min-w-[120px]">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(2.5rem, 6.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
                 0-{counters[0]}%
               </div>
               <div className="text-slate-700 mt-1 font-semibold"
-                   style={{ fontSize: "clamp(1rem, 3vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
                 Platform Fees
               </div>
             </div>
             <div className="text-center min-w-[120px] font">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(2.5rem, 6.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
                 1-2s
               </div>
               <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(1rem, 3vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
                 Transaction Fees
               </div>
             </div>
             <div className="text-center min-w-[120px]">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(2.5rem, 6.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
                 $0
               </div>
               <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(1rem, 3vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
                 Gas Speed
               </div>
             </div>
