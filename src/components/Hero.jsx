@@ -1,17 +1,252 @@
-import React, { useEffect, useRef } from "react";
+// import React, { useEffect, useRef, useState } from "react";
+
+// function Hero() {
+//   const canvasRef = useRef(null);
+//   const [counters, setCounters] = useState([0, 0, 0]);
+//   const targetCounts = [350, 120, 500]; // Projects, Clients, Freelancers
+
+//   // Counter animation effect
+//   useEffect(() => {
+//     const duration = 2000;
+//     const startTime = Date.now();
+    
+//     const updateCounters = () => {
+//       const elapsed = Date.now() - startTime;
+//       const progress = Math.min(elapsed / duration, 1);
+      
+//       const nextCounters = targetCounts.map((target, i) => {
+//         return Math.floor(target * progress);
+//       });
+      
+//       setCounters(nextCounters);
+      
+//       if (progress < 1) {
+//         requestAnimationFrame(updateCounters);
+//       }
+//     };
+    
+//     const timer = setTimeout(() => {
+//       requestAnimationFrame(updateCounters);
+//     }, 500);
+    
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   // Globe animation effect
+//   useEffect(() => {
+//     if (!canvasRef.current) return;
+
+//     const canvas = canvasRef.current;
+//     const ctx = canvas.getContext("2d");
+//     let animationFrameId;
+
+//     const setCanvasDimensions = () => {
+//       const dpr = window.devicePixelRatio || 1;
+//       canvas.width = window.innerWidth * dpr;
+//       canvas.height = window.innerHeight * dpr;
+//       canvas.style.width = `${window.innerWidth}px`;
+//       canvas.style.height = `${window.innerHeight}px`;
+//       ctx.scale(dpr, dpr);
+//     };
+
+//     setCanvasDimensions();
+
+//     const getResponsiveValues = () => {
+//       const viewportWidth = window.innerWidth;
+//       const viewportHeight = window.innerHeight;
+//       const minDimension = Math.min(viewportWidth, viewportHeight);
+      
+//       // Calculate radius based on viewport dimensions
+//       const radius = Math.max(150, minDimension * 0.35);
+      
+//       // Calculate focal length relative to radius
+//       const focalLength = Math.max(300, radius * 1.5);
+      
+//       // Adjust dot count based on screen size
+//       let numDots;
+//       if (viewportWidth < 768) {
+//         numDots = 3000;
+//       } else if (viewportWidth < 1200) {
+//         numDots = 5000;
+//       } else {
+//         numDots = 7000;
+//       }
+      
+//       return { radius, focalLength, numDots };
+//     };
+
+//     let { radius, focalLength, numDots } = getResponsiveValues();
+//     const dots = [];
+//     let angleY = 0;
+
+//     const generateDots = () => {
+//       dots.length = 0;
+//       for (let i = 0; i < numDots; i++) {
+//         const theta = Math.random() * 2 * Math.PI;
+//         const phi = Math.acos(2 * Math.random() - 1);
+//         const x = radius * Math.sin(phi) * Math.cos(theta);
+//         const y = radius * Math.sin(phi) * Math.sin(theta);
+//         const z = radius * Math.cos(phi);
+//         dots.push({ x, y, z });
+//       }
+//     };
+
+//     generateDots();
+
+//     const draw = () => {
+//       const dpr = window.devicePixelRatio || 1;
+//       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
+      
+//       const viewportWidth = window.innerWidth;
+//       const viewportHeight = window.innerHeight;
+      
+//       // Calculate center position with padding to prevent clipping
+//       const centerX = viewportWidth / 2;
+//       const centerY = viewportHeight / 2 - (viewportHeight * 0.05);
+      
+//       const cosAngle = Math.cos(angleY);
+//       const sinAngle = Math.sin(angleY);
+
+//       for (const dot of dots) {
+//         const rotatedX = dot.x * cosAngle - dot.z * sinAngle;
+//         const rotatedZ = dot.x * sinAngle + dot.z * cosAngle;
+
+//         // Use responsive focal length
+//         const scale = focalLength / (focalLength + rotatedZ);
+//         const x2d = centerX + rotatedX * scale;
+//         const y2d = centerY + dot.y * scale;
+
+//         // Dynamic effects based on current radius
+//         const distanceFromCenter = Math.sqrt(rotatedX * rotatedX + dot.y * dot.y);
+//         const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / (radius * 0.8)));
+//         const edgeDarkening = Math.max(0.3, (Math.abs(rotatedX) / radius) * 1.5);
+//         const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
+        
+//         const size = Math.max(0.15, 1.2 * scale);
+
+//         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
+//         ctx.fillRect(x2d, y2d, size, size);
+//       }
+
+//       angleY += 0.0025;
+//       animationFrameId = requestAnimationFrame(draw);
+//     };
+
+//     draw();
+
+//     const handleResize = () => {
+//       setCanvasDimensions();
+//       const newValues = getResponsiveValues();
+//       radius = newValues.radius;
+//       focalLength = newValues.focalLength;
+//       numDots = newValues.numDots;
+//       generateDots();
+//     };
+
+//     window.addEventListener("resize", handleResize);
+
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//       cancelAnimationFrame(animationFrameId);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="relative pb-2 w-full min-h-screen bg-white overflow-hidden">
+//       <canvas
+//         ref={canvasRef}
+//         className="absolute top-0 left-0 w-full h-full"
+//         style={{
+//           background: "white",
+//           zIndex: 1,
+//         }}
+//       />
+
+//       <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 py-2">
+//         <div className="text-center max-w-4xl mx-auto w-full">
+//           <p className="text-slate-400 text-2xl md:text-5xl lg:text-6xl mb-3 sm:mb-4 tracking-wide font-medium">
+//             ICP Work
+//           </p>
+//           <h1 className="text-4xl md:text-2xl lg:text-5xl text-slate-900 mb-4 sm:mb-6 font-medium">
+//             Unleashing Potential, <br />
+//             <span>Delivering Excellence</span>
+//           </h1>
+//           <p className="text-slate-800 text-base leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium">
+//             Your Gateway to the Elite Freelance Revolution.
+//           </p>
+//           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+//             <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+//               Join ICP Work
+//             </button>
+//             <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold text-sm transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300">
+//               Learn more →
+//             </button>
+//           </div>
+          
+//           {/* Data Insights Counters */}
+//           <div className="flex flex-wrap justify-center gap-8 mt-8 sm:mt-12">
+//             <div className="text-center min-w-[100px]">
+//               <div className="text-3xl md:text-4xl font-bold text-indigo-700">{counters[0]}+</div>
+//               <div className="text-sm md:text-base text-slate-700 mt-1">Projects Completed</div>
+//             </div>
+//             <div className="text-center min-w-[100px]">
+//               <div className="text-3xl md:text-4xl font-bold text-indigo-700">{counters[1]}+</div>
+//               <div className="text-sm md:text-base text-slate-700 mt-1">Happy Clients</div>
+//             </div>
+//             <div className="text-center min-w-[100px]">
+//               <div className="text-3xl md:text-4xl font-bold text-indigo-700">{counters[2]}+</div>
+//               <div className="text-sm md:text-base text-slate-700 mt-1">Expert Freelancers</div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Hero;
+import React, { useEffect, useRef, useState } from "react";
 
 function Hero() {
   const canvasRef = useRef(null);
+  const [counters, setCounters] = useState([0, 0, 0]);
+  const targetCounts = [350, 120, 500]; // Projects, Clients, Freelancers
 
+  // Counter animation effect
   useEffect(() => {
-    // Ensure canvas element is available before proceeding
+    const duration = 2000;
+    const startTime = Date.now();
+    
+    const updateCounters = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      const nextCounters = targetCounts.map((target, i) => {
+        return Math.floor(target * progress);
+      });
+      
+      setCounters(nextCounters);
+      
+      if (progress < 1) {
+        requestAnimationFrame(updateCounters);
+      }
+    };
+    
+    const timer = setTimeout(() => {
+      requestAnimationFrame(updateCounters);
+    }, 500);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Globe animation effect
+  useEffect(() => {
     if (!canvasRef.current) return;
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     let animationFrameId;
 
-    // Set canvas size considering device pixel ratio for sharpness on retina screens
     const setCanvasDimensions = () => {
       const dpr = window.devicePixelRatio || 1;
       canvas.width = window.innerWidth * dpr;
@@ -21,32 +256,38 @@ function Hero() {
       ctx.scale(dpr, dpr);
     };
 
-    setCanvasDimensions(); // Initial setup
+    setCanvasDimensions();
 
-    // Make sphere responsive to viewport size
     const getResponsiveValues = () => {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
       const minDimension = Math.min(viewportWidth, viewportHeight);
       
-      // Restore original sphere size
-      const screenSizeMultiplier = Math.max(0.15, Math.min(0.30, 765 / viewportWidth));
-const baseRadius = Math.max(220, minDimension * screenSizeMultiplier);
+      // Calculate radius based on viewport dimensions
+      const radius = Math.max(150, minDimension * 0.35);
       
-      // Adjust dot count based on screen size for performance
-      const baseDotCount = viewportWidth < 768 ? 3000 : 
-                          viewportWidth < 1200 ? 4500 : 6500;
+      // Calculate focal length relative to radius
+      const focalLength = Math.max(300, radius * 1.5);
       
-      return { radius: baseRadius, numDots: baseDotCount };
+      // Adjust dot count based on screen size
+      let numDots;
+      if (viewportWidth < 768) {
+        numDots = 2800;
+      } else if (viewportWidth < 1200) {
+        numDots = 5000;
+      } else {
+        numDots = 7000;
+      }
+      
+      return { radius, focalLength, numDots };
     };
 
-    let { radius, numDots } = getResponsiveValues();
+    let { radius, focalLength, numDots } = getResponsiveValues();
     const dots = [];
     let angleY = 0;
 
-    // Generate random dots on a sphere
     const generateDots = () => {
-      dots.length = 0; // Clear existing dots
+      dots.length = 0;
       for (let i = 0; i < numDots; i++) {
         const theta = Math.random() * 2 * Math.PI;
         const phi = Math.acos(2 * Math.random() - 1);
@@ -60,38 +301,37 @@ const baseRadius = Math.max(220, minDimension * screenSizeMultiplier);
     generateDots();
 
     const draw = () => {
-      // Use device-pixel-ratio-aware dimensions for clearing
       const dpr = window.devicePixelRatio || 1;
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
       
-      const centerX = window.innerWidth / 2;
-      // Center the sphere properly within the Hero component bounds
-      const centerY = window.innerHeight / 2;
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
       
-      // Pre-calculate rotation values once per frame
+      // Calculate center position with padding to prevent clipping
+      const centerX = viewportWidth / 2;
+      const centerY = viewportHeight / 2 - (viewportHeight * 0.05);
+      
       const cosAngle = Math.cos(angleY);
       const sinAngle = Math.sin(angleY);
 
       for (const dot of dots) {
-        // Inlined rotation is slightly faster than a function call in a tight loop
         const rotatedX = dot.x * cosAngle - dot.z * sinAngle;
         const rotatedZ = dot.x * sinAngle + dot.z * cosAngle;
 
-        const scale = 400 / (400 + rotatedZ);
+        // Use responsive focal length
+        const scale = focalLength / (focalLength + rotatedZ);
         const x2d = centerX + rotatedX * scale;
         const y2d = centerY + dot.y * scale;
 
-        // OPTIMIZATION 2: Use `x * x` which is generally faster than `Math.pow`
+        // Dynamic effects based on current radius
         const distanceFromCenter = Math.sqrt(rotatedX * rotatedX + dot.y * dot.y);
-        const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / 180));
+        const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / (radius * 0.8)));
         const edgeDarkening = Math.max(0.3, (Math.abs(rotatedX) / radius) * 1.5);
         const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
         
         const size = Math.max(0.15, 1.2 * scale);
 
         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
-        
-        // OPTIMIZATION 3: Use `fillRect` instead of `arc` for performance.
         ctx.fillRect(x2d, y2d, size, size);
       }
 
@@ -103,16 +343,15 @@ const baseRadius = Math.max(220, minDimension * screenSizeMultiplier);
 
     const handleResize = () => {
       setCanvasDimensions();
-      // Regenerate sphere with new responsive values
       const newValues = getResponsiveValues();
       radius = newValues.radius;
+      focalLength = newValues.focalLength;
       numDots = newValues.numDots;
       generateDots();
     };
 
     window.addEventListener("resize", handleResize);
 
-    // OPTIMIZATION 4: Cleanup function to prevent memory leaks.
     return () => {
       window.removeEventListener("resize", handleResize);
       cancelAnimationFrame(animationFrameId);
@@ -120,37 +359,78 @@ const baseRadius = Math.max(220, minDimension * screenSizeMultiplier);
   }, []);
 
   return (
-    <div className="relative  pb-2 w-full min-h-screen bg-white overflow-hidden">
+    <div className="relative pb-2 w-full min-h-screen bg-white overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          background:
-            "white",
+          background: "white",
           zIndex: 1,
         }}
       />
 
-      {/* Hero Content - Centered */}
-      <div className="relative z-50 flex items-center justify-center min-h-screen px-4 py-2">
-        <div className="text-center max-w-4xl mx-auto">
-          <p className="text-slate-400 text-4xl  md:text-5xl lg:text-6xl xl:text-6xl mb-3 sm:mb-4 tracking-wide font-medium">
+      <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 py-2">
+        <div className="text-center max-w-4xl mx-auto w-full">
+          {/* Enhanced text sizing with larger sizes for bigger screens */}
+          <p className="text-slate-400 mb-3 sm:mb-4 tracking-wide font-medium"
+             style={{ fontSize: "clamp(2rem, 7vw, 4rem)" }}>
             ICP Work
           </p>
-          <h1 className="text-4xl  md:text-4xl lg:text-5xl xl:text-5xl text-slate-900 mb-4 sm:mb-6 font-medium">
-            Unleashing Potential, <br />
+          
+          <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
+              style={{ fontSize: "clamp(1.75rem, 6.5vw, 3.75rem)" }}>
+            Unleashing Potential, <br className="hidden sm:block" />
             <span>Delivering Excellence</span>
           </h1>
-          <p className="text-slate-800 text-base sm:text-lg md:text-lg leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium">
+          
+          <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
+             style={{ fontSize: "clamp(1rem, 3vw, 1.75rem)" }}>
             Your Gateway to the Elite Freelance Revolution.
           </p>
+          
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
               Join ICP Work
             </button>
-            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold text-sm transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300">
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300"
+                    style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
               Learn more →
             </button>
+          </div>
+          
+          {/* Enhanced Data Insights Counters */}
+          <div className="flex flex-wrap justify-center gap-8 mt-8 sm:mt-12">
+            <div className="text-center min-w-[120px]">
+              <div className="font-bold text-indigo-700"
+                   style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
+                {counters[0]}+
+              </div>
+              <div className="text-slate-700 mt-1"
+                   style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
+                Projects Completed
+              </div>
+            </div>
+            <div className="text-center min-w-[120px]">
+              <div className="font-bold text-indigo-700"
+                   style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
+                {counters[1]}+
+              </div>
+              <div className="text-slate-700 mt-1"
+                   style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
+                Happy Clients
+              </div>
+            </div>
+            <div className="text-center min-w-[120px]">
+              <div className="font-bold text-indigo-700"
+                   style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
+                {counters[2]}+
+              </div>
+              <div className="text-slate-700 mt-1"
+                   style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
+                Expert Freelancers
+              </div>
+            </div>
           </div>
         </div>
       </div>
