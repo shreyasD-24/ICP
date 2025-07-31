@@ -31,10 +31,10 @@ const steps = [
 export default function OrganisedProcess() {
   return (
     <section className="px-6 py-10 md:px-16 lg:px-28 bg-white text-center">
-      <h2 className="text-4xl md:text-6xl font-semibold mb-2">
+      <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-2">
         How ICP Work Functions
       </h2>
-      <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-xl md:text-3xl">
+      <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl">
         Simple, secure, and transparent workflows for clients and freelancers
       </p>
 
@@ -58,8 +58,8 @@ export default function OrganisedProcess() {
                     <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-gray-900 text-white flex items-center justify-center">
                       {index + 1}
                     </div>
-                    <h3 className="font-semibold text-xl mb-1">{step.title}</h3>
-                    <p className="text-md text-gray-600">{step.description}</p>
+                    <h3 className="font-semibold text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl mb-1">{step.title}</h3>
+                    <p className="text-sm xs:text-md lg:text-lg xl:text-lg 2xl:text-xl text-gray-600">{step.description}</p>
                   </div>
       
                   {/* Gradient bottom bar on hover */}

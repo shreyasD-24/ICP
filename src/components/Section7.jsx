@@ -35,7 +35,7 @@ export default function FAQSection() {
 
   return (
     <section className="px-6 py-12 md:px-16 lg:px-28 bg-white">
-      <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">
+      <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold text-center mb-10">
         Frequently Asked Questions for Freelancers
       </h2>
 
@@ -54,7 +54,7 @@ export default function FAQSection() {
                         : "text-gray-700 hover:text-gray-900"
                     }`}
                   >
-                    <span className="text-base lg:text-lg leading-relaxed pr-4">{faq.question}</span>
+                    <span className="text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl leading-relaxed pr-4">{faq.question}</span>
                     <FaChevronRight
                       className={`text-gray-400 w-3 h-3 transition-all duration-300 flex-shrink-0 ${
                         activeIndex === index ? "rotate-90 text-purple-600" : ""
@@ -71,11 +71,11 @@ export default function FAQSection() {
               <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 relative z-10 min-h-[240px] flex flex-col justify-center transition-all duration-500 m-1">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mt-3 flex-shrink-0"></div>
-                  <h3 className="text-base md:text-lg font-semibold text-gray-800 leading-snug">
+                  <h3 className="text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl font-semibold text-gray-800 leading-snug">
                     {faqs[activeIndex].question}
                   </h3>
                 </div>
-                <p className="text-sm md:text-base leading-relaxed ml-5">
+                <p className="text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl leading-relaxed ml-5">
                   {faqs[activeIndex].answer}
                 </p>
               </div>
