@@ -66,12 +66,10 @@ export default function SpecializedServicesSlider() {
   return (
     <section className="px-4 py-8 sm:px-6 sm:py-12 md:px-8 lg:px-16 xl:px-28 bg-white text-center">
       <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-2">
-        Specialized Services Crafted for Impact
+        Use Cases
       </h2>
       <p className="text-gray-600 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl mx-auto mb-8 sm:mb-12 lg:mb-16 xl:mb-24 sm:text-sm md:text-base max-w-4xl">
-        Our diverse suite of services addresses the dynamic needs of businesses
-        poised for growth and innovation. Each category is a gateway to
-        specialized talent, ready to catalyze your success.
+       Versatile platform for diverse decentralized work scenarios
       </p>
 
       {/* Slider Container */}

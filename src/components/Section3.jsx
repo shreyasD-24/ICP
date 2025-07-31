@@ -37,6 +37,16 @@ export default function OrganisedProcess() {
       <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl">
         Simple, secure, and transparent workflows for clients and freelancers
       </p>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    style={{ fontSize: "clamp(0.9rem, 2.25vw, 1.75rem)" }}>
+              Join ICP Work
+            </button>
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300"
+                    style={{ fontSize: "clamp(0.9rem, 2.25vw, 1.75rem)" }}>
+              Learn more →
+            </button>
+          </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
               {steps.map((step, index) => (

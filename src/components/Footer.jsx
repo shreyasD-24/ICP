@@ -13,7 +13,7 @@ export default function ICPWorkFooter() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
         {/* Links Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4 text-sm lg:text-base xl:text-lg 2xl:text-lg">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 text-sm lg:text-base xl:text-lg 2xl:text-lg">
           {/* Categories */}
           <div className="lg:col-span-1">
             <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
