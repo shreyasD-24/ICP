@@ -48,7 +48,7 @@ const Sect6 = () => {
         </p>
 
         {/* Grid with features */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
           <div className="text-center lg:text-left">
             <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
               Infinite Scalability
@@ -69,7 +69,7 @@ const Sect6 = () => {
             </p>
           </div>
 
-          <div className="text-center lg:text-left col-span-1 xs:col-span-2 lg:col-span-1">
+          <div className="text-center lg:text-left">
             <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
               Chain-Key Cryptography
             </h3>
