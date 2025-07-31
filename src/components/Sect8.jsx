@@ -64,7 +64,7 @@ const Sect8 = () => {
   const current = testimonials[currentTestimonial];
 
   return (
-    <div className="px-2 xs:px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[6rem] 2xl:px-[8rem] 3xl:px-[12rem] 4xl:px-[16rem] mt-[3rem] xs:mt-[4rem] sm:mt-[8rem] lg:mt-[9rem] xl:mt-[10rem] 2xl:mt-[12rem] mb-[3rem] xs:mb-[4rem] sm:mb-[8rem] lg:mb-[9rem] xl:mb-[10rem] 2xl:mb-[12rem]">
+    <div className="px-2 xs:px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[6rem] 2xl:px-[8rem] 3xl:px-[12rem] 4xl:px-[16rem] mt-[1.5rem] xs:mt-[3rem] sm:mt-[4rem] lg:mt-[4rem] xl:mt-[5rem] 2xl:mt-[5rem] mb-[1.5rem] xs:mb-[3rem] sm:mb-[8rem] lg:mb-[9rem] xl:mb-[10rem] 2xl:mb-[6rem]">
       <div className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center">
         <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
           Why Freelancers Love ICPWork ?

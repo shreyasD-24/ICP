@@ -8,7 +8,7 @@ const Sect6 = () => {
     "Direct Web Serving",
   ];
   return (
-    <div className="flex flex-col lg:flex-row px-1 xs:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 4xl:px-14 5xl:px-16 justify-center items-center lg:space-x-[4rem] xl:space-x-[4rem] 2xl:space-x-[6rem] 3xl:space-x-[8rem] my-8 xs:my-12 sm:my-20 md:my-24 lg:my-28 xl:my-24 2xl:my-36 3xl:my-40 space-y-8 xs:space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-0">
+    <div className="flex flex-col lg:flex-row px-1 xs:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-8 2xl:px-10 3xl:px-12 4xl:px-14 5xl:px-16 justify-center items-center lg:space-x-[4rem] xl:space-x-[4rem] 2xl:space-x-[6rem] 3xl:space-x-[8rem] my-3 xs:my-6 sm:my-6 md:my-7 lg:my-8 xl:my-8 2xl:my-10 3xl:my-14 space-y-8 xs:space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-0">
       <div className="relative flex-shrink-0">
         <img
           src={table}

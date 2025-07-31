@@ -3,7 +3,7 @@ import img from "../assets/Sect10.jpg";
 const Sect10 = () => {
   return (
     <div className="px-2 xs:px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[6rem] 2xl:px-[8rem] 3xl:px-[12rem]">
-      <div className="flex flex-col lg:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-0 lg:space-x-3 xl:space-x-4 2xl:space-x-6 my-4 xs:my-6 sm:my-8 md:my-10 lg:my-12 xl:my-20 mb-[2rem] xs:mb-[3rem] sm:mb-[4rem] md:mb-[6rem] lg:mb-[8rem] xl:mb-[12rem]">
+      <div className="flex flex-col lg:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-0 lg:space-x-3 xl:space-x-4 2xl:space-x-6 my-4 xs:my-6 sm:my-8 md:my-10 lg:my-12 xl:my-20 mb-[1rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[8rem]">
         <div className="w-full lg:w-[48%] xl:w-[46%] 2xl:w-[44%] text-center lg:text-left">
           {/* No changes to content */}
           <div className="bg-gradient-to-br from-purple-300 via-pink-300 to-orange-300 p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-4.5 rounded-[12px] xs:rounded-[14px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[22px] xl:rounded-[24px] 2xl:rounded-[26px] inline-block text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl font-semibold font-sans mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8">

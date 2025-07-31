@@ -72,7 +72,7 @@ const Sect2 = () => {
           </div>
         </div>
       </div>
-      <div className="px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[10rem] 3xl:px-[13rem] 4xl:px-[15rem] 5xl:px-[18rem] 6xl:px-[22rem] mb-[2rem] xs:mb-[3rem] sm:mb-[4rem] lg:mb-[4rem] xl:mb-[5rem] 2xl:mb-[6rem] 3xl:mb-[7rem] 4xl:mb-[8rem] 5xl:mb-[12rem] mt-[3rem] xs:mt-[4rem] sm:mt-[5rem] lg:mt-[6rem] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[9rem] 4xl:mt-[11rem] 5xl:mt-[16rem] text-center text-base xs:text-lg sm:text-xl lg:text-xl xl:text-lg 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl 5xl:text-[4rem] font-bold">
+      <div className="px-3 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[10rem] 3xl:px-[13rem] 4xl:px-[15rem] 5xl:px-[18rem] 6xl:px-[22rem] mb-[2rem] xs:mb-[1.5rem] sm:mb-[2rem] lg:mb-[2rem] xl:mb-[2.5rem] 2xl:mb-[3rem] 3xl:mb-[3.5rem] 4xl:mb-[4rem] 5xl:mb-[6rem] mt-[3rem] xs:mt-[4rem] sm:mt-[5rem] lg:mt-[6rem] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[9rem] 4xl:mt-[11rem] 5xl:mt-[16rem] text-center text-base xs:text-lg sm:text-xl lg:text-xl xl:text-lg 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl 5xl:text-[4rem] font-bold">
         This isn't gig work. This is the future of decentralized execution.
         Welcome to ICPWork — built 100% on-chain.
       </div>
