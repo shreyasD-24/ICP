@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Logos = () => {
   return (
     <div className="w-full bg-white px-4 my-4 sm:my-6 md:my-8 lg:my-12 xl:my-16 2xl:my-0">
@@ -14,10 +12,15 @@ const Logos = () => {
           { name: "Maimo", className: "font-bold" },
           { name: "TVS ✈", className: "font-bold" },
           { name: "⬛PLAID", className: "font-bold" },
-          { name: "GROVE", className: "font-bold" }
+          { name: "GROVE", className: "font-bold" },
         ].map((logo, index) => (
-          <div key={index} className="flex items-center justify-center px-1 py-1">
-            <span className={`text-slate-700 ${logo.className} text-sm sm:text-base md:text-md lg:text-md xl:text-lg 2xl:text-3xl 4xl:text-4xl text-center`}>
+          <div
+            key={index}
+            className="flex items-center justify-center px-1 py-1"
+          >
+            <span
+              className={`text-slate-700 ${logo.className} text-sm sm:text-base md:text-md lg:text-md xl:text-lg 2xl:text-3xl 4xl:text-4xl text-center`}
+            >
               {logo.name}
             </span>
           </div>

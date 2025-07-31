@@ -23,7 +23,9 @@ const WhyChooseICPWork = () => {
           <ul className="mt-2 text-gray-700 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl leading-relaxed space-y-1">
             <li>🛠️ You join a movement.</li>
             <li>🌍 You shape the future of work.</li>
-            <li>🔐 You own your reputation, your payments, and your freedom.</li>
+            <li>
+              🔐 You own your reputation, your payments, and your freedom.
+            </li>
           </ul>
         </div>
 
@@ -54,10 +56,10 @@ const WhyChooseICPWork = () => {
             We're more than a network. We're a protocol-powered revolution.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-black text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition">
+            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Join as Freelancer
             </button>
-            <button className="border border-green-500 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl text-green-600 px-6 py-3 rounded-full font-medium hover:bg-green-50 transition">
+            <button className="w-full sm:w-auto border border-green-500 text-green-600 px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl hover:bg-green-50 transition-all duration-300">
               Join as Client
             </button>
           </div>

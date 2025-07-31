@@ -9,26 +9,26 @@
 //   useEffect(() => {
 //     const duration = 2000;
 //     const startTime = Date.now();
-    
+
 //     const updateCounters = () => {
 //       const elapsed = Date.now() - startTime;
 //       const progress = Math.min(elapsed / duration, 1);
-      
+
 //       const nextCounters = targetCounts.map((target, i) => {
 //         return Math.floor(target * progress);
 //       });
-      
+
 //       setCounters(nextCounters);
-      
+
 //       if (progress < 1) {
 //         requestAnimationFrame(updateCounters);
 //       }
 //     };
-    
+
 //     const timer = setTimeout(() => {
 //       requestAnimationFrame(updateCounters);
 //     }, 500);
-    
+
 //     return () => clearTimeout(timer);
 //   }, []);
 
@@ -55,13 +55,13 @@
 //       const viewportWidth = window.innerWidth;
 //       const viewportHeight = window.innerHeight;
 //       const minDimension = Math.min(viewportWidth, viewportHeight);
-      
+
 //       // Calculate radius based on viewport dimensions
 //       const radius = Math.max(150, minDimension * 0.35);
-      
+
 //       // Calculate focal length relative to radius
 //       const focalLength = Math.max(300, radius * 1.5);
-      
+
 //       // Adjust dot count based on screen size
 //       let numDots;
 //       if (viewportWidth < 768) {
@@ -71,7 +71,7 @@
 //       } else {
 //         numDots = 7000;
 //       }
-      
+
 //       return { radius, focalLength, numDots };
 //     };
 
@@ -96,14 +96,14 @@
 //     const draw = () => {
 //       const dpr = window.devicePixelRatio || 1;
 //       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-      
+
 //       const viewportWidth = window.innerWidth;
 //       const viewportHeight = window.innerHeight;
-      
+
 //       // Calculate center position with padding to prevent clipping
 //       const centerX = viewportWidth / 2;
 //       const centerY = viewportHeight / 2 - (viewportHeight * 0.05);
-      
+
 //       const cosAngle = Math.cos(angleY);
 //       const sinAngle = Math.sin(angleY);
 
@@ -121,7 +121,7 @@
 //         const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / (radius * 0.8)));
 //         const edgeDarkening = Math.max(0.3, (Math.abs(rotatedX) / radius) * 1.5);
 //         const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
-        
+
 //         const size = Math.max(0.15, 1.2 * scale);
 
 //         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
@@ -182,7 +182,7 @@
 //               Learn more →
 //             </button>
 //           </div>
-          
+
 //           {/* Data Insights Counters */}
 //           <div className="flex flex-wrap justify-center gap-8 mt-8 sm:mt-12">
 //             <div className="text-center min-w-[100px]">
@@ -216,26 +216,26 @@ function Hero() {
   useEffect(() => {
     const duration = 2000;
     const startTime = Date.now();
-    
+
     const updateCounters = () => {
       const elapsed = Date.now() - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      
+
       const nextCounters = targetCounts.map((target, i) => {
         return Math.floor(target * progress);
       });
-      
+
       setCounters(nextCounters);
-      
+
       if (progress < 1) {
         requestAnimationFrame(updateCounters);
       }
     };
-    
+
     const timer = setTimeout(() => {
       requestAnimationFrame(updateCounters);
     }, 500);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -262,13 +262,13 @@ function Hero() {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
       const minDimension = Math.min(viewportWidth, viewportHeight);
-      
+
       // Calculate radius based on viewport dimensions
       const radius = Math.max(150, minDimension * 0.35);
-      
+
       // Calculate focal length relative to radius
       const focalLength = Math.max(300, radius * 1.5);
-      
+
       // Adjust dot count based on screen size
       let numDots;
       if (viewportWidth < 768) {
@@ -278,7 +278,7 @@ function Hero() {
       } else {
         numDots = 7000;
       }
-      
+
       return { radius, focalLength, numDots };
     };
 
@@ -303,14 +303,14 @@ function Hero() {
     const draw = () => {
       const dpr = window.devicePixelRatio || 1;
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-      
+
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
-      
+
       // Calculate center position with padding to prevent clipping
       const centerX = viewportWidth / 2;
-      const centerY = viewportHeight / 2 - (viewportHeight * 0.05);
-      
+      const centerY = viewportHeight / 2 - viewportHeight * 0.05;
+
       const cosAngle = Math.cos(angleY);
       const sinAngle = Math.sin(angleY);
 
@@ -324,11 +324,20 @@ function Hero() {
         const y2d = centerY + dot.y * scale;
 
         // Dynamic effects based on current radius
-        const distanceFromCenter = Math.sqrt(rotatedX * rotatedX + dot.y * dot.y);
-        const hollowEffect = Math.min(1, Math.max(0.02, distanceFromCenter / (radius * 0.8)));
-        const edgeDarkening = Math.max(0.3, (Math.abs(rotatedX) / radius) * 1.5);
-        const finalOpacity = hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
-        
+        const distanceFromCenter = Math.sqrt(
+          rotatedX * rotatedX + dot.y * dot.y
+        );
+        const hollowEffect = Math.min(
+          1,
+          Math.max(0.02, distanceFromCenter / (radius * 0.8))
+        );
+        const edgeDarkening = Math.max(
+          0.3,
+          (Math.abs(rotatedX) / radius) * 1.5
+        );
+        const finalOpacity =
+          hollowEffect * edgeDarkening * Math.max(0.04, scale * 0.4);
+
         const size = Math.max(0.15, 1.2 * scale);
 
         ctx.fillStyle = `rgba(0, 0, 0, ${finalOpacity})`;
@@ -387,14 +396,12 @@ function Hero() {
              style={{ fontSize: "clamp(1rem, 2vw, 2.3rem)" }}>
             Your Gateway to the Elite Freelance Revolution.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                    style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
+            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Join ICP Work
             </button>
-            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 py-3.5 rounded-full hover:bg-gray-300"
-                    style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full hover:bg-gray-300 text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
               Learn more →
             </button>
           </div>
