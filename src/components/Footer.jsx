@@ -11,13 +11,13 @@ export default function ICPWorkFooter() {
   return (
     <footer className="bg-white text-black">
       {/* Main Footer Content */}
-      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
         {/* Links Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4 text-sm lg:text-base xl:text-lg 2xl:text-lg">
           {/* Categories */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
-              <span className="text-lg">📂</span> Categories
+            <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
+              <span className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl">📂</span> Categories
             </h3>
             <ul className="space-y-3">
               {[
@@ -50,8 +50,8 @@ export default function ICPWorkFooter() {
 
           {/* For Clients */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
-              <span className="text-lg">🤝</span> For Clients
+            <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
+              <span className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl">🤝</span> For Clients
             </h3>
             <ul className="space-y-3">
               {[
@@ -75,8 +75,8 @@ export default function ICPWorkFooter() {
 
           {/* For Freelancers */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
-              <span className="text-lg">👨‍💻</span> For Freelancers
+            <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
+              <span className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl">👨‍💻</span> For Freelancers
             </h3>
             <ul className="space-y-3">
               {[
@@ -100,8 +100,8 @@ export default function ICPWorkFooter() {
 
           {/* Business Solutions */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
-              <span className="text-lg">🏢</span> Business Solutions
+            <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
+              <span className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl">🏢</span> Business Solutions
             </h3>
             <ul className="space-y-3">
               {[
@@ -125,8 +125,8 @@ export default function ICPWorkFooter() {
 
           {/* Company */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
-              <span className="text-lg">🏛</span> Company
+            <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
+              <span className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl">🏛</span> Company
             </h3>
             <ul className="space-y-3">
               {[
@@ -157,11 +157,11 @@ export default function ICPWorkFooter() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-300 bg-white">
-        <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <div className="text-2xl font-bold text-gray-900">ICPWork</div>
-              <p className="text-gray-600 text-center sm:text-left text-sm">
+              <div className="text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900">ICPWork</div>
+              <p className="text-gray-600 text-center sm:text-left text-sm lg:text-base xl:text-lg 2xl:text-lg">
                 © ICPWork Protocol 2025 • Built fully on-chain with{" "}
                 <span className="text-red-500">❤️</span> by the Internet
                 Computer community.
@@ -169,7 +169,7 @@ export default function ICPWorkFooter() {
             </div>
 
             <div className="flex items-center space-x-6">
-              <div className="flex space-x-4 text-xl">
+              <div className="flex space-x-4 text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl">
                 <FaTwitter className="hover:text-blue-400 cursor-pointer transition-all duration-300 hover:scale-125" />
                 <FaGithub className="hover:text-gray-900 cursor-pointer transition-all duration-300 hover:scale-125" />
                 <FaLinkedin className="hover:text-blue-600 cursor-pointer transition-all duration-300 hover:scale-125" />
