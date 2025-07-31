@@ -46,9 +46,9 @@ function Sect4() {
   ];
 
   return (
-    <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-12 sm:py-20 lg:py-22 xl:py-24 2xl:py-28">
+    <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
       <div>
-        <div className="mb-8 xs:mb-10 sm:mb-16 lg:mb-18 xl:mb-16 2xl:mb-24 text-center">
+        <div className="mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10 text-center">
           <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold text-gray-800 mb-3 xs:mb-4">
             Core Features & Benefits
           </h2>
@@ -62,7 +62,7 @@ function Sect4() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full"
+              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full"
             >
               {/* Icon Container - Exactly 50% of card height */}
               <div className="h-1/2 w-full flex items-center justify-center mb-2 xs:mb-3 sm:mb-0">
