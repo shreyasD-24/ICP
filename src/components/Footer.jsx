@@ -11,11 +11,9 @@ export default function ICPWorkFooter() {
   return (
     <footer className="bg-white text-black">
       {/* Main Footer Content */}
-      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-12">
-        
+      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
         {/* Links Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 text-sm">
-          
           {/* Categories */}
           <div className="lg:col-span-1">
             <h3 className="font-semibold mb-4 text-gray-900 text-base flex items-center gap-2">
@@ -40,7 +38,10 @@ export default function ICPWorkFooter() {
                 "On-chain Marketing",
                 "Open Bounties Directory",
               ].map((item, i) => (
-                <li key={i} className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform">
+                <li
+                  key={i}
+                  className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform"
+                >
                   {item}
                 </li>
               ))}
@@ -62,7 +63,10 @@ export default function ICPWorkFooter() {
                 "Browse Talent Pools",
                 "Integration with ICP dApps",
               ].map((item, i) => (
-                <li key={i} className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform">
+                <li
+                  key={i}
+                  className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform"
+                >
                   {item}
                 </li>
               ))}
@@ -84,7 +88,10 @@ export default function ICPWorkFooter() {
                 "Token Rewards & Staking",
                 "Wallet & Identity Setup (II)",
               ].map((item, i) => (
-                <li key={i} className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform">
+                <li
+                  key={i}
+                  className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform"
+                >
                   {item}
                 </li>
               ))}
@@ -106,7 +113,10 @@ export default function ICPWorkFooter() {
                 "ICP Identity Management",
                 "Request Enterprise Demo",
               ].map((item, i) => (
-                <li key={i} className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform">
+                <li
+                  key={i}
+                  className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform"
+                >
                   {item}
                 </li>
               ))}
@@ -133,7 +143,10 @@ export default function ICPWorkFooter() {
                 "Contact Team",
                 "Investor Deck",
               ].map((item, i) => (
-                <li key={i} className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform">
+                <li
+                  key={i}
+                  className="hover:text-green-600 cursor-pointer transition-colors duration-200 hover:translate-x-1 transform"
+                >
                   {item}
                 </li>
               ))}
@@ -147,12 +160,11 @@ export default function ICPWorkFooter() {
         <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <div className="text-2xl font-bold text-gray-900">
-                ICPWork
-              </div>
+              <div className="text-2xl font-bold text-gray-900">ICPWork</div>
               <p className="text-gray-600 text-center sm:text-left text-sm">
                 © ICPWork Protocol 2025 • Built fully on-chain with{" "}
-                <span className="text-red-500">❤️</span> by the Internet Computer community.
+                <span className="text-red-500">❤️</span> by the Internet
+                Computer community.
               </p>
             </div>
 
