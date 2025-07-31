@@ -210,7 +210,7 @@ import React, { useEffect, useRef, useState } from "react";
 function Hero() {
   const canvasRef = useRef(null);
   const [counters, setCounters] = useState([0, 0, 0]);
-  const targetCounts = [350, 120, 500]; // Projects, Clients, Freelancers
+  const targetCounts = [5, 120, 500]; // Projects, Clients, Freelancers
 
   // Counter animation effect
   useEffect(() => {
@@ -359,7 +359,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative pb-2 w-full min-h-screen bg-white overflow-hidden">
+    <div className="relative  w-full min-h-screen bg-white overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute top-0 left-0 w-full h-full"
@@ -372,15 +372,15 @@ function Hero() {
       <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 py-2">
         <div className="text-center max-w-4xl mx-auto w-full">
           {/* Enhanced text sizing with larger sizes for bigger screens */}
-          <p className="text-slate-400 mb-3 sm:mb-4 tracking-wide font-medium"
+          <p className="text-slate-400 tracking-wide font-medium"
              style={{ fontSize: "clamp(2rem, 7vw, 4rem)" }}>
-            ICP Work
+            The Future of Work
           </p>
           
           <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
               style={{ fontSize: "clamp(1.75rem, 6.5vw, 3.75rem)" }}>
-            Unleashing Potential, <br className="hidden sm:block" />
-            <span>Delivering Excellence</span>
+            is Decentralized. <br className="hidden sm:block" />
+            <span>Welcome to ICP Work.</span>
           </h1>
           
           <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
@@ -389,7 +389,7 @@ function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                     style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
               Join ICP Work
             </button>
@@ -400,35 +400,35 @@ function Hero() {
           </div>
           
           {/* Enhanced Data Insights Counters */}
-          <div className="flex flex-wrap justify-center gap-8 mt-8 sm:mt-12">
+          <div className="flex flex-wrap justify-center gap-8 mt-8 sm:mt-12 font-semibold">
             <div className="text-center min-w-[120px]">
-              <div className="font-bold text-indigo-700"
+              <div className="font-bold text-black"
                    style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
-                {counters[0]}+
+                0-{counters[0]}%
+              </div>
+              <div className="text-slate-700 mt-1 font-semibold"
+                   style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
+                Platform Fees
+              </div>
+            </div>
+            <div className="text-center min-w-[120px] font">
+              <div className="font-bold text-black"
+                   style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
+                1-2s
               </div>
               <div className="text-slate-700 mt-1"
                    style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
-                Projects Completed
+                Transaction Fees
               </div>
             </div>
             <div className="text-center min-w-[120px]">
-              <div className="font-bold text-indigo-700"
+              <div className="font-bold text-black"
                    style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
-                {counters[1]}+
+                $0
               </div>
               <div className="text-slate-700 mt-1"
                    style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
-                Happy Clients
-              </div>
-            </div>
-            <div className="text-center min-w-[120px]">
-              <div className="font-bold text-indigo-700"
-                   style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)" }}>
-                {counters[2]}+
-              </div>
-              <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(0.875rem, 2.5vw, 1.25rem)" }}>
-                Expert Freelancers
+                Gas Speed
               </div>
             </div>
           </div>
