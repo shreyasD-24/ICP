@@ -17,16 +17,28 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <Logos />
       <Sect2 />
-      <OrganisedProcess />
-      <Sect4 />
-      <SpecializedServices />
+      <div id="how-it-works">
+        <OrganisedProcess />
+      </div>
+      <div id="features">
+        <Sect4 />
+      </div>
+      <div id="use-cases">
+        <SpecializedServices />
+      </div>
       <Sect6 />
-      <FAQSection />
+      <div id="faq">
+        <FAQSection />
+      </div>
       <Sect8 />
-      <WhyChooseICPWork />
+      <div id="why-choose-us">
+        <WhyChooseICPWork />
+      </div>
       <Sect10 />
       <Vision />
       <ICPWorkFooter />

@@ -1,6 +1,11 @@
 :root {
   --font-mono: "Mona Sans", monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
