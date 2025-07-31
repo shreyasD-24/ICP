@@ -3,13 +3,13 @@ import image from "../assets/Vision.jpg";
 
 const Vision = () => {
   return (
-    <div className="px-16 sm:px-24 md:px-32 lg:px-40 xl:px-48 2xl:px-56 3xl:px-64 mt-[4rem] sm:mt-[6rem] md:mt-[8rem] lg:mt-[10rem] xl:mt-[12rem] mb-[6rem] sm:mb-[8rem] md:mb-[10rem] lg:mb-[12rem] xl:mb-[14rem] 2xl:mb-[16rem]">
+    <div className="px-4 sm:px-16 md:px-24 lg:px-32 xl:px-32 2xl:px-48 3xl:px-56 4xl:px-64 mt-20 sm:mt-[4rem] md:mt-[6rem] lg:mt-[8rem] xl:mt-[8rem] 2xl:mt-[12rem] mb-12 sm:mb-[6rem] md:mb-[8rem] lg:mb-[10rem] xl:mb-[2rem] 2xl:mb-[14rem] 3xl:mb-[16rem]">
       <div className="mx-auto">
         {/* Main Heading */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-extrabold text-gray-900 mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+        <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-12">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-extrabold text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-8 2xl:mb-12 flex items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-4 2xl:gap-6">
             <svg
-              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 text-gray-900"
+              className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-18 xl:h-18 2xl:w-28 2xl:h-28 3xl:w-32 3xl:h-32 text-gray-900"
               xmlns="http://www.w3.org/2000/svg"
               xmlSpace="preserve"
               viewBox="0 0 2048 2048"
@@ -44,10 +44,10 @@ const Vision = () => {
         </div>
 
         {/* Quote Section */}
-        <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-2xl sm:rounded-3xl lg:rounded-[2rem] xl:rounded-[2.5rem] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 2xl:p-20 mb-8 sm:mb-10 md:mb-12 lg:mb-16 shadow-lg">
+        <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[2rem] xl:rounded-[2rem] 2xl:rounded-[2.5rem] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-10 2xl:p-16 3xl:p-20 mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-12 2xl:mb-16 shadow-lg">
           {/* Profile Section */}
-          <div className="flex flex-col items-center mb-6 sm:mb-8 md:mb-10">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-72 2xl:h-72 rounded-full overflow-hidden mb-4 sm:mb-5 md:mb-6 shadow-lg ring-4 ring-purple-200 hover:ring-purple-300 transition-all duration-300">
+          <div className="flex flex-col items-center mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-8">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-48 xl:h-48 2xl:w-64 2xl:h-64 3xl:w-72 3xl:h-72 rounded-full overflow-hidden mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-5 shadow-lg ring-4 ring-purple-200 hover:ring-purple-300 transition-all duration-300">
               <img
                 src={profile}
                 alt="Darshana Manikkuwadura"
@@ -56,14 +56,14 @@ const Vision = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center space-x-4 sm:space-x-5 md:space-x-6">
+            <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6">
               <a
                 href="#"
                 className="text-gray-600 hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:-translate-y-1 p-2 rounded-full hover:bg-blue-50 active:scale-95"
                 aria-label="Twitter"
               >
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -77,7 +77,7 @@ const Vision = () => {
                 aria-label="GitHub"
               >
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -91,7 +91,7 @@ const Vision = () => {
                 aria-label="LinkedIn"
               >
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -105,7 +105,7 @@ const Vision = () => {
                 aria-label="Discord"
               >
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -119,7 +119,7 @@ const Vision = () => {
                 aria-label="Telegram"
               >
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -130,30 +130,30 @@ const Vision = () => {
           </div>
 
           <div className="text-center">
-            <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-gray-800 leading-relaxed mb-6 sm:mb-8 md:mb-10 lg:mb-12 italic">
+            <blockquote className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl 3xl:text-4xl font-medium text-gray-800 leading-relaxed mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-8 2xl:mb-12 italic">
               "At ICPWork, we're not just building a platform — we're rebuilding
               the foundation of freelance work for the decentralized age."
             </blockquote>
-            <cite className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold text-gray-700">
+            <cite className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl 3xl:text-3xl font-semibold text-gray-700">
               — Darshana Manikkuwadura, Founder & CEO ICPWork
             </cite>
           </div>
         </div>
 
         {/* Mission Statement */}
-        <div className="space-y-10 sm:space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-700 leading-relaxed text-center">
+        <div className="space-y-6 sm:space-y-10 md:space-y-12 lg:space-y-16 xl:space-y-16 2xl:space-y-24">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl 3xl:text-3xl text-gray-700 leading-relaxed text-center">
             ICPWork is on a mission to disrupt legacy freelance platforms like
             Upwork and Fiverr by introducing a fully on-chain protocol built on
             the Internet Computer (ICP).
           </p>
 
           {/* Key Points */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-8 lg:gap-12 xl:gap-16 my-12 sm:my-16 md:my-20 lg:my-24 xl:my-28">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-8 lg:gap-10 xl:gap-10 2xl:gap-16 my-8 sm:my-12 md:my-16 lg:my-20 xl:my-16 2xl:my-28 3xl:my-32">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-red-500 to-pink-600 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 xl:w-20 xl:h-20 flex items-center justify-center mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-10 shadow-lg">
+              <div className="bg-gradient-to-br from-red-500 to-pink-600 rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-7 lg:mb-8 xl:mb-6 2xl:mb-10 shadow-lg">
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -166,15 +166,15 @@ const Vision = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl 3xl:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-5 2xl:mb-8">
                 No more 30% commissions.
               </h3>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 xl:w-20 xl:h-20 flex items-center justify-center mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-10 shadow-lg">
+              <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-7 lg:mb-8 xl:mb-6 2xl:mb-10 shadow-lg">
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -187,15 +187,15 @@ const Vision = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl 3xl:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-5 2xl:mb-8">
                 No more platform censorship.
               </h3>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 xl:w-20 xl:h-20 flex items-center justify-center mx-auto mb-6 sm:mb-7 md:mb-8 lg:mb-10 shadow-lg">
+              <div className="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-7 lg:mb-8 xl:mb-6 2xl:mb-10 shadow-lg">
                 <svg
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -214,14 +214,14 @@ const Vision = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl 3xl:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-5 2xl:mb-8">
                 No more locked-in reputations.
               </h3>
             </div>
           </div>
 
           {/* Solution Description */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-700 leading-relaxed text-center">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl 3xl:text-3xl text-gray-700 leading-relaxed text-center">
             By removing intermediaries, enabling portable on-chain reputations,
             and securing transactions via smart contracts, ICPWork empowers
             freelancers and clients to collaborate directly — trustlessly,
@@ -229,19 +229,19 @@ const Vision = () => {
           </p>
 
           {/* Closing Statement */}
-          <div className="text-center mt-12 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28 2xl:mt-32">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-10 lg:mb-8">
+          <div className="text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-16 2xl:mt-28 3xl:mt-32">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-4xl 3xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-8 xl:mb-6">
               This isn't gig economy 2.0.
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent pb-2 sm:pb-3 md:pb-4 lg:pb-5 xl:pb-6 leading-tight">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-4xl 3xl:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 bg-clip-text text-transparent pb-2 sm:pb-3 md:pb-4 lg:pb-5 xl:pb-4 2xl:pb-6 leading-tight">
               This is decentralized freelancing, reimagined.
             </p>
           </div>
-          <div className="flex justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 2xl:mt-36">
+          <div className="flex justify-center mt-10 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-6 2xl:mt-32 3xl:mt-36">
             <img
               src={image}
               alt="Vision Image"
-              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-3/4 h-auto"
+              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-3/4 h-auto rounded-lg sm:rounded-xl md:rounded-2xl"
             />
           </div>
         </div>
