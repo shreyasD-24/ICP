@@ -392,7 +392,8 @@ function Hero() {
             className="text-slate-900 mb-4 sm:mb-6 font-medium"
             style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}
           >
-            is Decentralized. <br className="hidden sm:block" />
+            is Decentralized. <br className="sm:hidden" />
+            <br className="hidden sm:block" />
             <span>Welcome to ICPWork.</span>
           </h1>
 
@@ -403,10 +404,10 @@ function Hero() {
             Your Gateway to the Elite Freelance Revolution.
           </p>
 
-          <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             {/* Join ICP Work Button */}
             <button
-              className="w-full sm:w-auto relative rounded-[20px] text-white px-4 sm:px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10  font-semibold text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
+              className="relative rounded-[20px] text-white font-semibold transition-all duration-500 transform hover:-translate-y-0.5 px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 text-sm sm:text-base lg:text-lg xl:text-xl whitespace-nowrap"
               style={{
                 background: "transparent",
                 boxShadow: `
@@ -473,14 +474,14 @@ function Hero() {
               <span className="relative z-10">Join ICP Work</span>
             </button>
 
-            {/* Learn More Button - unchanged */}
-            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] hover:bg-gray-300 text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
+            {/* Learn More Button */}
+            <button className="bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 rounded-[20px] hover:bg-gray-300 px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 xl:px-12 xl:py-5 text-sm sm:text-base lg:text-lg xl:text-xl whitespace-nowrap">
               Learn more →
             </button>
           </div>
 
           {/* Enhanced Data Insights Counters with better mobile responsiveness */}
-          <div className="flex justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16 mt-16 sm:mt-16 font-semibold">
+          <div className="flex justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16 mt-8 sm:mt-16 font-semibold">
             <div className="text-center flex-1 max-w-[150px]">
               <div
                 className="font-bold text-black"
