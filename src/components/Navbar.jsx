@@ -125,7 +125,7 @@ function Navbar() {
         >
           <div className="w-full h-full rounded-[18px] bg-black"></div>
         </div>
-        <span className="relative z-10">Join ICP Work</span>
+        <span className="relative z-10">Coming Soon</span>
       </button>
 
       {/* Mobile Menu Button */}
