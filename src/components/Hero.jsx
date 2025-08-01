@@ -382,18 +382,18 @@ function Hero() {
         <div className="text-center max-w-4xl mx-auto w-full">
           {/* Enhanced text sizing with better responsiveness for smaller screens */}
           <p className="text-slate-400 tracking-wide font-medium"
-             style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.5rem)" }}>
+             style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.2rem)" }}>
             The Future of Work
           </p>
           
           <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
-              style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.5rem)" }}>
+              style={{ fontSize: "clamp(1.8rem, 4.5vw, 5.2rem)" }}>
             is Decentralized. <br className="hidden sm:block" />
             <span>Welcome to ICPWork.</span>
           </h1>
           
           <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
-             style={{ fontSize: "clamp(1rem, 2vw, 2.3rem)" }}>
+             style={{ fontSize: "clamp(1rem, 2vw, 2rem)" }}>
             Your Gateway to the Elite Freelance Revolution.
           </p>
 
@@ -410,31 +410,31 @@ function Hero() {
           <div className="flex flex-wrap justify-center gap-8 mt-16 sm:mt-16 font-semibold">
             <div className="text-center min-w-[120px]">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 3.5rem)" }}>
                 0-{counters[0]}%
               </div>
               <div className="text-slate-700 mt-1 font-semibold"
-                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)" }}>
                 Platform Fees
               </div>
             </div>
             <div className="text-center min-w-[120px] font">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 3.5rem)" }}>
                 1-2s
               </div>
               <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)" }}>
                 Transaction Fees
               </div>
             </div>
             <div className="text-center min-w-[120px]">
               <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 4rem)" }}>
+                   style={{ fontSize: "clamp(1.5rem, 3.5vw, 3.5rem)" }}>
                 $0
               </div>
               <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 2rem)" }}>
+                   style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)" }}>
                 Gas Speed
               </div>
             </div>
