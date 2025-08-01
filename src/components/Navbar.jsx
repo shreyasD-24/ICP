@@ -5,12 +5,16 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="relative flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 3xl:px-32 4xl:px-40 py-4 sm:py-5 md:py-6 lg:py-7 xl:py-8 2xl:py-10 3xl:py-12 4xl:py-14 5xl:py-16">
-      <div className="logo">
+    <nav className="relative flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 3xl:px-32 4xl:px-40">
+      <div className="logo overflow-hidden">
         <img
           src={logo}
           alt="ICP"
-          className="h-8 sm:h-10 lg:h-12 xl:h-14 2xl:h-16 3xl:h-20 4xl:h-24 5xl:h-28"
+          className="h-16 xs:h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 2xl:h-40 3xl:h-44 4xl:h-48 5xl:h-52 w-auto object-cover scale-125 transform"
+          style={{
+            filter: "contrast(1.1) brightness(1.05)",
+            imageRendering: "crisp-edges",
+          }}
         />
       </div>
 
@@ -62,10 +66,10 @@ function Navbar() {
 
       {/* Desktop Get Started Button - Black Background with Gradient Border */}
       <button
-  className="hidden lg:block relative px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-white active:scale-95 transition-all duration-500"
-  style={{
-    background: "transparent",
-    boxShadow: `
+        className="hidden lg:block relative px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-white active:scale-95 transition-all duration-500"
+        style={{
+          background: "transparent",
+          boxShadow: `
       0 0 15px rgba(68, 176, 255, 0.4),
       0 0 25px rgba(151, 62, 238, 0.3),
       0 0 35px rgba(241, 42, 230, 0.2),
@@ -73,13 +77,13 @@ function Navbar() {
       0 6px 18px rgba(151, 62, 238, 0.15),
       0 8px 24px rgba(255, 112, 57, 0.1)
     `,
-  }}
-  onMouseEnter={(e) => {
-    // Hide the gradient border and show the gradient background
-    const gradientBorder = e.currentTarget.querySelector('div');
-    if (gradientBorder) gradientBorder.style.display = 'none';
-    
-    e.currentTarget.style.background = `
+        }}
+        onMouseEnter={(e) => {
+          // Hide the gradient border and show the gradient background
+          const gradientBorder = e.currentTarget.querySelector("div");
+          if (gradientBorder) gradientBorder.style.display = "none";
+
+          e.currentTarget.style.background = `
       linear-gradient(135deg,
         rgba(41, 163, 218, 0.9) 0%,
         rgba(68, 176, 255, 0.9) 20%,
@@ -88,19 +92,19 @@ function Navbar() {
         rgba(255, 112, 57, 0.9) 80%,
         rgba(255, 195, 40, 0.9) 100%)
     `;
-    e.currentTarget.style.boxShadow = `
+          e.currentTarget.style.boxShadow = `
       0 6px 18px rgba(41, 163, 218, 0.35),
       0 8px 25px rgba(151, 62, 238, 0.3),
       0 10px 30px rgba(255, 112, 57, 0.25)
     `;
-  }}
-  onMouseLeave={(e) => {
-    // Show the gradient border again and reset background
-    const gradientBorder = e.currentTarget.querySelector('div');
-    if (gradientBorder) gradientBorder.style.display = 'block';
-    
-    e.currentTarget.style.background = "transparent";
-    e.currentTarget.style.boxShadow = `
+        }}
+        onMouseLeave={(e) => {
+          // Show the gradient border again and reset background
+          const gradientBorder = e.currentTarget.querySelector("div");
+          if (gradientBorder) gradientBorder.style.display = "block";
+
+          e.currentTarget.style.background = "transparent";
+          e.currentTarget.style.boxShadow = `
       0 0 15px rgba(68, 176, 255, 0.4),
       0 0 25px rgba(151, 62, 238, 0.3),
       0 0 35px rgba(241, 42, 230, 0.2),
@@ -108,22 +112,21 @@ function Navbar() {
       0 6px 18px rgba(151, 62, 238, 0.15),
       0 8px 24px rgba(255, 112, 57, 0.1)
     `;
-  }}
-  onClick={() => console.log("Join ICP Work clicked")}
->
-  {/* Gradient Border */}
-  <div
-    className="absolute inset-0 rounded-[20px] p-0.5"
-    style={{
-      background:
-        "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
-    }}
-  >
-    <div className="w-full h-full rounded-[18px] bg-black"></div>
-  </div>
-  <span className="relative z-10">Join ICP Work</span>
-</button>
-
+        }}
+        onClick={() => console.log("Join ICP Work clicked")}
+      >
+        {/* Gradient Border */}
+        <div
+          className="absolute inset-0 rounded-[20px] p-0.5"
+          style={{
+            background:
+              "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
+          }}
+        >
+          <div className="w-full h-full rounded-[18px] bg-black"></div>
+        </div>
+        <span className="relative z-10">Join ICP Work</span>
+      </button>
 
       {/* Mobile Menu Button */}
       <button
