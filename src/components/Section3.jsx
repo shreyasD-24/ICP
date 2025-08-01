@@ -39,20 +39,98 @@ export default function OrganisedProcess() {
         <p className="text-gray-600 max-w-3xl mx-auto mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl">
           Simple, secure, and transparent workflows for clients and freelancers
         </p>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-        <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-          Join ICP Work
-        </button>
-        <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full hover:bg-gray-300 text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
-          Learn more →
-        </button>
-      </div>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+  {/* Join ICP Work Button */}
+  <button
+    className="w-full sm:w-auto rounded-[20px] text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10  font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
+    style={{
+      background: "black",
+      boxShadow: `
+        0 4px 12px rgba(41, 163, 218, 0.2),
+        0 6px 18px rgba(151, 62, 238, 0.15),
+        0 8px 24px rgba(255, 112, 57, 0.1)
+      `,
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.background = `
+        linear-gradient(135deg,
+          rgba(41, 163, 218, 0.9) 0%,
+          rgba(68, 176, 255, 0.9) 20%,
+          rgba(151, 62, 238, 0.9) 40%,
+          rgba(230, 31, 122, 0.9) 60%,
+          rgba(255, 112, 57, 0.9) 80%,
+          rgba(255, 195, 40, 0.9) 100%)
+      `;
+      e.currentTarget.style.boxShadow = `
+        0 6px 18px rgba(41, 163, 218, 0.35),
+        0 8px 25px rgba(151, 62, 238, 0.3),
+        0 10px 30px rgba(255, 112, 57, 0.25)
+      `;
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.background = "black";
+      e.currentTarget.style.boxShadow = `
+        0 4px 12px rgba(41, 163, 218, 0.2),
+        0 6px 18px rgba(151, 62, 238, 0.15),
+        0 8px 24px rgba(255, 112, 57, 0.1)
+      `;
+    }}
+  >
+    Join ICP Work
+  </button>
+
+  {/* Learn More Button - unchanged */}
+  <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] hover:bg-gray-300 text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
+    Learn more →
+  </button>
+</div>
 
         <div className="grid gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative group rounded-xl shadow-md overflow-hidden bg-gray-50 hover:bg-white transition-all duration-300"
+              className="relative group rounded-xl shadow-md overflow-hidden bg-gray-50 hover:bg-white transition-all duration-500"
+              style={{
+                transition: "all 0.5s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transition = "all 0.7s ease-in-out";
+
+                e.currentTarget.style.boxShadow = `
+                  0 10px 40px rgba(41, 163, 218, 0.5),
+                  0 15px 50px rgba(68, 176, 255, 0.45),
+                  0 20px 60px rgba(151, 62, 238, 0.35),
+                  0 25px 70px rgba(230, 31, 122, 0.3),
+                  0 30px 80px rgba(255, 112, 57, 0.25),
+                  0 35px 90px rgba(255, 195, 40, 0.2)
+                `;
+
+                e.currentTarget.style.background = `
+                  radial-gradient(circle at top left, rgba(41,163,218,0.3), transparent 60%),
+                  radial-gradient(circle at bottom right, rgba(255,195,40,0.3), transparent 60%),
+                  linear-gradient(135deg,
+                    rgba(41, 163, 218, 0.3) 0%,
+                    rgba(68, 176, 255, 0.3) 15%,
+                    rgba(151, 62, 238, 0.3) 35%,
+                    rgba(230, 31, 122, 0.3) 55%,
+                    rgba(255, 112, 57, 0.3) 75%,
+                    rgba(255, 195, 40, 0.3) 100%)
+                `;
+
+                const heading = e.currentTarget.querySelector("h3");
+                const description = e.currentTarget.querySelector("p");
+                if (heading) heading.style.color = "#111827";
+                if (description) description.style.color = "#4B5563";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)";
+                e.currentTarget.style.background = "#f9fafb";
+                // Reset text colors
+                const heading = e.currentTarget.querySelector("h3");
+                const description = e.currentTarget.querySelector("p");
+                if (heading) heading.style.color = "";
+                if (description) description.style.color = "";
+              }}
             >
               {/* Image */}
               <div className="w-full">
@@ -75,9 +153,6 @@ export default function OrganisedProcess() {
                   {step.description}
                 </p>
               </div>
-
-              {/* Gradient bottom bar on hover */}
-              <div className="absolute bottom-0 left-0 right-0 h-[8px] bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
         </div>
