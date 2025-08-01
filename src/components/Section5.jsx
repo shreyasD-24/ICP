@@ -82,7 +82,22 @@ export default function SpecializedServicesSlider() {
 
         {/* Features Grid Below */}
         <div className="w-full">
-          <div className="bg-black text-white rounded-3xl p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-2xl">
+          <div 
+            className="text-black rounded-3xl p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-2xl"
+            style={{
+              background: `
+                radial-gradient(circle at top left, rgba(41,163,218,0.3), transparent 60%),
+                radial-gradient(circle at bottom right, rgba(255,195,40,0.3), transparent 60%),
+                linear-gradient(135deg,
+                  rgba(41, 163, 218, 0.3) 0%,
+                  rgba(68, 176, 255, 0.3) 15%,
+                  rgba(151, 62, 238, 0.3) 35%,
+                  rgba(230, 31, 122, 0.3) 55%,
+                  rgba(255, 112, 57, 0.3) 75%,
+                  rgba(255, 195, 40, 0.3) 100%)
+              `
+            }}
+          >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-8 2xl:gap-12">
               {features.map((feature, i) => (
                 <div
@@ -90,14 +105,14 @@ export default function SpecializedServicesSlider() {
                   className="p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 relative"
                 >
                   <div className="flex items-start space-x-4 md:space-x-6 lg:space-x-8">
-                    <div className="text-purple-400 text-base xs:text-lg sm:text-2xl lg:text-2xl xl:text-xl 2xl:text-4xl shrink-0 mt-1">
+                    <div className="text-purple-600 text-base xs:text-lg sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl shrink-0 mt-1">
                       {feature.icon}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-base xs:text-lg sm:text-2xl lg:text-2xl xl:text-xl 2xl:text-4xl leading-tight mb-2 xs:mb-3 sm:mb-6">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-300 text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-base 2xl:text-2xl leading-relaxed">
+                      <p className="text-gray-700 text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-base 2xl:text-2xl leading-relaxed">
                         {feature.description}
                       </p>
                     </div>
