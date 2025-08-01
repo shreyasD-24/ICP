@@ -62,7 +62,35 @@ function Sect4() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full"
+              className="bg-white rounded-lg p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(41,163,218,0.3),_0_0_40px_rgba(68,176,255,0.25),_0_0_50px_rgba(151,62,238,0.2),_0_0_60px_rgba(230,31,122,0.15),_0_0_70px_rgba(255,112,57,0.1)] transition-all duration-500 border border-gray-100 h-auto xs:h-[400px] sm:h-[500px] lg:h-[550px] xl:h-[480px] flex flex-col items-center text-center w-full relative overflow-hidden group"
+              style={{
+                transition: "all 0.5s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = `
+                  0 0 30px rgba(41, 163, 218, 0.4),
+                  0 0 40px rgba(68, 176, 255, 0.35),
+                  0 0 50px rgba(151, 62, 238, 0.3),
+                  0 0 60px rgba(230, 31, 122, 0.25),
+                  0 0 70px rgba(255, 112, 57, 0.2),
+                  0 0 80px rgba(235, 255, 112, 0.15)
+                `;
+                e.currentTarget.style.background = `linear-gradient(90deg, rgba(41, 163, 218, 0.4) -0.55%, rgba(68, 176, 255, 0.4) 22.86%, rgba(151, 62, 238, 0.4) 43.09%, rgba(230, 31, 122, 0.4) 58.52%, rgba(255, 112, 57, 0.4) 76.77%, rgba(235, 255, 112, 0.4) 99.34%)`;
+                // Keep text colors as original since background is very light
+                const heading = e.currentTarget.querySelector("h3");
+                const description = e.currentTarget.querySelector("p");
+                if (heading) heading.style.color = "#111827"; // Keep dark gray
+                if (description) description.style.color = "#4B5563"; // Keep gray-600
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "0 0 20px rgba(0,0,0,0.1)";
+                e.currentTarget.style.background = "white";
+                // Reset text colors
+                const heading = e.currentTarget.querySelector("h3");
+                const description = e.currentTarget.querySelector("p");
+                if (heading) heading.style.color = "";
+                if (description) description.style.color = "";
+              }}
             >
               {/* Icon Container - Exactly 50% of card height */}
               <div className="h-1/2 w-full flex items-center justify-center mb-2 xs:mb-3 sm:mb-0">
