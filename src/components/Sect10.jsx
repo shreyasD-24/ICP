@@ -7,7 +7,18 @@ const Sect10 = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-0 lg:space-x-8 xl:space-x-12 2xl:space-x-16 3xl:space-x-20 my-4 xs:my-6 sm:my-8 md:my-10 lg:my-12 xl:my-8 mb-[1rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[4rem]">
           <div className="w-full lg:w-[48%] xl:w-[46%] 2xl:w-[44%] text-center lg:text-left">
             {/* No changes to content */}
-            <div className="bg-gradient-to-br from-purple-300 via-pink-300 to-orange-300 p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-4.5 rounded-[12px] xs:rounded-[14px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[22px] xl:rounded-[24px] 2xl:rounded-[26px] inline-block text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl font-semibold font-sans mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8">
+            <div
+              className="p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-4.5 rounded-[12px] xs:rounded-[14px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[22px] xl:rounded-[24px] 2xl:rounded-[26px] inline-block text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl font-semibold font-sans mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8 text-black"
+              style={{
+                background: `linear-gradient(135deg,
+                  rgba(41, 163, 218, 0.5) 0%,
+                  rgba(68, 176, 255, 0.5) 15%,
+                  rgba(151, 62, 238, 0.5) 35%,
+                  rgba(230, 31, 122, 0.5) 55%,
+                  rgba(255, 112, 57, 0.5) 75%,
+                  rgba(255, 195, 40, 0.5) 100%)`,
+              }}
+            >
               Empower your business with unmatched expertise
             </div>
             <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold mb-2 xs:mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-5 leading-tight">
@@ -47,7 +58,18 @@ const Sect10 = () => {
           </div>
 
           <div className="w-full lg:w-[48%] xl:w-[46%] 2xl:w-[44%] flex justify-center">
-            <div className="bg-gradient-to-br from-pink-300 via-orange-300 to-purple-300 p-2 xs:p-3 sm:p-4 md:p-5 lg:p-5 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[1.5rem] xl:rounded-[2.5rem] 2xl:rounded-[3rem] inline-block shadow-lg">
+            <div
+              className="p-2 xs:p-3 sm:p-4 md:p-5 lg:p-5 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[1.5rem] xl:rounded-[2.5rem] 2xl:rounded-[3rem] inline-block shadow-lg"
+              style={{
+                background: `linear-gradient(135deg,
+                rgba(41, 163, 218, 0.5) 0%,
+                rgba(68, 176, 255, 0.5) 15%,
+                rgba(151, 62, 238, 0.5) 35%,
+                rgba(230, 31, 122, 0.5) 55%,
+                rgba(255, 112, 57, 0.5) 75%,
+                rgba(255, 195, 40, 0.5) 100%)`,
+              }}
+            >
               <img
                 src={img}
                 alt="Section 10"

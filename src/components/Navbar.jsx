@@ -5,12 +5,12 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="relative flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 3xl:px-32 4xl:px-40">
-      <div className="logo overflow-hidden">
+    <nav className="relative flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 3xl:px-32 4xl:px-40 py-4 sm:py-5 md:py-6 lg:py-7 xl:py-8 2xl:py-10 3xl:py-12 4xl:py-14 5xl:py-16">
+      <div className="logo">
         <img
           src={logo}
           alt="ICP"
-          className="h-16 xs:h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36 2xl:h-40 3xl:h-44 4xl:h-48 5xl:h-52 w-auto object-cover scale-125 transform"
+          className="h-8 xs:h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 2xl:h-20 3xl:h-22 4xl:h-24 5xl:h-26 w-auto object-contain"
           style={{
             filter: "contrast(1.1) brightness(1.05)",
             imageRendering: "crisp-edges",

@@ -60,41 +60,81 @@ const Sect6 = () => {
 
         {/* Grid with features */}
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
-          <div className="text-center lg:text-left">
-            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
+          <div
+            className="text-center lg:text-left p-4 xs:p-5 sm:p-6 lg:p-7 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl lg:rounded-[1.2rem] xl:rounded-[1.5rem] 2xl:rounded-[2rem] cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl active:scale-95 bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 border border-transparent hover:border-blue-200"
+            onClick={() => console.log("Infinite Scalability clicked")}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px rgba(41, 163, 218, 0.3), 0 15px 40px rgba(151, 62, 238, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "";
+            }}
+          >
+            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900 transition-colors duration-300">
               Infinite Scalability
             </h3>
-            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed">
+            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed transition-colors duration-300">
               Horizontal Scaling Through Subnet Architecture Accommodates
               Massive User Growth
             </p>
           </div>
 
-          <div className="text-center lg:text-left">
-            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
+          <div
+            className="text-center lg:text-left p-4 xs:p-5 sm:p-6 lg:p-7 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl lg:rounded-[1.2rem] xl:rounded-[1.5rem] 2xl:rounded-[2rem] cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl active:scale-95 bg-white hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50 border border-transparent hover:border-purple-200"
+            onClick={() => console.log("Direct Web Serving clicked")}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px rgba(151, 62, 238, 0.3), 0 15px 40px rgba(230, 31, 122, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "";
+            }}
+          >
+            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900 transition-colors duration-300">
               Direct Web Serving
             </h3>
-            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed">
+            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed transition-colors duration-300">
               Entire Application Runs On-Chain, Eliminating Centralized Cloud
               Dependencies
             </p>
           </div>
 
-          <div className="text-center lg:text-left">
-            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
+          <div
+            className="text-center lg:text-left p-4 xs:p-5 sm:p-6 lg:p-7 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl lg:rounded-[1.2rem] xl:rounded-[1.5rem] 2xl:rounded-[2rem] cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl active:scale-95 bg-white hover:bg-gradient-to-br hover:from-pink-50 hover:to-orange-50 border border-transparent hover:border-pink-200"
+            onClick={() => console.log("Chain-Key Cryptography clicked")}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px rgba(230, 31, 122, 0.3), 0 15px 40px rgba(255, 112, 57, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "";
+            }}
+          >
+            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900 transition-colors duration-300">
               Chain-Key Cryptography
             </h3>
-            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed">
+            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed transition-colors duration-300">
               Revolutionary Cryptography Enables Secure Interoperability And
               Cross-Chain Functionality
             </p>
           </div>
 
-          <div className="text-center lg:text-left">
-            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
+          <div
+            className="text-center lg:text-left p-4 xs:p-5 sm:p-6 lg:p-7 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl lg:rounded-[1.2rem] xl:rounded-[1.5rem] 2xl:rounded-[2rem] cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl active:scale-95 bg-white hover:bg-gradient-to-br hover:from-orange-50 hover:to-yellow-50 border border-transparent hover:border-orange-200"
+            onClick={() => console.log("Seamless Upgradability clicked")}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 10px 30px rgba(255, 112, 57, 0.3), 0 15px 40px rgba(255, 195, 40, 0.2)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "";
+            }}
+          >
+            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900 transition-colors duration-300">
               Seamless Upgradability
             </h3>
-            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed">
+            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed transition-colors duration-300">
               Smart Contracts (Canisters) Can Be Upgraded Without Downtime,
               Preserving State and Ensuring Continuous Availability
             </p>
