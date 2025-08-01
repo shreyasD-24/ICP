@@ -78,6 +78,16 @@ const Sect6 = () => {
               Cross-Chain Functionality
             </p>
           </div>
+
+          <div className="text-center lg:text-left">
+            <h3 className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-6 text-gray-900">
+              Seamless Upgradability
+            </h3>
+            <p className="text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-600 leading-relaxed">
+              Smart Contracts (Canisters) Can Be Upgraded Without Downtime,
+              Preserving State and Ensuring Continuous Availability
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import image from "../assets/Vision.jpg";
 
 const Vision = () => {
   return (
-    <div className="px-4 sm:px-16 md:px-24 lg:px-32 xl:px-32 2xl:px-48 3xl:px-56 4xl:px-64 mt-10 sm:mt-[1rem] md:mt-[1.5rem] lg:mt-[2rem] xl:mt-[2rem] 2xl:mt-[3rem] mb-3 sm:mb-[1.5rem] md:mb-[2rem] lg:mb-[2.5rem] xl:mb-[3rem] 2xl:mb-[3.5rem] 3xl:mb-[4rem]">
+    <div className="px-6 sm:px-20 md:px-32 lg:px-40 xl:px-44 2xl:px-56 3xl:px-64 4xl:px-72 mt-10 sm:mt-[1rem] md:mt-[1.5rem] lg:mt-[2rem] xl:mt-[2rem] 2xl:mt-[3rem] mb-3 sm:mb-[1.5rem] md:mb-[2rem] lg:mb-[2.5rem] xl:mb-[3rem] 2xl:mb-[3.5rem] 3xl:mb-[4rem]">
       <div className="mx-auto">
         {/* Main Heading */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-12">
@@ -58,7 +58,7 @@ const Vision = () => {
             {/* Social Links */}
             <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6">
               <a
-                href="#"
+                href="https://x.com/DashMofficial"
                 className="text-gray-600 hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:-translate-y-1 p-2 rounded-full hover:bg-blue-50 active:scale-95"
                 aria-label="Twitter"
               >
@@ -72,7 +72,7 @@ const Vision = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/dash-manikkuwadura"
                 className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-125 hover:-translate-y-1 p-2 rounded-full hover:bg-blue-50 active:scale-95"
                 aria-label="LinkedIn"
               >

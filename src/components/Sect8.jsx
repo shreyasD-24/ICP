@@ -65,7 +65,7 @@ const Sect8 = () => {
 
   return (
     <div className="px-2 xs:px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[6rem] 2xl:px-[8rem] 3xl:px-[12rem] 4xl:px-[16rem] mt-[1.5rem] xs:mt-[3rem] sm:mt-[4rem] lg:mt-[4rem] xl:mt-[5rem] 2xl:mt-[5rem] mb-[1.5rem] xs:mb-[3rem] sm:mb-[8rem] lg:mb-[9rem] xl:mb-[10rem] 2xl:mb-[6rem]">
-      <div className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center">
+      <div className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center mx-auto w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%]">
         <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
           Why Freelancers Love ICPWork ?
         </h2>
