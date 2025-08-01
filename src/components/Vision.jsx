@@ -3,8 +3,8 @@ import image from "../assets/Vision.jpg";
 
 const Vision = () => {
   return (
-    <div className="px-6 sm:px-20 md:px-32 lg:px-40 xl:px-44 2xl:px-56 3xl:px-64 4xl:px-72 mt-10 sm:mt-[1rem] md:mt-[1.5rem] lg:mt-[2rem] xl:mt-[2rem] 2xl:mt-[3rem] mb-3 sm:mb-[1.5rem] md:mb-[2rem] lg:mb-[2.5rem] xl:mb-[3rem] 2xl:mb-[3.5rem] 3xl:mb-[4rem]">
-      <div className="mx-auto">
+    <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-9 xl:py-9 2xl:py-9 2xl:pt-6">
+      <div className="max-w-[120rem] mx-auto">
         {/* Main Heading */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-12">
           <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-extrabold text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-8 2xl:mb-12 flex items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-4 2xl:gap-6">
@@ -199,7 +199,7 @@ const Vision = () => {
             <img
               src={image}
               alt="Vision Image"
-              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-3/4 h-auto rounded-lg sm:rounded-xl md:rounded-2xl"
+              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-18/20 h-auto rounded-lg sm:rounded-xl md:rounded-2xl"
             />
           </div>
         </div>
