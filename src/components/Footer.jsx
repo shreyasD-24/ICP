@@ -5,7 +5,10 @@ import {
   FaLinkedin,
   FaDiscord,
   FaTelegramPlane,
+  FaEnvelope,
+  FaLaptopCode,
 } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 export default function ICPWorkFooter() {
   return (
@@ -173,23 +176,67 @@ export default function ICPWorkFooter() {
         <div className="border-t border-gray-300 bg-white pt-6 xs:pt-5 sm:pt-8 lg:pt-9 xl:pt-8 2xl:pt-10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <div className="text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900">
-                ICPWork
+              <img 
+                src={logo} 
+                alt="ICPWork Logo" 
+                className="h-8 lg:h-10 xl:h-12 2xl:h-14 w-auto"
+              />
+              <div className="text-gray-600 text-center sm:text-left text-sm lg:text-base xl:text-lg 2xl:text-lg">
+                <p>© ICPWork Protocol 2025</p>
+                <p>Built fully on-chain with{" "}
+                  <span className="text-red-500">❤️</span> by the Internet Computer community.
+                </p>
               </div>
-              <p className="text-gray-600 text-center sm:text-left text-sm lg:text-base xl:text-lg 2xl:text-lg">
-                © ICPWork Protocol 2025 • Built fully on-chain with{" "}
-                <span className="text-red-500">❤️</span> by the Internet
-                Computer community.
-              </p>
             </div>
 
             <div className="flex items-center space-x-6">
               <div className="flex space-x-4 text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl">
-                <FaTwitter className="hover:text-blue-400 cursor-pointer transition-all duration-300 hover:scale-125" />
-                <FaGithub className="hover:text-gray-900 cursor-pointer transition-all duration-300 hover:scale-125" />
-                <FaLinkedin className="hover:text-blue-600 cursor-pointer transition-all duration-300 hover:scale-125" />
-                <FaDiscord className="hover:text-indigo-600 cursor-pointer transition-all duration-300 hover:scale-125" />
-                <FaTelegramPlane className="hover:text-blue-500 cursor-pointer transition-all duration-300 hover:scale-125" />
+                <a 
+                  href="https://x.com/ICPWorkofficial" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Twitter/X"
+                >
+                  <FaTwitter className="hover:text-blue-400 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
+                <a 
+                  href="https://github.com/ICPWorkOfficial/backend-canisters" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub className="hover:text-gray-900 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/icpwork/?viewAsMember=true" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin className="hover:text-blue-600 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
+                <a 
+                  href="https://discord.gg/uAhH8rMr27" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Discord"
+                >
+                  <FaDiscord className="hover:text-indigo-600 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
+                <a 
+                  href="mailto:ICPWorkOfficial@gmail.com" 
+                  aria-label="Email"
+                >
+                  <FaEnvelope className="hover:text-red-500 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
+                <a 
+                  href="https://dorahacks.io/hacker/ICPWorkOfficial" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="DoraHacks"
+                >
+                  <FaLaptopCode className="hover:text-orange-500 cursor-pointer transition-all duration-300 hover:scale-125" />
+                </a>
               </div>
             </div>
           </div>
