@@ -9,11 +9,11 @@ import {
 
 export default function ICPWorkFooter() {
   return (
-    <footer className="bg-white text-black mb-8">
+    <footer className="bg-white text-black px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
+      <div className="max-w-[120rem] mx-auto">
         {/* Links Grid */}
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 text-sm lg:text-base xl:text-lg 2xl:text-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 text-sm lg:text-base xl:text-lg 2xl:text-lg mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10">
           {/* Categories */}
           <div className="lg:col-span-1">
             <h3 className="font-semibold mb-4 text-gray-900 text-base lg:text-lg xl:text-xl 2xl:text-xl flex items-center gap-2">
@@ -153,11 +153,9 @@ export default function ICPWorkFooter() {
             </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-300 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-6">
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-300 bg-white pt-6 xs:pt-5 sm:pt-8 lg:pt-9 xl:pt-8 2xl:pt-10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
               <div className="text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900">ICPWork</div>
