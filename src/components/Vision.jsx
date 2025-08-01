@@ -3,6 +3,27 @@ import image from "../assets/Vision.jpg";
 
 const Vision = () => {
   return (
+    <>
+      <style>{`
+        .gradient-icon {
+          background: linear-gradient(135deg,
+            rgba(41, 163, 218, 0.8) 0%,
+            rgba(68, 176, 255, 0.8) 15%,
+            rgba(151, 62, 238, 0.8) 35%,
+            rgba(230, 31, 122, 0.8) 55%,
+            rgba(255, 112, 57, 0.8) 75%,
+            rgba(255, 195, 40, 0.8) 100%);
+          border-radius: 1.5rem;
+          padding: 0.5rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .gradient-icon svg {
+          color: white;
+        }
+      `}</style>
     <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-9 xl:py-9 2xl:py-9 2xl:pt-6">
       <div className="max-w-[120rem] mx-auto">
         {/* Main Heading */}
@@ -59,7 +80,7 @@ const Vision = () => {
             <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6">
               <a
                 href="https://x.com/DashMofficial"
-                className="text-gray-600 hover:text-blue-400 transition-all duration-300 hover:scale-125 hover:-translate-y-1 p-2 rounded-full hover:bg-blue-50 active:scale-95"
+                className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
                 aria-label="Twitter"
               >
                 <svg
@@ -73,7 +94,7 @@ const Vision = () => {
 
               <a
                 href="https://www.linkedin.com/in/dash-manikkuwadura"
-                className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-125 hover:-translate-y-1 p-2 rounded-full hover:bg-blue-50 active:scale-95"
+                className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -205,6 +226,7 @@ const Vision = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
