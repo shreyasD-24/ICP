@@ -31,13 +31,14 @@ const steps = [
 
 export default function OrganisedProcess() {
   return (
-    <section className="px-6 py-10 md:px-16 lg:px-28 bg-white text-center">
-      <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-2">
-        How ICP Work Functions
-      </h2>
-      <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl">
-        Simple, secure, and transparent workflows for clients and freelancers
-      </p>
+    <section className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14 bg-white text-center">
+      <div className="max-w-[120rem] mx-auto">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-2 xs:mb-3 sm:mb-4 lg:mb-5 xl:mb-4 2xl:mb-6">
+          How ICP Work Functions
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10 text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl">
+          Simple, secure, and transparent workflows for clients and freelancers
+        </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
         <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
           Join ICP Work
@@ -47,38 +48,39 @@ export default function OrganisedProcess() {
         </button>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="relative group rounded-xl shadow-md overflow-hidden bg-gray-50 hover:bg-white transition-all duration-300"
-          >
-            {/* Image */}
-            <div className="w-full">
-              <img
-                src={step.img}
-                alt={step.title}
-                className="w-full h-auto object-contain"
-              />
-            </div>
-
-            {/* Content */}
-            <div className="p-4 text-center">
-              <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-gray-900 text-white flex items-center justify-center">
-                {index + 1}
+        <div className="grid gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 sm:grid-cols-2 lg:grid-cols-5">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="relative group rounded-xl shadow-md overflow-hidden bg-gray-50 hover:bg-white transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="w-full">
+                <img
+                  src={step.img}
+                  alt={step.title}
+                  className="w-full h-auto object-contain"
+                />
               </div>
-              <h3 className="font-semibold text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl mb-1">
-                {step.title}
-              </h3>
-              <p className="text-sm xs:text-md lg:text-lg xl:text-lg 2xl:text-xl text-gray-600">
-                {step.description}
-              </p>
-            </div>
 
-            {/* Gradient bottom bar on hover */}
-            <div className="absolute bottom-0 left-0 right-0 h-[8px] bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </div>
-        ))}
+              {/* Content */}
+              <div className="p-4 text-center">
+                <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-gray-900 text-white flex items-center justify-center">
+                  {index + 1}
+                </div>
+                <h3 className="font-semibold text-sm xs:text-base lg:text-xl xl:text-lg 2xl:text-2xl mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-sm xs:text-md lg:text-lg xl:text-lg 2xl:text-xl text-gray-600">
+                  {step.description}
+                </p>
+              </div>
+
+              {/* Gradient bottom bar on hover */}
+              <div className="absolute bottom-0 left-0 right-0 h-[8px] bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -2,9 +2,9 @@ import React from "react";
 
 const WhyChooseICPWork = () => {
   return (
-    <section className="w-full px-4 md:px-16 lg:px-24 py-12 bg-white text-gray-900">
+    <section className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14 bg-white text-gray-900">
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-center gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 max-w-[120rem] mx-auto">
         {/* Text Content */}
         <div className="flex-1">
           <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-4">
@@ -40,7 +40,7 @@ const WhyChooseICPWork = () => {
       </div>
 
       {/* Bottom Call-to-Action */}
-      <div className="mt-12 relative rounded-2xl p-1 bg-gradient-to-r from-green-500 via-yellow-500 via-red-500 via-green-500 via-blue-500 via-pink-500 via-purple-500 to-blue-500">
+      <div className="mt-8 xs:mt-5 sm:mt-8 lg:mt-9 xl:mt-8 2xl:mt-10 relative rounded-2xl p-1 bg-gradient-to-r from-green-500 via-yellow-500 via-red-500 via-green-500 via-blue-500 via-pink-500 via-purple-500 to-blue-500 max-w-[120rem] mx-auto">
         <div className="rounded-2xl p-6 md:p-8 bg-white shadow-sm text-center">
           <h3 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold mb-3">
             🌐 Ready to Build the Future of Work?

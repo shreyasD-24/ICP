@@ -34,12 +34,13 @@ export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="px-6 py-12 pt-6 md:px-16 lg:px-28 bg-white">
-      <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold text-center mb-10">
-        Frequently Asked Questions for Freelancers
-      </h2>
+    <section className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14 bg-white">
+      <div className="max-w-[120rem] mx-auto">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl font-semibold text-center mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10">
+          Frequently Asked Questions for Freelancers
+        </h2>
 
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start justify-center">
+        <div className="flex flex-col lg:flex-row gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 items-start justify-center">
         {/* Left Side - Questions */}
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 w-full lg:w-1/2">
           <div className="flex flex-col divide-y divide-gray-100">
@@ -81,6 +82,7 @@ export default function FAQSection() {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
