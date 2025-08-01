@@ -64,14 +64,21 @@ function Navbar() {
       <button
   className="hidden lg:block relative px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-white active:scale-95 transition-all duration-500"
   style={{
-    background: "black",
+    background: "transparent",
     boxShadow: `
+      0 0 15px rgba(68, 176, 255, 0.4),
+      0 0 25px rgba(151, 62, 238, 0.3),
+      0 0 35px rgba(241, 42, 230, 0.2),
       0 4px 12px rgba(41, 163, 218, 0.2),
       0 6px 18px rgba(151, 62, 238, 0.15),
       0 8px 24px rgba(255, 112, 57, 0.1)
     `,
   }}
   onMouseEnter={(e) => {
+    // Hide the gradient border and show the gradient background
+    const gradientBorder = e.currentTarget.querySelector('div');
+    if (gradientBorder) gradientBorder.style.display = 'none';
+    
     e.currentTarget.style.background = `
       linear-gradient(135deg,
         rgba(41, 163, 218, 0.9) 0%,
@@ -88,8 +95,15 @@ function Navbar() {
     `;
   }}
   onMouseLeave={(e) => {
-    e.currentTarget.style.background = "black";
+    // Show the gradient border again and reset background
+    const gradientBorder = e.currentTarget.querySelector('div');
+    if (gradientBorder) gradientBorder.style.display = 'block';
+    
+    e.currentTarget.style.background = "transparent";
     e.currentTarget.style.boxShadow = `
+      0 0 15px rgba(68, 176, 255, 0.4),
+      0 0 25px rgba(151, 62, 238, 0.3),
+      0 0 35px rgba(241, 42, 230, 0.2),
       0 4px 12px rgba(41, 163, 218, 0.2),
       0 6px 18px rgba(151, 62, 238, 0.15),
       0 8px 24px rgba(255, 112, 57, 0.1)
@@ -97,6 +111,16 @@ function Navbar() {
   }}
   onClick={() => console.log("Join ICP Work clicked")}
 >
+  {/* Gradient Border */}
+  <div
+    className="absolute inset-0 rounded-[20px] p-0.5"
+    style={{
+      background:
+        "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
+    }}
+  >
+    <div className="w-full h-full rounded-[18px] bg-black"></div>
+  </div>
   <span className="relative z-10">Join ICP Work</span>
 </button>
 
