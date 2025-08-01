@@ -67,21 +67,34 @@ function Sect4() {
                 transition: "all 0.5s ease",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = `
-                  0 0 30px rgba(41, 163, 218, 0.4),
-                  0 0 40px rgba(68, 176, 255, 0.35),
-                  0 0 50px rgba(151, 62, 238, 0.3),
-                  0 0 60px rgba(230, 31, 122, 0.25),
-                  0 0 70px rgba(255, 112, 57, 0.2),
-                  0 0 80px rgba(235, 255, 112, 0.15)
-                `;
-                e.currentTarget.style.background = `linear-gradient(90deg, rgba(41, 163, 218, 0.2) -0.55%, rgba(68, 176, 255, 0.2) 22.86%, rgba(151, 62, 238, 0.2) 43.09%, rgba(230, 31, 122, 0.2) 58.52%, rgba(255, 112, 57, 0.2) 76.77%, rgba(235, 255, 112, 0.2) 99.34%)`;
-                // Keep text colors as original since background is very light
-                const heading = e.currentTarget.querySelector("h3");
-                const description = e.currentTarget.querySelector("p");
-                if (heading) heading.style.color = "#111827"; // Keep dark gray
-                if (description) description.style.color = "#4B5563"; // Keep gray-600
-              }}
+  e.currentTarget.style.transition = "all 0.7s ease-in-out";
+
+  e.currentTarget.style.boxShadow = `
+    0 10px 40px rgba(41, 163, 218, 0.5),
+    0 15px 50px rgba(68, 176, 255, 0.45),
+    0 20px 60px rgba(151, 62, 238, 0.35),
+    0 25px 70px rgba(230, 31, 122, 0.3),
+    0 30px 80px rgba(255, 112, 57, 0.25),
+    0 35px 90px rgba(255, 195, 40, 0.2)
+  `;
+
+  e.currentTarget.style.background = `
+    radial-gradient(circle at top left, rgba(41,163,218,0.3), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(255,195,40,0.3), transparent 60%),
+    linear-gradient(135deg,
+      rgba(41, 163, 218, 0.3) 0%,
+      rgba(68, 176, 255, 0.3) 15%,
+      rgba(151, 62, 238, 0.3) 35%,
+      rgba(230, 31, 122, 0.3) 55%,
+      rgba(255, 112, 57, 0.3) 75%,
+      rgba(255, 195, 40, 0.3) 100%)
+  `;
+
+  const heading = e.currentTarget.querySelector("h3");
+  const description = e.currentTarget.querySelector("p");
+  if (heading) heading.style.color = "#111827";
+  if (description) description.style.color = "#4B5563";
+}}
               onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = "0 0 20px rgba(0,0,0,0.1)";
                 e.currentTarget.style.background = "white";
