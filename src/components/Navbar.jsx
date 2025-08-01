@@ -83,6 +83,10 @@ function Navbar() {
           const gradientBorder = e.currentTarget.querySelector("div");
           if (gradientBorder) gradientBorder.style.display = "none";
 
+          // Change text to "Coming Soon"
+          const textSpan = e.currentTarget.querySelector("span");
+          if (textSpan) textSpan.textContent = "Coming Soon";
+
           e.currentTarget.style.background = `
       linear-gradient(135deg,
         rgba(41, 163, 218, 0.9) 0%,
@@ -102,6 +106,10 @@ function Navbar() {
           // Show the gradient border again and reset background
           const gradientBorder = e.currentTarget.querySelector("div");
           if (gradientBorder) gradientBorder.style.display = "block";
+
+          // Change text back to "Join ICP Work"
+          const textSpan = e.currentTarget.querySelector("span");
+          if (textSpan) textSpan.textContent = "Join ICP Work";
 
           e.currentTarget.style.background = "transparent";
           e.currentTarget.style.boxShadow = `
@@ -125,7 +133,7 @@ function Navbar() {
         >
           <div className="w-full h-full rounded-[18px] bg-black"></div>
         </div>
-        <span className="relative z-10">Coming Soon</span>
+        <span className="relative z-10">Join ICP Work</span>
       </button>
 
       {/* Mobile Menu Button */}
@@ -203,9 +211,17 @@ function Navbar() {
                 boxShadow:
                   "0 0 15px rgba(68, 176, 255, 0.8), 0 0 25px rgba(151, 62, 238, 0.7), 0 0 35px rgba(241, 42, 230, 0.6)",
               }}
+              onMouseEnter={(e) => {
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Coming Soon";
+              }}
+              onMouseLeave={(e) => {
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Join ICP Work";
+              }}
               onClick={() => {
                 setIsMenuOpen(false);
-                console.log("Get Started clicked");
+                console.log("Join ICP Work clicked");
               }}
             >
               {/* Gradient Border */}
@@ -218,7 +234,7 @@ function Navbar() {
               >
                 <div className="w-full h-full rounded-[18px] bg-black"></div>
               </div>
-              <span className="relative z-10">Get Started</span>
+              <span className="relative z-10">Join ICP Work</span>
               <div
                 className="absolute inset-0 rounded-[20px] opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300"
                 style={{

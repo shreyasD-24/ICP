@@ -56,7 +56,7 @@ const WhyChooseICPWork = () => {
             We're more than a network. We're a protocol-powered revolution.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button 
+            <button
               className="w-full sm:w-auto relative rounded-[20px] text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
               style={{
                 background: "transparent",
@@ -70,9 +70,13 @@ const WhyChooseICPWork = () => {
                 `,
               }}
               onMouseEnter={(e) => {
-                const gradientBorder = e.currentTarget.querySelector('div');
-                if (gradientBorder) gradientBorder.style.display = 'none';
-                
+                const gradientBorder = e.currentTarget.querySelector("div");
+                if (gradientBorder) gradientBorder.style.display = "none";
+
+                // Change text to "Coming Soon"
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Coming Soon";
+
                 e.currentTarget.style.background = `
                   linear-gradient(135deg,
                     rgba(41, 163, 218, 0.9) 0%,
@@ -89,9 +93,13 @@ const WhyChooseICPWork = () => {
                 `;
               }}
               onMouseLeave={(e) => {
-                const gradientBorder = e.currentTarget.querySelector('div');
-                if (gradientBorder) gradientBorder.style.display = 'block';
-                
+                const gradientBorder = e.currentTarget.querySelector("div");
+                if (gradientBorder) gradientBorder.style.display = "block";
+
+                // Change text back to "Join as Freelancer"
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Join as Freelancer";
+
                 e.currentTarget.style.background = "transparent";
                 e.currentTarget.style.boxShadow = `
                   0 0 15px rgba(68, 176, 255, 0.4),

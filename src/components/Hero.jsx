@@ -381,29 +381,35 @@ function Hero() {
       <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 pt-2">
         <div className="text-center max-w-4xl mx-auto w-full">
           {/* Enhanced text sizing with better responsiveness for smaller screens */}
-          <p className="text-slate-400 tracking-wide font-medium"
-             style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}>
+          <p
+            className="text-slate-400 tracking-wide font-medium"
+            style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}
+          >
             The Future of Work
           </p>
-          
-          <h1 className="text-slate-900 mb-4 sm:mb-6 font-medium"
-              style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}>
+
+          <h1
+            className="text-slate-900 mb-4 sm:mb-6 font-medium"
+            style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}
+          >
             is Decentralized. <br className="hidden sm:block" />
             <span>Welcome to ICPWork.</span>
           </h1>
-          
-          <p className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
-             style={{ fontSize: "clamp(0.6rem, 2vw, 2rem)" }}>
+
+          <p
+            className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
+            style={{ fontSize: "clamp(0.6rem, 2vw, 2rem)" }}
+          >
             Your Gateway to the Elite Freelance Revolution.
           </p>
 
           <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-  {/* Join ICP Work Button */}
-  <button
-    className="w-full sm:w-auto relative rounded-[20px] text-white px-4 sm:px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10  font-semibold text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
-    style={{
-      background: "transparent",
-      boxShadow: `
+            {/* Join ICP Work Button */}
+            <button
+              className="w-full sm:w-auto relative rounded-[20px] text-white px-4 sm:px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10  font-semibold text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
+              style={{
+                background: "transparent",
+                boxShadow: `
         0 0 15px rgba(68, 176, 255, 0.4),
         0 0 25px rgba(151, 62, 238, 0.3),
         0 0 35px rgba(241, 42, 230, 0.2),
@@ -411,12 +417,16 @@ function Hero() {
         0 6px 18px rgba(151, 62, 238, 0.15),
         0 8px 24px rgba(255, 112, 57, 0.1)
       `,
-    }}
-    onMouseEnter={(e) => {
-      const gradientBorder = e.currentTarget.querySelector('div');
-      if (gradientBorder) gradientBorder.style.display = 'none';
-      
-      e.currentTarget.style.background = `
+              }}
+              onMouseEnter={(e) => {
+                const gradientBorder = e.currentTarget.querySelector("div");
+                if (gradientBorder) gradientBorder.style.display = "none";
+
+                // Change text to "Coming Soon"
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Coming Soon";
+
+                e.currentTarget.style.background = `
         linear-gradient(135deg,
           rgba(41, 163, 218, 0.9) 0%,
           rgba(68, 176, 255, 0.9) 20%,
@@ -425,18 +435,22 @@ function Hero() {
           rgba(255, 112, 57, 0.9) 80%,
           rgba(255, 195, 40, 0.9) 100%)
       `;
-      e.currentTarget.style.boxShadow = `
+                e.currentTarget.style.boxShadow = `
         0 6px 18px rgba(41, 163, 218, 0.35),
         0 8px 25px rgba(151, 62, 238, 0.3),
         0 10px 30px rgba(255, 112, 57, 0.25)
       `;
-    }}
-    onMouseLeave={(e) => {
-      const gradientBorder = e.currentTarget.querySelector('div');
-      if (gradientBorder) gradientBorder.style.display = 'block';
-      
-      e.currentTarget.style.background = "transparent";
-      e.currentTarget.style.boxShadow = `
+              }}
+              onMouseLeave={(e) => {
+                const gradientBorder = e.currentTarget.querySelector("div");
+                if (gradientBorder) gradientBorder.style.display = "block";
+
+                // Change text back to "Join ICP Work"
+                const textSpan = e.currentTarget.querySelector("span");
+                if (textSpan) textSpan.textContent = "Join ICP Work";
+
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.boxShadow = `
         0 0 15px rgba(68, 176, 255, 0.4),
         0 0 25px rgba(151, 62, 238, 0.3),
         0 0 35px rgba(241, 42, 230, 0.2),
@@ -444,57 +458,68 @@ function Hero() {
         0 6px 18px rgba(151, 62, 238, 0.15),
         0 8px 24px rgba(255, 112, 57, 0.1)
       `;
-    }}
-  >
-    {/* Gradient Border */}
-    <div
-      className="absolute inset-0 rounded-[20px] p-0.5"
-      style={{
-        background:
-          "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
-      }}
-    >
-      <div className="w-full h-full rounded-[18px] bg-black"></div>
-    </div>
-    <span className="relative z-10">Coming Soon</span>
-  </button>
+              }}
+            >
+              {/* Gradient Border */}
+              <div
+                className="absolute inset-0 rounded-[20px] p-0.5"
+                style={{
+                  background:
+                    "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
+                }}
+              >
+                <div className="w-full h-full rounded-[18px] bg-black"></div>
+              </div>
+              <span className="relative z-10">Join ICP Work</span>
+            </button>
 
-  {/* Learn More Button - unchanged */}
-  <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] hover:bg-gray-300 text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
-    Learn more →
-  </button>
-</div>
+            {/* Learn More Button - unchanged */}
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] hover:bg-gray-300 text-xs sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
+              Learn more →
+            </button>
+          </div>
 
-          
           {/* Enhanced Data Insights Counters with better mobile responsiveness */}
           <div className="flex justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16 mt-16 sm:mt-16 font-semibold">
             <div className="text-center flex-1 max-w-[150px]">
-              <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}>
+              <div
+                className="font-bold text-black"
+                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+              >
                 0-{counters[0]}%
               </div>
-              <div className="text-slate-700 mt-1 font-semibold"
-                   style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}>
+              <div
+                className="text-slate-700 mt-1 font-semibold"
+                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+              >
                 Platform Fees
               </div>
             </div>
             <div className="text-center flex-1 max-w-[120px] font">
-              <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}>
+              <div
+                className="font-bold text-black"
+                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+              >
                 1-2s
               </div>
-              <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}>
+              <div
+                className="text-slate-700 mt-1"
+                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+              >
                 Transaction Fees
               </div>
             </div>
             <div className="text-center flex-1 max-w-[120px]">
-              <div className="font-bold text-black"
-                   style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}>
+              <div
+                className="font-bold text-black"
+                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+              >
                 $0
               </div>
-              <div className="text-slate-700 mt-1"
-                   style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}>
+              <div
+                className="text-slate-700 mt-1"
+                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+              >
                 Gas Speed
               </div>
             </div>
