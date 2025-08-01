@@ -54,18 +54,29 @@ export default function SpecializedServicesSlider() {
         Use Cases
       </h2>
       <p className="text-gray-600 text-sm xs:text-base sm:text-lg lg:text-xl xl:text-lg 2xl:text-2xl 3xl:text-3xl mx-auto mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10 px-2 xs:px-4 sm:px-0">
-       Versatile platform for diverse decentralized work scenarios
+        Versatile platform for diverse decentralized work scenarios
       </p>
 
       {/* Features Grid Layout */}
       <div className="max-w-[120rem] mx-auto">
         {/* Top Image */}
         <div className="mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10">
-          <div className="rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <img
               src="/section5Img/2.jpg"
               alt="Service Dashboard"
-              className="rounded-3xl w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+              className="rounded-3xl w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover transition-all duration-200 ease-in-out shadow-xl"
+              style={{
+                filter: "none",
+                transition: "filter 0.2s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.filter =
+                  "drop-shadow(0 0px 8px rgba(41, 163, 218, 0.6)) drop-shadow(0 1px 10px rgba(255, 112, 57, 0.8)) drop-shadow(0 1px 12px rgba(255, 195, 40, 0.7)) drop-shadow(0 2px 14px rgba(151, 62, 238, 0.6)) drop-shadow(0 2px 16px rgba(230, 31, 122, 0.5)) drop-shadow(0 3px 18px rgba(68, 176, 255, 0.4))";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.filter = "none";
+              }}
             />
           </div>
         </div>
@@ -75,7 +86,10 @@ export default function SpecializedServicesSlider() {
           <div className="bg-black text-white rounded-3xl p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-8 2xl:gap-12">
               {features.map((feature, i) => (
-                <div key={i} className="p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 relative">
+                <div
+                  key={i}
+                  className="p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 relative"
+                >
                   <div className="flex items-start space-x-4 md:space-x-6 lg:space-x-8">
                     <div className="text-purple-400 text-base xs:text-lg sm:text-2xl lg:text-2xl xl:text-xl 2xl:text-4xl shrink-0 mt-1">
                       {feature.icon}

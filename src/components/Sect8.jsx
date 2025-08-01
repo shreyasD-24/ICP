@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Sect8 = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const testimonialsRef = useRef(null);
+  const feedbackRef = useRef(null);
 
   const testimonials = [
     {
@@ -65,7 +67,25 @@ const Sect8 = () => {
 
   return (
     <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
-      <div className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center mx-auto w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%]">
+      <div
+        ref={testimonialsRef}
+        className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center mx-auto w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] transition-all duration-200 ease-in-out"
+        style={{
+          filter: "none",
+          transition: "filter 0.2s ease-in-out",
+        }}
+        onMouseEnter={() => {
+          if (testimonialsRef.current) {
+            testimonialsRef.current.style.filter =
+              "drop-shadow(0 1px 12px rgba(41, 163, 218, 0.6)) drop-shadow(0 2px 16px rgba(255, 112, 57, 0.8)) drop-shadow(0 3px 20px rgba(255, 195, 40, 0.7)) drop-shadow(0 4px 24px rgba(151, 62, 238, 0.6)) drop-shadow(0 5px 28px rgba(230, 31, 122, 0.5)) drop-shadow(0 6px 32px rgba(68, 176, 255, 0.4))";
+          }
+        }}
+        onMouseLeave={() => {
+          if (testimonialsRef.current) {
+            testimonialsRef.current.style.filter = "none";
+          }
+        }}
+      >
         <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
           Why Freelancers Love ICPWork ?
         </h2>
@@ -233,7 +253,25 @@ const Sect8 = () => {
       </div>
 
       {/* Feedback Section */}
-      <div className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-24 2xl:mt-28 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)] transition-shadow duration-300 px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
+      <div
+        ref={feedbackRef}
+        className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-24 2xl:mt-28 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14"
+        style={{
+          filter: "none",
+          transition: "filter 0.2s ease-in-out",
+        }}
+        onMouseEnter={() => {
+          if (feedbackRef.current) {
+            feedbackRef.current.style.filter =
+              "drop-shadow(0 1px 12px rgba(41, 163, 218, 0.6)) drop-shadow(0 2px 16px rgba(255, 112, 57, 0.8)) drop-shadow(0 3px 20px rgba(255, 195, 40, 0.7)) drop-shadow(0 4px 24px rgba(151, 62, 238, 0.6)) drop-shadow(0 5px 28px rgba(230, 31, 122, 0.5)) drop-shadow(0 6px 32px rgba(68, 176, 255, 0.4))";
+          }
+        }}
+        onMouseLeave={() => {
+          if (feedbackRef.current) {
+            feedbackRef.current.style.filter = "none";
+          }
+        }}
+      >
         {/* Made with heart */}
         <div className="flex items-center justify-center mb-2 xs:mb-3 sm:mb-5 lg:mb-8 xl:mb-11 opacity-100">
           <span className="text-lg xs:text-xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-400 mr-2 xs:mr-3 sm:mr-4 font-bold">

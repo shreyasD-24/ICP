@@ -16,7 +16,18 @@ const Sect2 = () => {
           <img
             src={img}
             alt="Img"
-            className="w-full max-w-[20rem] xs:max-w-[22rem] sm:max-w-[30rem] md:max-w-[35rem] lg:max-w-[40rem] xl:max-w-[45rem] 2xl:w-[55rem] 3xl:w-[60rem] 4xl:w-[70rem] 5xl:w-[80rem]"
+            className="w-full max-w-[20rem] xs:max-w-[22rem] sm:max-w-[30rem] md:max-w-[35rem] lg:max-w-[40rem] xl:max-w-[45rem] 2xl:w-[55rem] 3xl:w-[60rem] 4xl:w-[70rem] 5xl:w-[80rem] transition-all duration-200 ease-in-out"
+            style={{
+              filter: "none",
+              transition: "filter 0.2s ease-in-out",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.filter =
+                "drop-shadow(0 5px 12px rgba(41, 163, 218, 0.6)) drop-shadow(0 8px 16px rgba(255, 112, 57, 0.8)) drop-shadow(0 12px 20px rgba(255, 195, 40, 0.7)) drop-shadow(0 16px 24px rgba(151, 62, 238, 0.6)) drop-shadow(0 20px 28px rgba(230, 31, 122, 0.5)) drop-shadow(0 24px 32px rgba(68, 176, 255, 0.4))";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.filter = "none";
+            }}
           />
           <div className="bg-white rounded-[12px] xs:rounded-[15px] sm:rounded-[18px] py-2 xs:py-3 sm:py-4 lg:py-4 xl:py-5 2xl:py-5 3xl:py-6 4xl:py-8 5xl:py-16 pl-3 xs:pl-4 sm:pl-5 lg:pl-5 xl:pl-6 2xl:pl-6 3xl:pl-7 4xl:pl-10 5xl:pl-18 pr-1.5 xs:pr-2 sm:pr-3 lg:pr-3 xl:pr-3 2xl:pr-3 3xl:pr-4 4xl:pr-6 5xl:pr-10 text-[0.65rem] xs:text-[0.7rem] sm:text-[0.875rem] lg:text-[0.875rem] xl:text-[0.9rem] 2xl:text-[1rem] 3xl:text-[1.1rem] 4xl:text-[1.25rem] 5xl:text-[2rem] max-w-[11rem] xs:max-w-[12rem] sm:max-w-[16rem] lg:max-w-[17rem] xl:max-w-[18rem] 2xl:max-w-[19rem] 3xl:max-w-[21rem] 4xl:max-w-[26rem] 5xl:max-w-[40rem] z-2 absolute bottom-[-0.75rem] xs:bottom-[-1rem] sm:bottom-[-1.5rem] lg:bottom-[-1.75rem] xl:bottom-[-2rem] 2xl:bottom-[-2.5rem] 3xl:bottom-[-3rem] 4xl:bottom-[-3.5rem] 5xl:bottom-[-6rem] right-[-0.25rem] xs:right-[-0.5rem] sm:right-[-1.5rem] lg:right-[-1.75rem] xl:right-[-2rem] 2xl:right-[-2.5rem] 3xl:right-[-3rem] 4xl:right-[-3.5rem] 5xl:right-[-6rem] shadow-[0_0_1.5rem_rgba(0,0,0,0.3)] xs:shadow-[0_0_2rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_3.5rem_rgba(0,0,0,0.55)] xl:shadow-[0_0_4rem_rgba(0,0,0,0.6)] 2xl:shadow-[0_0_5rem_rgba(0,0,0,0.6)] 3xl:shadow-[0_0_6rem_rgba(0,0,0,0.7)] 4xl:shadow-[0_0_7rem_rgba(0,0,0,0.7)] 5xl:shadow-[0_0_12rem_rgba(0,0,0,0.8)]">
             <img

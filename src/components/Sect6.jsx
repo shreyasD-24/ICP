@@ -13,7 +13,18 @@ const Sect6 = () => {
         <img
           src={table}
           alt="Img"
-          className="h-[18rem] xs:h-[20rem] sm:h-[28rem] md:h-[32rem] lg:h-[33rem] xl:h-[30rem] 2xl:h-[38rem] 3xl:h-[42rem] 4xl:h-[45rem] 5xl:h-[50rem] w-auto"
+          className="h-[18rem] xs:h-[20rem] sm:h-[28rem] md:h-[32rem] lg:h-[33rem] xl:h-[30rem] 2xl:h-[38rem] 3xl:h-[42rem] 4xl:h-[45rem] 5xl:h-[50rem] w-auto transition-all duration-200 ease-in-out"
+          style={{
+            filter: "none",
+            transition: "filter 0.2s ease-in-out",
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.filter =
+              "drop-shadow(0 1px 12px rgba(41, 163, 218, 0.6)) drop-shadow(0 2px 16px rgba(255, 112, 57, 0.8)) drop-shadow(0 3px 20px rgba(255, 195, 40, 0.7)) drop-shadow(0 4px 24px rgba(151, 62, 238, 0.6)) drop-shadow(0 5px 28px rgba(230, 31, 122, 0.5)) drop-shadow(0 6px 32px rgba(68, 176, 255, 0.4))";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.filter = "none";
+          }}
         />
         <div className="bg-white rounded-[8px] xs:rounded-[10px] sm:rounded-[15px] lg:rounded-[16px] xl:rounded-[18px] py-2 xs:py-3 sm:py-5 lg:py-5 xl:py-6 2xl:py-8 3xl:py-10 4xl:py-12 5xl:py-16 pl-3 xs:pl-4 sm:pl-6 lg:pl-6 xl:pl-7 2xl:pl-8 3xl:pl-10 4xl:pl-12 5xl:pl-16 pr-2 xs:pr-3 sm:pr-5 lg:pr-5 xl:pr-6 2xl:pr-7 3xl:pr-8 4xl:pr-10 5xl:pr-12 text-xs xs:text-sm sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl max-w-[10rem] xs:max-w-[12rem] sm:max-w-[20rem] lg:max-w-[20rem] xl:max-w-[22rem] 2xl:max-w-[25rem] 3xl:max-w-[28rem] 4xl:max-w-[32rem] 5xl:max-w-[38rem] absolute top-[25%] -translate-y-1/2 -right-[1rem] xs:-right-[1.5rem] sm:-right-[3.5rem] lg:-right-[3.5rem] xl:-right-[4rem] 2xl:-right-[5rem] 3xl:-right-[6rem] 4xl:-right-[7rem] 5xl:-right-[9rem] shadow-[0_0_1rem_rgba(0,0,0,0.3)] xs:shadow-[0_0_1.5rem_rgba(0,0,0,0.4)] sm:shadow-[0_0_3rem_rgba(0,0,0,0.5)] lg:shadow-[0_0_3.5rem_rgba(0,0,0,0.55)] xl:shadow-[0_0_4rem_rgba(0,0,0,0.6)] 2xl:shadow-[0_0_5rem_rgba(0,0,0,0.6)] 3xl:shadow-[0_0_6rem_rgba(0,0,0,0.7)] 4xl:shadow-[0_0_7rem_rgba(0,0,0,0.7)] 5xl:shadow-[0_0_12rem_rgba(0,0,0,0.8)]">
           <ul>
