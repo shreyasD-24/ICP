@@ -309,7 +309,7 @@ function Hero() {
 
       // Calculate center position with padding to prevent clipping
       const centerX = viewportWidth / 2;
-      const centerY = viewportHeight / 2 - viewportHeight * 0.05;
+      const centerY = viewportHeight / 2;
 
       const cosAngle = Math.cos(angleY);
       const sinAngle = Math.sin(angleY);
