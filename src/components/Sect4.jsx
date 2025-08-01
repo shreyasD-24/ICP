@@ -75,7 +75,7 @@ function Sect4() {
                   0 0 70px rgba(255, 112, 57, 0.2),
                   0 0 80px rgba(235, 255, 112, 0.15)
                 `;
-                e.currentTarget.style.background = `linear-gradient(90deg, rgba(41, 163, 218, 0.4) -0.55%, rgba(68, 176, 255, 0.4) 22.86%, rgba(151, 62, 238, 0.4) 43.09%, rgba(230, 31, 122, 0.4) 58.52%, rgba(255, 112, 57, 0.4) 76.77%, rgba(235, 255, 112, 0.4) 99.34%)`;
+                e.currentTarget.style.background = `linear-gradient(90deg, rgba(41, 163, 218, 0.2) -0.55%, rgba(68, 176, 255, 0.2) 22.86%, rgba(151, 62, 238, 0.2) 43.09%, rgba(230, 31, 122, 0.2) 58.52%, rgba(255, 112, 57, 0.2) 76.77%, rgba(235, 255, 112, 0.2) 99.34%)`;
                 // Keep text colors as original since background is very light
                 const heading = e.currentTarget.querySelector("h3");
                 const description = e.currentTarget.querySelector("p");
