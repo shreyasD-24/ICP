@@ -28,32 +28,88 @@ const Sect10 = () => {
               Your Gateway to the Elite Freelance revolution
             </p>
 
-            {/* Search Bar */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative mt-3 xs:mt-4 sm:mt-5 md:mt-6 lg:mt-6 xl:mt-8 w-full max-w-[280px] xs:max-w-[320px] sm:max-w-lg md:max-w-xl lg:max-w-xl xl:max-w-3xl 2xl:max-w-4xl">
-                <input
-                  type="text"
-                  placeholder="Search your industry here..."
-                  className="w-full py-2 xs:py-3 sm:py-4 md:py-5 lg:py-5 xl:py-7 2xl:py-8 pl-3 xs:pl-4 sm:pl-6 md:pl-8 lg:pl-8 xl:pl-12 2xl:pl-14 pr-10 xs:pr-12 sm:pr-16 md:pr-20 lg:pr-20 xl:pr-28 2xl:pr-32 rounded-full border-2 border-purple-800 shadow-sm focus:outline-none focus:ring-1 focus:ring-purple-800 focus:border-purple-800 text-xs xs:text-sm sm:text-base md:text-lg lg:text-lg xl:text-2xl 2xl:text-3xl text-gray-700 placeholder-gray-500"
-                />
-                <div className="absolute right-0.5 xs:right-0.5 sm:right-0.5 md:right-1 lg:right-1 xl:right-1.5 2xl:right-2 top-1/2 transform -translate-y-1/2">
-                  <button className="bg-[#041D37] text-white p-1.5 xs:p-2 sm:p-3 md:p-4 lg:p-4 xl:p-6 2xl:p-7 rounded-full transition-colors duration-200 cursor-pointer hover:bg-[#03244a]">
-                    <svg
-                      className="w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-6 lg:h-6 xl:w-8 xl:h-8 2xl:w-9 2xl:h-9"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                  </button>
+            {/* Subscribe Newsletter Button */}
+            <div className="flex justify-center lg:justify-start mb-8 xs:mb-10 sm:mb-12 md:mb-8 lg:mb-0">
+              <button
+                className="relative mt-3 xs:mt-4 sm:mt-5 md:mt-6 lg:mt-6 xl:mt-8 px-8 xs:px-10 sm:px-12 md:px-16 lg:px-18 xl:px-20 2xl:px-24 py-3 xs:py-3.5 sm:py-4 md:py-5 lg:py-5 xl:py-6 2xl:py-7 rounded-[20px] font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-black active:scale-95 transition-all duration-300 group"
+                style={{
+                  background: "white",
+                  boxShadow: `
+                    0 0 15px rgba(68, 176, 255, 0.4),
+                    0 0 25px rgba(151, 62, 238, 0.3),
+                    0 0 35px rgba(241, 42, 230, 0.2),
+                    0 4px 12px rgba(41, 163, 218, 0.2),
+                    0 6px 18px rgba(151, 62, 238, 0.15),
+                    0 8px 24px rgba(255, 112, 57, 0.1)
+                  `,
+                }}
+                onMouseEnter={(e) => {
+                  // Hide the gradient border and show the gradient background
+                  const gradientBorder = e.currentTarget.querySelector("div");
+                  if (gradientBorder) gradientBorder.style.display = "none";
+
+                  e.currentTarget.style.background = `
+                    linear-gradient(135deg,
+                      rgba(41, 163, 218, 0.9) 0%,
+                      rgba(68, 176, 255, 0.9) 20%,
+                      rgba(151, 62, 238, 0.9) 40%,
+                      rgba(230, 31, 122, 0.9) 60%,
+                      rgba(255, 112, 57, 0.9) 80%,
+                      rgba(255, 195, 40, 0.9) 100%)
+                  `;
+                  e.currentTarget.style.color = "white";
+                  e.currentTarget.style.boxShadow = `
+                    0 6px 18px rgba(41, 163, 218, 0.35),
+                    0 8px 25px rgba(151, 62, 238, 0.3),
+                    0 10px 30px rgba(255, 112, 57, 0.25)
+                  `;
+                }}
+                onMouseLeave={(e) => {
+                  // Show the gradient border again and reset background
+                  const gradientBorder = e.currentTarget.querySelector("div");
+                  if (gradientBorder) gradientBorder.style.display = "block";
+
+                  e.currentTarget.style.background = "white";
+                  e.currentTarget.style.color = "black";
+                  e.currentTarget.style.boxShadow = `
+                    0 0 15px rgba(68, 176, 255, 0.4),
+                    0 0 25px rgba(151, 62, 238, 0.3),
+                    0 0 35px rgba(241, 42, 230, 0.2),
+                    0 4px 12px rgba(41, 163, 218, 0.2),
+                    0 6px 18px rgba(151, 62, 238, 0.15),
+                    0 8px 24px rgba(255, 112, 57, 0.1)
+                  `;
+                }}
+                onClick={() => console.log("Subscribe to Newsletter clicked")}
+              >
+                {/* Gradient Border */}
+                <div
+                  className="absolute inset-0 rounded-[20px] p-0.5"
+                  style={{
+                    background:
+                      "linear-gradient(88.65deg, #44B0FF -8.8%, #973EEE 33.57%, #F12AE6 58.38%, #FF7039 79.99%, #F3BC3B 98%)",
+                  }}
+                >
+                  <div className="w-full h-full rounded-[18px] bg-white"></div>
                 </div>
-              </div>
+                <span className="relative z-10 flex items-center gap-3">
+                  Subscribe to Newsletter
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="transform transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
 
