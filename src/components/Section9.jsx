@@ -56,10 +56,44 @@ const WhyChooseICPWork = () => {
             We're more than a network. We're a protocol-powered revolution.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="w-full sm:w-auto bg-black hover:bg-gray-700 text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button 
+              className="w-full sm:w-auto rounded-[20px] text-white px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl transition-all duration-500 transform hover:-translate-y-0.5"
+              style={{
+                background: "black",
+                boxShadow: `
+                  0 4px 12px rgba(41, 163, 218, 0.2),
+                  0 6px 18px rgba(151, 62, 238, 0.15),
+                  0 8px 24px rgba(255, 112, 57, 0.1)
+                `,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = `
+                  linear-gradient(135deg,
+                    rgba(41, 163, 218, 0.9) 0%,
+                    rgba(68, 176, 255, 0.9) 20%,
+                    rgba(151, 62, 238, 0.9) 40%,
+                    rgba(230, 31, 122, 0.9) 60%,
+                    rgba(255, 112, 57, 0.9) 80%,
+                    rgba(255, 195, 40, 0.9) 100%)
+                `;
+                e.currentTarget.style.boxShadow = `
+                  0 6px 18px rgba(41, 163, 218, 0.35),
+                  0 8px 25px rgba(151, 62, 238, 0.3),
+                  0 10px 30px rgba(255, 112, 57, 0.25)
+                `;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "black";
+                e.currentTarget.style.boxShadow = `
+                  0 4px 12px rgba(41, 163, 218, 0.2),
+                  0 6px 18px rgba(151, 62, 238, 0.15),
+                  0 8px 24px rgba(255, 112, 57, 0.1)
+                `;
+              }}
+            >
               Join as Freelancer
             </button>
-            <button className="w-full sm:w-auto border border-green-500 text-green-600 px-8 lg:px-10 xl:px-12 2xl:px-14 3xl:px-16 4xl:px-20 5xl:px-24 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-full font-semibold text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl hover:bg-green-50 transition-all duration-300">
+            <button className="w-full sm:w-auto bg-gray-200 text-slate-700 hover:text-slate-900 font-semibold transition-colors duration-300 px-6 lg:px-8 xl:px-10 2xl:px-12 3xl:px-14 4xl:px-18 5xl:px-22 py-3 lg:py-4 xl:py-5 2xl:py-6 3xl:py-7 4xl:py-8 5xl:py-10 rounded-[20px] hover:bg-gray-300 text-sm lg:text-base xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl">
               Join as Client
             </button>
           </div>

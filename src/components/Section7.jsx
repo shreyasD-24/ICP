@@ -69,7 +69,7 @@ export default function FAQSection() {
 
         {/* Right Side - Answer Card */}
         <div className="relative w-full lg:w-1/2">
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 via-red-500 via-orange-500 via-yellow-400 via-green-400 via-blue-500 to-indigo-500 animate-pulse"></div>
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-400 via-purple-500 to-orange-400 animate-pulse"></div>
           <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 relative z-10 min-h-[240px] flex flex-col justify-center transition-all duration-500 m-1">
             <div className="flex items-start gap-3 mb-4">
               <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mt-3 flex-shrink-0"></div>
