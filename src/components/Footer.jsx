@@ -11,7 +11,7 @@ export default function ICPWorkFooter() {
   return (
     <footer className="bg-white text-black px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
       {/* Main Footer Content */}
-      <div className="max-w-[107rem] mx-auto">
+      <div className="max-w-[110rem] mx-auto">
         {/* Links Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20 text-sm lg:text-base xl:text-lg 2xl:text-lg mb-8 xs:mb-5 sm:mb-8 lg:mb-9 xl:mb-8 2xl:mb-10">
           {/* Categories */}

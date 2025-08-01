@@ -199,7 +199,7 @@ const Vision = () => {
             <img
               src={image}
               alt="Vision Image"
-              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-18/20 h-auto rounded-lg sm:rounded-xl md:rounded-2xl"
+              className="w-full sm:w-full md:w-11/12 lg:w-5/6 xl:w-4/5 2xl:w-19/20 h-auto rounded-lg sm:rounded-xl md:rounded-2xl"
             />
           </div>
         </div>
