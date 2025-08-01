@@ -73,7 +73,7 @@ export default function SpecializedServicesSlider() {
         {/* Features Grid Below */}
         <div className="w-full">
           <div className="bg-black text-white rounded-3xl p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 shadow-2xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xs:gap-8 sm:gap-12 lg:gap-14 xl:gap-12 2xl:gap-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 lg:gap-10 xl:gap-8 2xl:gap-12">
               {features.map((feature, i) => (
                 <div key={i} className="p-4 xs:p-6 sm:p-10 pb-6 xs:pb-8 sm:pb-12 lg:pb-12 xl:pb-10 2xl:pb-16 relative">
                   <div className="flex items-start space-x-4 md:space-x-6 lg:space-x-8">
@@ -89,14 +89,6 @@ export default function SpecializedServicesSlider() {
                       </p>
                     </div>
                   </div>
-                  {/* Vertical line separator between columns */}
-                  {(i + 1) % 3 !== 0 && i < features.length - 1 && (
-                    <div className="hidden md:block absolute right-0 top-0 h-full w-px bg-gray-700"></div>
-                  )}
-                  {/* Horizontal line separator between rows */}
-                  {i < 3 && (
-                    <div className="border-b border-gray-700 mt-4 xs:mt-3 sm:mt-6 lg:mt-6 xl:mt-4 2xl:mt-8"></div>
-                  )}
                 </div>
               ))}
             </div>
