@@ -12,6 +12,7 @@ import SpecializedServices from "../components/Section5";
 import FAQSection from "../components/Section7";
 import ICPWorkFooter from "../components/Footer";
 import WhyChooseICPWork from "../components/Section9";
+import BackToTop from "../components/BackToTop";
 
 function Home() {
   return (
@@ -42,6 +43,7 @@ function Home() {
       <Sect10 />
       <Vision />
       <ICPWorkFooter />
+      <BackToTop />
     </>
   );
 }
