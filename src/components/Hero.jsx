@@ -481,17 +481,17 @@ function Hero() {
           </div>
 
           {/* Enhanced Data Insights Counters with better mobile responsiveness */}
-          <div className="flex justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16 mt-8 sm:mt-16 font-semibold">
+          <div className="flex justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16 mt-4 sm:mt-12 xl:mt-20 font-semibold">
             <div className="text-center flex-1 max-w-[150px]">
               <div
                 className="font-bold text-black"
-                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+                style={{ fontSize: "clamp(0.6rem, 3.5vw, 3rem)" }}
               >
                 0-{counters[0]}%
               </div>
               <div
                 className="text-slate-700 mt-1 font-semibold"
-                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+                style={{ fontSize: "clamp(0.4rem, 1.5vw, 1.2rem)" }}
               >
                 Platform Fees
               </div>
@@ -499,31 +499,55 @@ function Hero() {
             <div className="text-center flex-1 max-w-[120px] font">
               <div
                 className="font-bold text-black"
-                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+                style={{ fontSize: "clamp(0.6rem, 3.5vw, 3rem)" }}
               >
                 1-2s
               </div>
               <div
                 className="text-slate-700 mt-1"
-                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+                style={{ fontSize: "clamp(0.4rem, 1.5vw, 1.2rem)" }}
               >
-                Transaction Fees
+                Transaction Speed
               </div>
             </div>
             <div className="text-center flex-1 max-w-[120px]">
               <div
                 className="font-bold text-black"
-                style={{ fontSize: "clamp(0.8rem, 3.5vw, 3.5rem)" }}
+                style={{ fontSize: "clamp(0.6rem, 3.5vw, 3rem)" }}
               >
                 $0
               </div>
               <div
                 className="text-slate-700 mt-1"
-                style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.5rem)" }}
+                style={{ fontSize: "clamp(0.4rem, 1.5vw, 1.2rem)" }}
               >
-                Gas Speed
+                Gas Fees
               </div>
             </div>
+          </div>
+
+          {/* Backed by Internet Computer */}
+          <div className="flex items-center justify-center gap-3 mt-4 sm:mt-8 xl:mt-16 border border-slate-200 rounded-2xl px-6 py-3 backdrop-blur-sm hover:border-slate-300 transition-all duration-300 max-w-fit mx-auto"
+               style={{
+                 background: `linear-gradient(135deg,
+                   rgba(41, 163, 218, 0.30) 0%,
+                   rgba(68, 176, 255, 0.30) 20%,
+                   rgba(151, 62, 238, 0.30) 40%,
+                   rgba(230, 31, 122, 0.30) 60%,
+                   rgba(255, 112, 57, 0.30) 80%,
+                   rgba(255, 195, 40, 0.30) 100%)`
+               }}>
+            <p
+              className="text-black font-medium"
+              style={{ fontSize: "clamp(0.6rem, 1.5vw, 1.2rem)" }}
+            >
+              Backed by
+            </p>
+            <img
+              src="/internet-computer.svg"
+              alt="Internet Computer"
+              className="h-4 sm:h-5 lg:h-8 opacity-80 hover:opacity-100 transition-opacity duration-300"
+            />
           </div>
         </div>
       </div>
