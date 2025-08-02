@@ -527,6 +527,7 @@ function Hero() {
           </div>
 
           {/* Backed by Internet Computer */}
+          <a href="https://internetcomputer.org">
           <div className="flex items-center justify-center gap-3 mt-4 sm:mt-8 xl:mt-16 border border-slate-200 rounded-2xl px-6 py-3 backdrop-blur-sm hover:border-slate-300 transition-all duration-300 max-w-fit mx-auto"
                style={{
                  background: `linear-gradient(135deg,
@@ -549,6 +550,7 @@ function Hero() {
               className="h-4 sm:h-5 lg:h-8 opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
+          </a>
         </div>
       </div>
     </div>
