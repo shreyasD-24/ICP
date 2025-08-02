@@ -11,6 +11,13 @@ import {
 import logo from "../assets/logo.png";
 
 export default function ICPWorkFooter() {
+  const scrollToHome = () => {
+    const homeElement = document.getElementById('home');
+    if (homeElement) {
+      homeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <style>{`
@@ -201,7 +208,8 @@ export default function ICPWorkFooter() {
               <img
                 src={logo}
                 alt="ICPWork Logo"
-                className="h-8 lg:h-10 xl:h-12 2xl:h-14 w-auto"
+                className="h-8 lg:h-10 xl:h-12 2xl:h-14 w-auto cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={scrollToHome}
               />
             </div>
             

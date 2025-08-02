@@ -4,13 +4,20 @@ import { useState } from "react";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToHome = () => {
+    const homeElement = document.getElementById('home');
+    if (homeElement) {
+      homeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="relative flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 3xl:px-32 4xl:px-40 py-4 sm:py-5 md:py-6 lg:py-7 xl:py-8 2xl:py-10 3xl:py-12 4xl:py-14 5xl:py-16">
-      <div className="logo">
+      <div className="logo cursor-pointer" onClick={scrollToHome}>
         <img
           src={logo}
           alt="ICP"
-          className="h-8 xs:h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 2xl:h-20 3xl:h-22 4xl:h-24 5xl:h-26 w-auto object-contain"
+          className="h-8 xs:h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 2xl:h-20 3xl:h-22 4xl:h-24 5xl:h-26 w-auto object-contain hover:scale-105 transition-transform duration-300"
           style={{
             filter: "contrast(1.1) brightness(1.05)",
             imageRendering: "crisp-edges",
