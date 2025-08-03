@@ -7,116 +7,130 @@ const Sect8 = () => {
 
   const testimonials = [
     {
-      id: 1,
-      name: "Aman Sagar",
-      position: "Fullstack Engineer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=amanzrx4", // LinkedIn DP
-      quote: "Building the future of web3, one commit at a time.",
-      linkedin: "https://www.linkedin.com/in/aman-sagar-362497137/"
-    },
-    {
-      id: 2,
-      name: "Prince Pal",
-      position: "Full stack web 3 developer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=princepal7021", // LinkedIn DP
-      quote: "Web3 is not just tech, it's a movement.",
-      linkedin: "https://linkedin.com/in/princeai"
-    },
-    {
-      id: 3,
-      name: "Adwait Keshari",
-      position: "Blockchain developer, full stack developer, data scientist, SMM, devrel",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=adwaitkeshari288", // LinkedIn DP
-      quote: "Decentralization is the future.",
-      linkedin: "https://www.linkedin.com/in/adwait-keshari-b5793b294/"
-    },
-    {
-      id: 4,
-      name: "Shivansh Anand",
-      position: "MERN Developer, React native, frontend, backend, figma for ui/ux",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=shivanshanand962", // LinkedIn DP
-      quote: "Design. Develop. Deliver.",
-      linkedin: "https://www.linkedin.com/in/shivansh-anand-%F0%9F%93%88-aa48851b8/"
-    },
-    {
-      id: 5,
-      name: "Harsh Pandey",
-      position: "Blockchain Developer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=hp7556513", // LinkedIn DP
-      quote: "Code is my superpower.",
-      linkedin: "https://www.linkedin.com/in/harsh-pandey-aa783925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-      id: 6,
-      name: "Abhishek Jadhav",
-      position: "Full Stack Developer (web3)",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=abhishek3jadhav", // LinkedIn DP
-      quote: "Building dApps for a decentralized world.",
-      linkedin: "https://www.linkedin.com/in/AbhishekJadhav2002"
-    },
-    {
-      id: 7,
-      name: "Sujal Joshi",
-      position: "Machine Learning / Deep Learning / NLP / CV / AI",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=sujaljoshi280", // LinkedIn DP
-      quote: "AI is the new electricity.",
-      linkedin: "https://www.linkedin.com/in/sujaljoshi19"
-    },
-    {
-      id: 8,
-      name: "Antony Nelson",
-      position: "Work from home",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=antonynelson139", // LinkedIn DP
-      quote: "Remote work, real results.",
-      linkedin: "#"
-    },
-    {
-      id: 9,
-      name: "Durgesh Kumar Prajapati",
-      position: "Web Developer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=durgeshkumar4993", // LinkedIn DP
-      quote: "Web is my playground.",
-      linkedin: "https://www.linkedin.com/in/durgesh4993/"
-    },
-    {
-      id: 10,
-      name: "Chandra Shekhar Choudhary",
-      position: "Full stack Blockchain developer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=chandrashekhariamcc", // LinkedIn DP
-      quote: "Blockchain for everyone.",
-      linkedin: "https://www.linkedin.com/in/chandra-shekhar-choudhary-a0a8b590?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-      id: 11,
-      name: "Muskan Bansal",
-      position: "Data Scientist",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=muskanbansal0304", // LinkedIn DP
-      quote: "Data is the new oil.",
-      linkedin: "https://www.linkedin.com/in/muskanbansal123"
-    },
-    {
-      id: 12,
-      name: "Salma Shaik",
-      position: "Web 3",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=sandisandisnow1089", // LinkedIn DP
-      quote: "Web3 for all.",
-      linkedin: "https://www.linkedin.com/in/shaik-saleema-890573260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
       id: 13,
       name: "Buddhika Perera",
       position: "Technical Consultant and CTO",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=itsdjBp", // LinkedIn DP
-      quote: "Tech for good.",
-      linkedin: "https://www.linkedin.com/in/buddhika-perera/"
+      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQE6spve63ho0w/profile-displayphoto-shrink_200_200/B4EZUoWVciH0AY-/0/1740138703499?e=1756944000&v=beta&t=2ohSn6y08ZFXhLKwO2BL76Wa_W1ptFCvFpPqBIuk1Lw",
+      quote: "ICPWork is the platform I recommend to any serious builder. The level of professionalism, speed of onboarding, and commitment to Web3 values make it a no-brainer. As a CTO, I’ve found exceptional talent and shipped high-impact work, fast.",
+      linkedin: "https://www.linkedin.com/in/buddhika-perera/",
+      x: "https://x.com/buddhikapp"
     },
     {
       id: 14,
       name: "Vivek Kumar",
       position: "Product Designer",
-      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=vivek9mehta09", // LinkedIn DP
-      quote: "Designing the future.",
-      linkedin: "https://www.linkedin.com/in/vivek-kumar-ux-designer/"
+      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQF1Pezus7iV_w/profile-displayphoto-shrink_200_200/B4EZSPGsH4GwAc-/0/1737567684365?e=1756944000&v=beta&t=-9EjNZgfRQMevkz2NKxEYKyaOtmSYG_i5SYJYS3afEQ",
+      quote: "As a product designer, I value clarity, collaboration, and speed. ICPWork delivers all three. The projects are real, the expectations are clear, and the Web3-native workflows allow me to focus on what matters—building beautiful, functional products.",
+      linkedin: "https://www.linkedin.com/in/vivek-kumar-ux-designer/",
+      x: "https://x.com/Cmonvivek"
+    },
+    {
+      id: 1,
+      name: "Aman Sagar",
+      position: "Fullstack Engineer",
+      profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
+      quote: "ICPWork has completely changed how I approach freelance projects. The platform’s speed, transparency, and developer-first mindset make it feel like it was built by engineers—for engineers. I’ve finally found a place where I can focus on shipping great code, not chasing payments.",
+      linkedin: "https://www.linkedin.com/in/aman-sagar-362497137/",
+      x: "https://x.com/amanzrx"
+    },
+    {
+      id: 2,
+      name: "Prince Pal",
+      position: "Full Stack Web3 Developer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D5603AQGOUG4CfSPe5A/profile-displayphoto-shrink_200_200/B56ZP9PGfGHIAY-/0/1735120415215?e=1756944000&v=beta&t=h7_u1D09Sdpwt3BBJtgUNLS7eMAH3ajoIenDwXBqV1Q",
+      quote: "Working through ICPWork has given me consistent, high-quality projects and the trust of global clients. The onboarding was seamless, and the Web3-native ecosystem makes it easy to collaborate and get paid in crypto without headaches.",
+      linkedin: "https://linkedin.com/in/princeai",
+      x: "https://x.com/prince_twets"
+    },
+    {
+      id: 3,
+      name: "Adwait Keshari",
+      position: "Blockchain & Fullstack Developer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D5635AQE6_j_Wnd_dyQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1737572501539?e=1754838000&v=beta&t=a6PYoRJkIMCryCZcXs7onzQZ8Qb91thG5zrjhilRfOs",
+      quote: "As someone who builds dApps and backend systems, I appreciate how ICPWork empowers developers like me with real ownership and on-chain transparency. It’s more than just a freelancing site—it's a network of serious builders.",
+      linkedin: "https://www.linkedin.com/in/adwait-keshari-b5793b294/",
+      x: "https://x.com/AdwaitKeshari"
+    },
+    {
+      id: 4,
+      name: "Shivansh Anand",
+      position: "MERN & React Native Developer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D5635AQGmz2f8kJo1DQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1735383464850?e=1754838000&v=beta&t=8B5btJoW6795Jsz3hkBc_TWlM1HRRJD7EfbrSgyoSeA",
+      quote: "What sets ICPWork apart is its simplicity and credibility. It’s rare to find a platform that respects both your time and your talent. I’ve grown my portfolio and landed amazing gigs without the usual platform noise.",
+      linkedin: "https://www.linkedin.com/in/shivansh-anand-%F0%9F%93%88-aa48851b8/",
+      x: ""
+    },
+    {
+      id: 5,
+      name: "Harsh Pandey",
+      position: "Blockchain Developer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQFowV1MqN_ZNg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703658210621?e=1756944000&v=beta&t=rygCp4RJ8MmcUB03uHOfU4U1RvoRYcpl6_o0KIboshU",
+      quote: "ICPWork is a game-changer for blockchain devs. I’ve connected with serious clients and shipped meaningful work. The smart contract-based system ensures payments are fast and fair—and that’s what freelancers need most.",
+      linkedin: "https://www.linkedin.com/in/harsh-pandey-aa783925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: "https://x.com/HarshPandey9984?t=jcRv2XPHxLfzCUijL7ZTqA&s=09"
+    },
+    {
+      id: 6,
+      name: "Abhishek Jadhav",
+      position: "Web3 Developer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQHAvWzRLAldEg/profile-displayphoto-shrink_200_200/B4DZSa2cGWHUAY-/0/1737764750200?e=1756944000&v=beta&t=UHzoMpXcRUWoagiSNidqtA2e0p9wCc2d7btpa6dYW38",
+      quote: "ICPWork stands out as a platform that understands Web3. The tools, the people, and the culture make it easier to focus on impact-driven code. It’s where I go when I want to work with teams who actually care about decentralization.",
+      linkedin: "https://www.linkedin.com/in/AbhishekJadhav2002",
+      x: "https://x.com/Abhishek_Jadhv"
+    },
+    {
+      id: 7,
+      name: "Sujal Joshi",
+      position: "Smart Contract Engineer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQGvv-vYqBcnFQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715405746427?e=1756944000&v=beta&t=R0lGZGyVfkatPy5WV1T0Bpzh4t2XMrCK-Vysb-3ccR0",
+      quote: "Freelancing through ICPWork gives me the freedom to build and scale meaningful projects. The escrowed smart contracts and milestone-based payments remove all the stress from the equation. I feel like my time is finally valued.",
+      linkedin: "https://www.linkedin.com/in/sujaljoshi19",
+      x: ""
+    },
+    {
+      id: 8,
+      name: "Antony Nelson",
+      position: "DevOps & Backend Specialist",
+      profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
+      quote: "Most freelance platforms don’t get backend workflows—but ICPWork does. Their system runs like clockwork, with strong infrastructure and real respect for technical contributors. It’s the most developer-centric environment I’ve worked in.",
+      linkedin: "#",
+      x: ""
+    },
+    {
+      id: 9,
+      name: "Durgesh Kumar Prajapati",
+      position: "Blockchain Security Auditor",
+      profilePic: "https://media.licdn.com/dms/image/v2/D5603AQHi-NH2yZk9ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713095690520?e=1756944000&v=beta&t=hKeneOEhKrZp8t3Js5T3BNle7JmPJeKvjRdQXsJ14d0",
+      quote: "ICPWork is more than just a place to find gigs—it’s a hub for top-tier blockchain talent. The quality of projects and level of professionalism I’ve experienced here is unmatched. Every project feels like a serious collaboration.",
+      linkedin: "https://www.linkedin.com/in/durgesh4993/",
+      x: "https://twitter.com/durgesh4993"
+    },
+    {
+      id: 10,
+      name: "Chandra Shekhar Choudhary",
+      position: "Software Engineer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQEfbePX8wqzfw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723100595084?e=1756944000&v=beta&t=dLIzupbxtV2px2GTQ_W0AfEN5C3kmxCakcjPX2gd_X4",
+      quote: "What I love most about ICPWork is the trust. The clients are authentic, the deliverables are clear, and the payments are automated. It’s the kind of platform that actually values both sides of the table—clients and freelancers.",
+      linkedin: "https://www.linkedin.com/in/chandra-shekhar-choudhary-a0a8b590?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: "https://x.com/chandu23531353?t=bfVUOTaDwVIC_M-f1xn-GQ&s=09"
+    },
+    {
+      id: 11,
+      name: "Muskan Bansal",
+      position: "UI/UX Designer",
+      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQG4hAAhccrfXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1733022941709?e=1756944000&v=beta&t=KWhxcNbkndEu5VTsqIuzd5VkW2-on48E5GyKnSrOS6Q",
+      quote: "Designing for Web3 startups can be chaotic—unless you’re on ICPWork. The structured processes, transparent scopes, and forward-thinking teams make every project a creative partnership. I feel seen and supported here.",
+      linkedin: "https://www.linkedin.com/in/muskanbansal123",
+      x: ""
+    },
+    {
+      id: 12,
+      name: "Salma Shaik",
+      position: "Frontend Developer",
+      profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
+      quote: "ICPWork brings together serious teams and talented devs in a way that feels collaborative and fair. From clean project specs to reliable payments, every detail has been thought through. It’s the best experience I’ve had freelancing.",
+      linkedin: "https://www.linkedin.com/in/shaik-saleema-890573260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: ""
     },
   ];
 
@@ -175,7 +189,7 @@ const Sect8 = () => {
               rel="noopener noreferrer"
               title={person.name}
               className="inline-block rounded-full border-2 border-blue-400 hover:border-purple-600 transition-all duration-200 shadow-md w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 overflow-hidden bg-white"
-              style={{ marginLeft: idx === 0 ? 0 : -12, zIndex: 14 - idx }}
+              style={{ marginLeft: idx === 0 ? 0 : -40, zIndex: 14 - idx }}
             >
               <img
                 src={person.profilePic}
@@ -210,6 +224,42 @@ const Sect8 = () => {
                     {current.name}
                   </h3>
                   <p className="text-gray-600 text-sm">{current.position}</p>
+                  <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 mt-1">
+                    {current.x && (
+                      <a
+                        href={current.x}
+                        className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                      </a>
+                    )}
+                    {current.linkedin && (
+                      <a
+                        href={current.linkedin}
+                        className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -301,6 +351,42 @@ const Sect8 = () => {
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg xl:text-2xl 2xl:text-xl">
                     {current.position}
                   </p>
+                  <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 mt-1">
+                    {current.x && (
+                      <a
+                        href={current.x}
+                        className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                      </a>
+                    )}
+                    {current.linkedin && (
+                      <a
+                        href={current.linkedin}
+                        className="gradient-icon cursor-pointer transition-all duration-300 hover:scale-125"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg
+                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
 

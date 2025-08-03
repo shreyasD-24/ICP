@@ -7,7 +7,7 @@ const Logos = () => {
     "https://www.fireblocks.com",
     "https://www.assuredefi.com",
     "https://coinmarketcap.com",
-    "https://aws.amazon.com",
+    // "https://aws.amazon.com",
     "https://www.coinbase.com",
     "https://www.coindesk.com",
     "https://swing.xyz",
@@ -20,7 +20,7 @@ const Logos = () => {
       {/* Responsive flex container with Section 4 width constraint */}
       <div className="max-w-[120rem] mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-6 xl:gap-8 2xl:gap-10">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((logoNumber, index) => (
+          {[1, 2, 3, 4, 5, 7, 8, 9, 10, 11].map((logoNumber, index) => (
             <div
               key={logoNumber}
               className="flex items-center justify-center px-1 py-1"
