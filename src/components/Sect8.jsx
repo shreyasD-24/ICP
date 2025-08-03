@@ -8,39 +8,115 @@ const Sect8 = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Darren Dunlap",
-      position: "Product Manager",
-      profilePic:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      quote:
-        "The smartest move I made as a freelancer — no middlemen, instant payments, and full ownership of my work.",
+      name: "Aman Sagar",
+      position: "Fullstack Engineer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=amanzrx4", // LinkedIn DP
+      quote: "Building the future of web3, one commit at a time.",
+      linkedin: "https://www.linkedin.com/in/aman-sagar-362497137/"
     },
     {
       id: 2,
-      name: "Darren Dunlap",
-      position: "Product Manager",
-      profilePic:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      quote:
-        "The smartest move I made as a freelancer — no middlemen, instant payments, and full ownership of my work.",
+      name: "Prince Pal",
+      position: "Full stack web 3 developer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=princepal7021", // LinkedIn DP
+      quote: "Web3 is not just tech, it's a movement.",
+      linkedin: "https://linkedin.com/in/princeai"
     },
     {
       id: 3,
-      name: "Darren Dunlap",
-      position: "Product Manager",
-      profilePic:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      quote:
-        "The smartest move I made as a freelancer — no middlemen, instant payments, and full ownership of my work.",
+      name: "Adwait Keshari",
+      position: "Blockchain developer, full stack developer, data scientist, SMM, devrel",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=adwaitkeshari288", // LinkedIn DP
+      quote: "Decentralization is the future.",
+      linkedin: "https://www.linkedin.com/in/adwait-keshari-b5793b294/"
     },
     {
       id: 4,
-      name: "Darren Dunlap",
-      position: "Product Manager",
-      profilePic:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      quote:
-        "The smartest move I made as a freelancer — no middlemen, instant payments, and full ownership of my work.",
+      name: "Shivansh Anand",
+      position: "MERN Developer, React native, frontend, backend, figma for ui/ux",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=shivanshanand962", // LinkedIn DP
+      quote: "Design. Develop. Deliver.",
+      linkedin: "https://www.linkedin.com/in/shivansh-anand-%F0%9F%93%88-aa48851b8/"
+    },
+    {
+      id: 5,
+      name: "Harsh Pandey",
+      position: "Blockchain Developer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=hp7556513", // LinkedIn DP
+      quote: "Code is my superpower.",
+      linkedin: "https://www.linkedin.com/in/harsh-pandey-aa783925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      id: 6,
+      name: "Abhishek Jadhav",
+      position: "Full Stack Developer (web3)",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=abhishek3jadhav", // LinkedIn DP
+      quote: "Building dApps for a decentralized world.",
+      linkedin: "https://www.linkedin.com/in/AbhishekJadhav2002"
+    },
+    {
+      id: 7,
+      name: "Sujal Joshi",
+      position: "Machine Learning / Deep Learning / NLP / CV / AI",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=sujaljoshi280", // LinkedIn DP
+      quote: "AI is the new electricity.",
+      linkedin: "https://www.linkedin.com/in/sujaljoshi19"
+    },
+    {
+      id: 8,
+      name: "Antony Nelson",
+      position: "Work from home",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=antonynelson139", // LinkedIn DP
+      quote: "Remote work, real results.",
+      linkedin: "#"
+    },
+    {
+      id: 9,
+      name: "Durgesh Kumar Prajapati",
+      position: "Web Developer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=durgeshkumar4993", // LinkedIn DP
+      quote: "Web is my playground.",
+      linkedin: "https://www.linkedin.com/in/durgesh4993/"
+    },
+    {
+      id: 10,
+      name: "Chandra Shekhar Choudhary",
+      position: "Full stack Blockchain developer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=chandrashekhariamcc", // LinkedIn DP
+      quote: "Blockchain for everyone.",
+      linkedin: "https://www.linkedin.com/in/chandra-shekhar-choudhary-a0a8b590?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      id: 11,
+      name: "Muskan Bansal",
+      position: "Data Scientist",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=muskanbansal0304", // LinkedIn DP
+      quote: "Data is the new oil.",
+      linkedin: "https://www.linkedin.com/in/muskanbansal123"
+    },
+    {
+      id: 12,
+      name: "Salma Shaik",
+      position: "Web 3",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=sandisandisnow1089", // LinkedIn DP
+      quote: "Web3 for all.",
+      linkedin: "https://www.linkedin.com/in/shaik-saleema-890573260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      id: 13,
+      name: "Buddhika Perera",
+      position: "Technical Consultant and CTO",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=itsdjBp", // LinkedIn DP
+      quote: "Tech for good.",
+      linkedin: "https://www.linkedin.com/in/buddhika-perera/"
+    },
+    {
+      id: 14,
+      name: "Vivek Kumar",
+      position: "Product Designer",
+      profilePic: "https://media.licdn.com/dms/image/D4D03AQF1Qw6Qw8Qw8A/profile-displayphoto-shrink_100_100/0/1689000000000?e=2147483647&v=beta&t=vivek9mehta09", // LinkedIn DP
+      quote: "Designing the future.",
+      linkedin: "https://www.linkedin.com/in/vivek-kumar-ux-designer/"
     },
   ];
 
@@ -89,6 +165,26 @@ const Sect8 = () => {
         <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
           Why Freelancers Love ICPWork ?
         </h2>
+        {/* Audi logo style 14 LinkedIn DP circles */}
+        <div className="flex justify-center items-center mb-6 gap-2 flex-wrap">
+          {testimonials.map((person, idx) => (
+            <a
+              key={person.id}
+              href={person.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={person.name}
+              className="inline-block rounded-full border-2 border-blue-400 hover:border-purple-600 transition-all duration-200 shadow-md w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 overflow-hidden bg-white"
+              style={{ marginLeft: idx === 0 ? 0 : -12, zIndex: 14 - idx }}
+            >
+              <img
+                src={person.profilePic}
+                alt={person.name}
+                className="w-full h-full object-cover rounded-full"
+              />
+            </a>
+          ))}
+        </div>
         <p className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-700 mb-8 xs:mb-12 sm:mb-16 lg:mb-18 xl:mb-20 2xl:mb-24 max-w-8xl mx-auto leading-relaxed px-2 xs:px-0">
           At ICPWork, we're redefining the future of freelancing — fully
           on-chain, censorship-resistant, and community-led. Our users aren't
