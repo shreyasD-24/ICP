@@ -26,7 +26,7 @@ function Navbar() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex grow justify-center space-x-3 lg:space-x-4 xl:space-x-5 2xl:space-x-8 3xl:space-x-10 4xl:space-x-12 5xl:space-x-16 text-base lg:text-lg xl:text-lg 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl">
+      <div className="hidden lg:flex grow justify-center space-x-3 lg:space-x-4 xl:space-x-5 2xl:space-x-8 3xl:space-x-10 4xl:space-x-12 5xl:space-x-16 text-base lg:text-lg xl:text-base 2xl:text-lg 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl 6xl:text-6xl">
         <a
           href="#home"
           className="hover:text-blue-600 hover:scale-105 cursor-pointer transition-all duration-300 font-medium relative group"
@@ -73,7 +73,7 @@ function Navbar() {
 
       {/* Desktop Get Started Button - Black Background with Gradient Border */}
       <button
-        className="hidden lg:block relative px-6 lg:px-7 xl:px-9 2xl:px-12 3xl:px-14 4xl:px-16 5xl:px-20 6xl:px-24 py-2.5 lg:py-3 xl:py-3.5 2xl:py-5 3xl:py-6 4xl:py-7 5xl:py-8 6xl:py-10 rounded-[20px] font-semibold text-sm lg:text-base xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-white active:scale-95 transition-all duration-500"
+        className="hidden lg:block relative px-6 lg:px-7 xl:px-9 2xl:px-12 3xl:px-14 4xl:px-16 5xl:px-20 6xl:px-24 py-2.5 lg:py-3 xl:py-3.5 2xl:py-5 3xl:py-6 4xl:py-7 5xl:py-8 6xl:py-10 rounded-[20px] font-semibold text-sm lg:text-base xl:text-sm 2xl:text-base 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl 6xl:text-5xl text-white active:scale-95 transition-all duration-500"
         style={{
           background: "transparent",
           boxShadow: `
