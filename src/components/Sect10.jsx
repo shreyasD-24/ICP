@@ -4,11 +4,11 @@ const Sect10 = () => {
   return (
     <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-10 xl:py-8 2xl:py-8">
       <div className="max-w-[133rem] mx-auto">
-        <div className="flex flex-col lg:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-0 lg:space-x-8 xl:space-x-12 2xl:space-x-16 3xl:space-x-20 my-4 xs:my-6 sm:my-8 md:my-10 lg:my-12 xl:my-8 mb-[1rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[4rem]">
+        <div className="flex flex-col lg:flex-row justify-center items-center space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-0 lg:space-x-8 xl:space-x-6 2xl:space-x-10 3xl:space-x-20 my-4 xs:my-6 sm:my-8 md:my-10 lg:my-12 xl:my-6 2xl:my-8 mb-[1rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[2rem] 2xl:mb-[3rem]">
           <div className="w-full lg:w-[48%] xl:w-[46%] 2xl:w-[44%] text-center lg:text-left">
             {/* No changes to content */}
             <div
-              className="p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-4 2xl:p-4.5 rounded-[12px] xs:rounded-[14px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[22px] xl:rounded-[24px] 2xl:rounded-[26px] inline-block text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl font-semibold font-sans mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8 text-black"
+              className="p-1.5 xs:p-2 sm:p-2.5 md:p-3 lg:p-3.5 xl:p-3 2xl:p-3.5 rounded-[12px] xs:rounded-[14px] sm:rounded-[18px] md:rounded-[20px] lg:rounded-[22px] xl:rounded-[18px] 2xl:rounded-[20px] inline-block text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-base 2xl:text-lg font-semibold font-sans mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-5 2xl:mb-6 text-black"
               style={{
                 background: `linear-gradient(135deg,
                   rgba(41, 163, 218, 0.5) 0%,
@@ -21,17 +21,17 @@ const Sect10 = () => {
             >
               Empower your business with unmatched expertise
             </div>
-            <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold mb-2 xs:mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-5 leading-tight">
+            <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-8xl 4xl:text-9xl font-bold mb-2 xs:mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-3 2xl:mb-4 leading-tight">
               ICP Work: Unleashing Potential, Delivering Excellence
             </h2>
-            <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl text-gray-600 mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-8 leading-relaxed">
+            <p className="text-sm xs:text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-xl 2xl:text-2xl 3xl:text-6xl 4xl:text-7xl text-gray-600 mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-5 2xl:mb-6 leading-relaxed">
               Your Gateway to the Elite Freelance revolution
             </p>
 
             {/* Subscribe Newsletter Button */}
             <div className="flex justify-center lg:justify-start mb-8 xs:mb-10 sm:mb-12 md:mb-8 lg:mb-0">
               <button
-                className="relative mt-3 xs:mt-4 sm:mt-5 md:mt-6 lg:mt-6 xl:mt-8 px-8 xs:px-10 sm:px-12 md:px-16 lg:px-18 xl:px-20 2xl:px-24 py-3 xs:py-3.5 sm:py-4 md:py-5 lg:py-5 xl:py-6 2xl:py-7 rounded-[20px] font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-black active:scale-95 transition-all duration-300 group"
+                className="relative mt-3 xs:mt-4 sm:mt-5 md:mt-6 lg:mt-6 xl:mt-5 2xl:mt-6 px-8 xs:px-10 sm:px-12 md:px-16 lg:px-18 xl:px-12 2xl:px-16 py-3 xs:py-3.5 sm:py-4 md:py-5 lg:py-5 xl:py-4 2xl:py-5 rounded-[20px] font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-lg 2xl:text-xl text-black active:scale-95 transition-all duration-300 group"
                 style={{
                   background: "white",
                   boxShadow: `
@@ -115,7 +115,7 @@ const Sect10 = () => {
 
           <div className="w-full lg:w-[48%] xl:w-[46%] 2xl:w-[44%] flex justify-center">
             <div
-              className="p-2 xs:p-3 sm:p-4 md:p-5 lg:p-5 xl:p-8 2xl:p-10 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[1.5rem] xl:rounded-[2.5rem] 2xl:rounded-[3rem] inline-block shadow-lg"
+              className="p-2 xs:p-3 sm:p-4 md:p-5 lg:p-5 xl:p-4 2xl:p-6 rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-[1.5rem] xl:rounded-[1.2rem] 2xl:rounded-[2rem] inline-block shadow-lg"
               style={{
                 background: `linear-gradient(135deg,
                 rgba(41, 163, 218, 0.5) 0%,
@@ -129,7 +129,7 @@ const Sect10 = () => {
               <img
                 src={img}
                 alt="Section 10"
-                className="w-[18rem] xs:w-[22rem] sm:w-[38rem] md:w-[44rem] lg:w-[42rem] xl:w-[56rem] 2xl:w-[62rem] 3xl:w-[68rem] 4xl:w-[74rem] h-48 xs:h-56 sm:h-96 md:h-[28rem] lg:h-[26rem] xl:h-[38rem] 2xl:h-[44rem] 3xl:h-[50rem] 4xl:h-[56rem] rounded-md xs:rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[1rem] xl:rounded-[2rem] 2xl:rounded-[2.5rem] shadow-lg border-2 xs:border-3 sm:border-4 md:border-6 lg:border-6 xl:border-[0.75rem] 2xl:border-[1rem] 3xl:border-[1.25rem] border-white object-cover"
+                className="w-[18rem] xs:w-[22rem] sm:w-[38rem] md:w-[44rem] lg:w-[42rem] xl:w-[40rem] 2xl:w-[48rem] 3xl:w-[68rem] 4xl:w-[74rem] h-48 xs:h-56 sm:h-96 md:h-[28rem] lg:h-[26rem] xl:h-[24rem] 2xl:h-[30rem] 3xl:h-[50rem] 4xl:h-[56rem] rounded-md xs:rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[1rem] xl:rounded-[0.8rem] 2xl:rounded-[1.5rem] shadow-lg border-2 xs:border-3 sm:border-4 md:border-6 lg:border-6 xl:border-4 2xl:border-6 3xl:border-[1.25rem] border-white object-cover"
               />
             </div>
           </div>

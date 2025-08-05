@@ -10,127 +10,156 @@ const Sect8 = () => {
       id: 13,
       name: "Buddhika Perera",
       position: "Technical Consultant and CTO",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQE6spve63ho0w/profile-displayphoto-shrink_200_200/B4EZUoWVciH0AY-/0/1740138703499?e=1756944000&v=beta&t=2ohSn6y08ZFXhLKwO2BL76Wa_W1ptFCvFpPqBIuk1Lw",
-      quote: "ICPWork is the platform I recommend to any serious builder. The level of professionalism, speed of onboarding, and commitment to Web3 values make it a no-brainer. As a CTO, I’ve found exceptional talent and shipped high-impact work, fast.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4E03AQE6spve63ho0w/profile-displayphoto-shrink_200_200/B4EZUoWVciH0AY-/0/1740138703499?e=1756944000&v=beta&t=2ohSn6y08ZFXhLKwO2BL76Wa_W1ptFCvFpPqBIuk1Lw",
+      quote:
+        "ICPWork is the platform I recommend to any serious builder. The level of professionalism, speed of onboarding, and commitment to Web3 values make it a no-brainer. As a CTO, I’ve found exceptional talent and shipped high-impact work, fast.",
       linkedin: "https://www.linkedin.com/in/buddhika-perera/",
-      x: "https://x.com/buddhikapp"
+      x: "https://x.com/buddhikapp",
     },
     {
       id: 14,
       name: "Vivek Kumar",
       position: "Product Designer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQF1Pezus7iV_w/profile-displayphoto-shrink_200_200/B4EZSPGsH4GwAc-/0/1737567684365?e=1756944000&v=beta&t=-9EjNZgfRQMevkz2NKxEYKyaOtmSYG_i5SYJYS3afEQ",
-      quote: "As a product designer, I value clarity, collaboration, and speed. ICPWork delivers all three. The projects are real, the expectations are clear, and the Web3-native workflows allow me to focus on what matters—building beautiful, functional products.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4E03AQF1Pezus7iV_w/profile-displayphoto-shrink_200_200/B4EZSPGsH4GwAc-/0/1737567684365?e=1756944000&v=beta&t=-9EjNZgfRQMevkz2NKxEYKyaOtmSYG_i5SYJYS3afEQ",
+      quote:
+        "As a product designer, I value clarity, collaboration, and speed. ICPWork delivers all three. The projects are real, the expectations are clear, and the Web3-native workflows allow me to focus on what matters—building beautiful, functional products.",
       linkedin: "https://www.linkedin.com/in/vivek-kumar-ux-designer/",
-      x: "https://x.com/Cmonvivek"
+      x: "https://x.com/Cmonvivek",
     },
     {
       id: 1,
       name: "Aman Sagar",
       position: "Fullstack Engineer",
       profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
-      quote: "ICPWork has completely changed how I approach freelance projects. The platform’s speed, transparency, and developer-first mindset make it feel like it was built by engineers—for engineers. I’ve finally found a place where I can focus on shipping great code, not chasing payments.",
+      quote:
+        "ICPWork has completely changed how I approach freelance projects. The platform’s speed, transparency, and developer-first mindset make it feel like it was built by engineers—for engineers. I’ve finally found a place where I can focus on shipping great code, not chasing payments.",
       linkedin: "https://www.linkedin.com/in/aman-sagar-362497137/",
-      x: "https://x.com/amanzrx"
+      x: "https://x.com/amanzrx",
     },
     {
       id: 2,
       name: "Prince Pal",
       position: "Full Stack Web3 Developer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D5603AQGOUG4CfSPe5A/profile-displayphoto-shrink_200_200/B56ZP9PGfGHIAY-/0/1735120415215?e=1756944000&v=beta&t=h7_u1D09Sdpwt3BBJtgUNLS7eMAH3ajoIenDwXBqV1Q",
-      quote: "Working through ICPWork has given me consistent, high-quality projects and the trust of global clients. The onboarding was seamless, and the Web3-native ecosystem makes it easy to collaborate and get paid in crypto without headaches.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D5603AQGOUG4CfSPe5A/profile-displayphoto-shrink_200_200/B56ZP9PGfGHIAY-/0/1735120415215?e=1756944000&v=beta&t=h7_u1D09Sdpwt3BBJtgUNLS7eMAH3ajoIenDwXBqV1Q",
+      quote:
+        "Working through ICPWork has given me consistent, high-quality projects and the trust of global clients. The onboarding was seamless, and the Web3-native ecosystem makes it easy to collaborate and get paid in crypto without headaches.",
       linkedin: "https://linkedin.com/in/princeai",
-      x: "https://x.com/prince_twets"
+      x: "https://x.com/prince_twets",
     },
     {
       id: 3,
       name: "Adwait Keshari",
       position: "Blockchain & Fullstack Developer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D5635AQE6_j_Wnd_dyQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1737572501539?e=1754838000&v=beta&t=a6PYoRJkIMCryCZcXs7onzQZ8Qb91thG5zrjhilRfOs",
-      quote: "As someone who builds dApps and backend systems, I appreciate how ICPWork empowers developers like me with real ownership and on-chain transparency. It’s more than just a freelancing site—it's a network of serious builders.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D5635AQE6_j_Wnd_dyQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1737572501539?e=1754838000&v=beta&t=a6PYoRJkIMCryCZcXs7onzQZ8Qb91thG5zrjhilRfOs",
+      quote:
+        "As someone who builds dApps and backend systems, I appreciate how ICPWork empowers developers like me with real ownership and on-chain transparency. It’s more than just a freelancing site—it's a network of serious builders.",
       linkedin: "https://www.linkedin.com/in/adwait-keshari-b5793b294/",
-      x: "https://x.com/AdwaitKeshari"
+      x: "https://x.com/AdwaitKeshari",
     },
     {
       id: 4,
       name: "Shivansh Anand",
       position: "MERN & React Native Developer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D5635AQGmz2f8kJo1DQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1735383464850?e=1754838000&v=beta&t=8B5btJoW6795Jsz3hkBc_TWlM1HRRJD7EfbrSgyoSeA",
-      quote: "What sets ICPWork apart is its simplicity and credibility. It’s rare to find a platform that respects both your time and your talent. I’ve grown my portfolio and landed amazing gigs without the usual platform noise.",
-      linkedin: "https://www.linkedin.com/in/shivansh-anand-%F0%9F%93%88-aa48851b8/",
-      x: ""
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D5635AQGmz2f8kJo1DQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1735383464850?e=1754838000&v=beta&t=8B5btJoW6795Jsz3hkBc_TWlM1HRRJD7EfbrSgyoSeA",
+      quote:
+        "What sets ICPWork apart is its simplicity and credibility. It’s rare to find a platform that respects both your time and your talent. I’ve grown my portfolio and landed amazing gigs without the usual platform noise.",
+      linkedin:
+        "https://www.linkedin.com/in/shivansh-anand-%F0%9F%93%88-aa48851b8/",
+      x: "",
     },
     {
       id: 5,
       name: "Harsh Pandey",
       position: "Blockchain Developer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQFowV1MqN_ZNg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703658210621?e=1756944000&v=beta&t=rygCp4RJ8MmcUB03uHOfU4U1RvoRYcpl6_o0KIboshU",
-      quote: "ICPWork is a game-changer for blockchain devs. I’ve connected with serious clients and shipped meaningful work. The smart contract-based system ensures payments are fast and fair—and that’s what freelancers need most.",
-      linkedin: "https://www.linkedin.com/in/harsh-pandey-aa783925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      x: "https://x.com/HarshPandey9984?t=jcRv2XPHxLfzCUijL7ZTqA&s=09"
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4D03AQFowV1MqN_ZNg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703658210621?e=1756944000&v=beta&t=rygCp4RJ8MmcUB03uHOfU4U1RvoRYcpl6_o0KIboshU",
+      quote:
+        "ICPWork is a game-changer for blockchain devs. I’ve connected with serious clients and shipped meaningful work. The smart contract-based system ensures payments are fast and fair—and that’s what freelancers need most.",
+      linkedin:
+        "https://www.linkedin.com/in/harsh-pandey-aa783925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: "https://x.com/HarshPandey9984?t=jcRv2XPHxLfzCUijL7ZTqA&s=09",
     },
     {
       id: 6,
       name: "Abhishek Jadhav",
       position: "Web3 Developer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQHAvWzRLAldEg/profile-displayphoto-shrink_200_200/B4DZSa2cGWHUAY-/0/1737764750200?e=1756944000&v=beta&t=UHzoMpXcRUWoagiSNidqtA2e0p9wCc2d7btpa6dYW38",
-      quote: "ICPWork stands out as a platform that understands Web3. The tools, the people, and the culture make it easier to focus on impact-driven code. It’s where I go when I want to work with teams who actually care about decentralization.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4D03AQHAvWzRLAldEg/profile-displayphoto-shrink_200_200/B4DZSa2cGWHUAY-/0/1737764750200?e=1756944000&v=beta&t=UHzoMpXcRUWoagiSNidqtA2e0p9wCc2d7btpa6dYW38",
+      quote:
+        "ICPWork stands out as a platform that understands Web3. The tools, the people, and the culture make it easier to focus on impact-driven code. It’s where I go when I want to work with teams who actually care about decentralization.",
       linkedin: "https://www.linkedin.com/in/AbhishekJadhav2002",
-      x: "https://x.com/Abhishek_Jadhv"
+      x: "https://x.com/Abhishek_Jadhv",
     },
     {
       id: 7,
       name: "Sujal Joshi",
       position: "Smart Contract Engineer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQGvv-vYqBcnFQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715405746427?e=1756944000&v=beta&t=R0lGZGyVfkatPy5WV1T0Bpzh4t2XMrCK-Vysb-3ccR0",
-      quote: "Freelancing through ICPWork gives me the freedom to build and scale meaningful projects. The escrowed smart contracts and milestone-based payments remove all the stress from the equation. I feel like my time is finally valued.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4E03AQGvv-vYqBcnFQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715405746427?e=1756944000&v=beta&t=R0lGZGyVfkatPy5WV1T0Bpzh4t2XMrCK-Vysb-3ccR0",
+      quote:
+        "Freelancing through ICPWork gives me the freedom to build and scale meaningful projects. The escrowed smart contracts and milestone-based payments remove all the stress from the equation. I feel like my time is finally valued.",
       linkedin: "https://www.linkedin.com/in/sujaljoshi19",
-      x: ""
+      x: "",
     },
     {
       id: 8,
       name: "Antony Nelson",
       position: "DevOps & Backend Specialist",
       profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
-      quote: "Most freelance platforms don’t get backend workflows—but ICPWork does. Their system runs like clockwork, with strong infrastructure and real respect for technical contributors. It’s the most developer-centric environment I’ve worked in.",
+      quote:
+        "Most freelance platforms don’t get backend workflows—but ICPWork does. Their system runs like clockwork, with strong infrastructure and real respect for technical contributors. It’s the most developer-centric environment I’ve worked in.",
       linkedin: "#",
-      x: ""
+      x: "",
     },
     {
       id: 9,
       name: "Durgesh Kumar Prajapati",
       position: "Blockchain Security Auditor",
-      profilePic: "https://media.licdn.com/dms/image/v2/D5603AQHi-NH2yZk9ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713095690520?e=1756944000&v=beta&t=hKeneOEhKrZp8t3Js5T3BNle7JmPJeKvjRdQXsJ14d0",
-      quote: "ICPWork is more than just a place to find gigs—it’s a hub for top-tier blockchain talent. The quality of projects and level of professionalism I’ve experienced here is unmatched. Every project feels like a serious collaboration.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D5603AQHi-NH2yZk9ew/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713095690520?e=1756944000&v=beta&t=hKeneOEhKrZp8t3Js5T3BNle7JmPJeKvjRdQXsJ14d0",
+      quote:
+        "ICPWork is more than just a place to find gigs—it’s a hub for top-tier blockchain talent. The quality of projects and level of professionalism I’ve experienced here is unmatched. Every project feels like a serious collaboration.",
       linkedin: "https://www.linkedin.com/in/durgesh4993/",
-      x: "https://twitter.com/durgesh4993"
+      x: "https://twitter.com/durgesh4993",
     },
     {
       id: 10,
       name: "Chandra Shekhar Choudhary",
       position: "Software Engineer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4D03AQEfbePX8wqzfw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723100595084?e=1756944000&v=beta&t=dLIzupbxtV2px2GTQ_W0AfEN5C3kmxCakcjPX2gd_X4",
-      quote: "What I love most about ICPWork is the trust. The clients are authentic, the deliverables are clear, and the payments are automated. It’s the kind of platform that actually values both sides of the table—clients and freelancers.",
-      linkedin: "https://www.linkedin.com/in/chandra-shekhar-choudhary-a0a8b590?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      x: "https://x.com/chandu23531353?t=bfVUOTaDwVIC_M-f1xn-GQ&s=09"
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4D03AQEfbePX8wqzfw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723100595084?e=1756944000&v=beta&t=dLIzupbxtV2px2GTQ_W0AfEN5C3kmxCakcjPX2gd_X4",
+      quote:
+        "What I love most about ICPWork is the trust. The clients are authentic, the deliverables are clear, and the payments are automated. It’s the kind of platform that actually values both sides of the table—clients and freelancers.",
+      linkedin:
+        "https://www.linkedin.com/in/chandra-shekhar-choudhary-a0a8b590?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: "https://x.com/chandu23531353?t=bfVUOTaDwVIC_M-f1xn-GQ&s=09",
     },
     {
       id: 11,
       name: "Muskan Bansal",
       position: "UI/UX Designer",
-      profilePic: "https://media.licdn.com/dms/image/v2/D4E03AQG4hAAhccrfXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1733022941709?e=1756944000&v=beta&t=KWhxcNbkndEu5VTsqIuzd5VkW2-on48E5GyKnSrOS6Q",
-      quote: "Designing for Web3 startups can be chaotic—unless you’re on ICPWork. The structured processes, transparent scopes, and forward-thinking teams make every project a creative partnership. I feel seen and supported here.",
+      profilePic:
+        "https://media.licdn.com/dms/image/v2/D4E03AQG4hAAhccrfXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1733022941709?e=1756944000&v=beta&t=KWhxcNbkndEu5VTsqIuzd5VkW2-on48E5GyKnSrOS6Q",
+      quote:
+        "Designing for Web3 startups can be chaotic—unless you’re on ICPWork. The structured processes, transparent scopes, and forward-thinking teams make every project a creative partnership. I feel seen and supported here.",
       linkedin: "https://www.linkedin.com/in/muskanbansal123",
-      x: ""
+      x: "",
     },
     {
       id: 12,
       name: "Salma Shaik",
       position: "Frontend Developer",
       profilePic: "https://cdn-icons-png.flaticon.com/512/21/21104.png",
-      quote: "ICPWork brings together serious teams and talented devs in a way that feels collaborative and fair. From clean project specs to reliable payments, every detail has been thought through. It’s the best experience I’ve had freelancing.",
-      linkedin: "https://www.linkedin.com/in/shaik-saleema-890573260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      x: ""
+      quote:
+        "ICPWork brings together serious teams and talented devs in a way that feels collaborative and fair. From clean project specs to reliable payments, every detail has been thought through. It’s the best experience I’ve had freelancing.",
+      linkedin:
+        "https://www.linkedin.com/in/shaik-saleema-890573260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      x: "",
     },
   ];
 
@@ -156,10 +185,10 @@ const Sect8 = () => {
   const current = testimonials[currentTestimonial];
 
   return (
-    <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14">
+    <div className="px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-16 2xl:px-20 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-10 2xl:py-12 3xl:py-14">
       <div
         ref={testimonialsRef}
-        className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16 text-center mx-auto w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] transition-all duration-200 ease-in-out"
+        className="bg-gray-100 rounded-lg xs:rounded-xl sm:rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-10 2xl:p-12 3xl:p-16 text-center mx-auto w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[88%] 2xl:max-w-[85%] 3xl:max-w-[80%] transition-all duration-200 ease-in-out"
         style={{
           filter: "none",
           transition: "filter 0.2s ease-in-out",
@@ -176,7 +205,7 @@ const Sect8 = () => {
           }
         }}
       >
-        <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
+        <h2 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-10 2xl:mb-12 3xl:mb-16">
           Why Freelancers Love ICPWork ?
         </h2>
         {/* Audi logo style 14 LinkedIn DP circles */}
@@ -188,8 +217,8 @@ const Sect8 = () => {
               target="_blank"
               rel="noopener noreferrer"
               title={person.name}
-              className="inline-block rounded-full border-2 border-blue-400 hover:border-purple-600 transition-all duration-200 shadow-md w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 overflow-hidden bg-white"
-              style={{ marginLeft: idx === 0 ? 0 : -40, zIndex: 14 - idx }}
+              className="inline-block rounded-full border-2 border-blue-400 hover:border-purple-600 transition-all duration-200 shadow-md w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 overflow-hidden bg-white"
+              style={{ marginLeft: idx === 0 ? 0 : -32, zIndex: 14 - idx }}
             >
               <img
                 src={person.profilePic}
@@ -199,7 +228,7 @@ const Sect8 = () => {
             </a>
           ))}
         </div>
-        <p className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-700 mb-8 xs:mb-12 sm:mb-16 lg:mb-18 xl:mb-20 2xl:mb-24 max-w-8xl mx-auto leading-relaxed px-2 xs:px-0">
+        <p className="text-sm xs:text-base sm:text-lg lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-700 mb-8 xs:mb-12 sm:mb-16 lg:mb-18 xl:mb-16 2xl:mb-20 3xl:mb-24 max-w-8xl mx-auto leading-relaxed px-2 xs:px-0">
           At ICPWork, we're redefining the future of freelancing — fully
           on-chain, censorship-resistant, and community-led. Our users aren't
           just freelancers or clients; they're Web3 pioneers shaping how work
@@ -207,7 +236,7 @@ const Sect8 = () => {
         </p>
 
         {/* Testimonial Carousel */}
-        <div className="rounded-lg xs:rounded-xl p-1 xs:p-2 sm:p-4 md:p-6 lg:p-6 xl:p-8 mx-auto">
+        <div className="rounded-lg xs:rounded-xl p-1 xs:p-2 sm:p-4 md:p-6 lg:p-6 xl:p-6 2xl:p-7 3xl:p-8 mx-auto">
           {/* Mobile Layout */}
           <div className="flex flex-col sm:hidden space-y-4">
             {/* Testimonial Content */}
@@ -217,14 +246,14 @@ const Sect8 = () => {
                 <img
                   src={current.profilePic}
                   alt={current.name}
-                  className="w-16 h-16 rounded-full object-cover"
+                  className="w-12 h-12 rounded-full object-cover"
                 />
                 <div className="text-center">
-                  <h3 className="font-semibold text-base text-gray-900">
+                  <h3 className="font-semibold text-sm text-gray-900">
                     {current.name}
                   </h3>
-                  <p className="text-gray-600 text-sm">{current.position}</p>
-                  <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 mt-1">
+                  <p className="text-gray-600 text-xs">{current.position}</p>
+                  <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 mt-1">
                     {current.x && (
                       <a
                         href={current.x}
@@ -234,7 +263,7 @@ const Sect8 = () => {
                         rel="noopener noreferrer"
                       >
                         <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -251,7 +280,7 @@ const Sect8 = () => {
                         rel="noopener noreferrer"
                       >
                         <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -265,7 +294,7 @@ const Sect8 = () => {
 
               {/* Quote Section */}
               <div className="text-center max-w-2xl">
-                <p className="text-gray-800 text-base leading-relaxed font-bold">
+                <p className="text-gray-800 text-sm leading-relaxed font-bold">
                   "{current.quote}"
                 </p>
               </div>
@@ -336,22 +365,22 @@ const Sect8 = () => {
             </button>
 
             {/* Testimonial Content */}
-            <div className="flex flex-row items-start justify-center text-left flex-1 space-x-4 sm:space-x-24 lg:space-x-28 xl:space-x-32 2xl:space-x-40 3xl:space-x-48 4xl:space-x-56">
+            <div className="flex flex-row items-start justify-center text-left flex-1 space-x-4 sm:space-x-24 lg:space-x-28 xl:space-x-24 2xl:space-x-32 3xl:space-x-48 4xl:space-x-56">
               {/* Profile Section */}
-              <div className="flex flex-row items-center space-x-3 sm:space-x-4 lg:space-x-5 xl:space-x-6 flex-shrink-0">
+              <div className="flex flex-row items-center space-x-3 sm:space-x-4 lg:space-x-5 xl:space-x-3 2xl:space-x-4 3xl:space-x-5 flex-shrink-0">
                 <img
                   src={current.profilePic}
                   alt={current.name}
-                  className="w-14 h-14 sm:w-20 sm:h-20 lg:w-28 lg:h-28 xl:w-40 xl:h-40 2xl:w-28 2xl:h-28 3xl:w-32 3xl:h-32 rounded-full object-cover"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 3xl:w-24 3xl:h-24 rounded-full object-cover"
                 />
                 <div className="text-left">
-                  <h3 className="font-semibold text-base sm:text-lg lg:text-xl xl:text-3xl 2xl:text-2xl text-gray-900">
+                  <h3 className="font-semibold text-sm sm:text-base lg:text-lg xl:text-base 2xl:text-lg 3xl:text-xl text-gray-900">
                     {current.name}
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg xl:text-2xl 2xl:text-xl">
+                  <p className="text-gray-600 text-xs sm:text-sm lg:text-base xl:text-sm 2xl:text-base 3xl:text-lg">
                     {current.position}
                   </p>
-                  <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 mt-1">
+                  <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-4 mt-1">
                     {current.x && (
                       <a
                         href={current.x}
@@ -361,7 +390,7 @@ const Sect8 = () => {
                         rel="noopener noreferrer"
                       >
                         <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -378,7 +407,7 @@ const Sect8 = () => {
                         rel="noopener noreferrer"
                       >
                         <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                          className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -391,8 +420,8 @@ const Sect8 = () => {
               </div>
 
               {/* Quote Section */}
-              <div className="flex-1 text-left max-w-2xl lg:max-w-2xl xl:max-w-4xl 2xl:max-w-4xl">
-                <p className="text-gray-800 text-base sm:text-lg lg:text-xl xl:text-3xl 2xl:text-2xl 3xl:text-3xl leading-relaxed font-bold">
+              <div className="flex-1 text-left max-w-2xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
+                <p className="text-gray-800 text-sm sm:text-base lg:text-lg xl:text-base 2xl:text-lg 3xl:text-2xl leading-relaxed font-bold">
                   "{current.quote}"
                 </p>
               </div>
@@ -420,7 +449,7 @@ const Sect8 = () => {
           </div>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center mt-2 xs:mt-3 sm:mt-4 lg:mt-5 xl:mt-6 space-x-1 xs:space-x-1.5 sm:space-x-2">
+          <div className="flex justify-center mt-2 xs:mt-3 sm:mt-4 lg:mt-5 xl:mt-4 2xl:mt-5 3xl:mt-6 space-x-1 xs:space-x-1.5 sm:space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -437,7 +466,7 @@ const Sect8 = () => {
       {/* Feedback Section */}
       <div
         ref={feedbackRef}
-        className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-24 2xl:mt-28 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[85%] 2xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-22 2xl:px-24 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-12 2xl:py-14"
+        className="mx-auto mt-16 xs:mt-20 sm:mt-16 md:mt-20 lg:mt-22 xl:mt-20 2xl:mt-24 3xl:mt-32 w-full max-w-[100%] xs:max-w-[98%] sm:max-w-[95%] md:max-w-[90%] lg:max-w-[87%] xl:max-w-[88%] 2xl:max-w-[85%] 3xl:max-w-[80%] bg-white rounded-lg sm:rounded-xl lg:rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 px-4 xs:px-6 sm:px-16 md:px-18 lg:px-20 xl:px-16 2xl:px-20 3xl:px-28 4xl:px-32 5xl:px-36 py-8 xs:py-6 sm:py-10 lg:py-11 xl:py-10 2xl:py-12 3xl:py-14"
         style={{
           filter: "none",
           transition: "filter 0.2s ease-in-out",
@@ -456,12 +485,12 @@ const Sect8 = () => {
       >
         {/* Made with heart */}
         <div className="flex items-center justify-center mb-2 xs:mb-3 sm:mb-5 lg:mb-8 xl:mb-11 opacity-100">
-          <span className="text-lg xs:text-xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-400 mr-2 xs:mr-3 sm:mr-4 font-bold">
+          <span className="text-lg xs:text-xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl text-gray-400 mr-2 xs:mr-3 sm:mr-4 font-bold">
             Made with
           </span>
           <div className="relative">
             <svg
-              className="w-6 h-6 xs:w-8 xs:h-8 sm:w-14 sm:h-14 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 text-red-500"
+              className="w-6 h-6 xs:w-8 xs:h-8 sm:w-14 sm:h-14 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 3xl:w-20 3xl:h-20 text-red-500"
               height="200px"
               width="200px"
               version="1.1"
@@ -487,17 +516,17 @@ const Sect8 = () => {
           </div>
         </div>
 
-        <h3 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold text-gray-900 mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16">
+        <h3 className="text-lg xs:text-xl sm:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-7xl 5xl:text-8xl font-bold text-gray-900 mb-4 xs:mb-6 sm:mb-8 lg:mb-10 xl:mb-8 2xl:mb-10 3xl:mb-16">
           Got Feedback for ICPWork?
         </h3>
-        <p className="text-gray-600 text-sm xs:text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl mb-6 xs:mb-8 sm:mb-10 lg:mb-12 xl:mb-14 2xl:mb-18 leading-relaxed">
+        <p className="text-gray-600 text-sm xs:text-base sm:text-lg lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl mb-6 xs:mb-8 sm:mb-10 lg:mb-12 xl:mb-10 2xl:mb-12 3xl:mb-18 leading-relaxed">
           <b>Still Have Suggestions?</b>
           <br />
           We're building ICPWork with our community — and your input shapes
           every feature. Whether you're a developer, freelancer, or curious
           explorer, we want to hear from you.
         </p>
-        <p className="text-gray-800 text-sm xs:text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl mb-4 xs:mb-6 sm:mb-8 lg:mb-12 xl:mb-16 font-medium lg:font-semibold">
+        <p className="text-gray-800 text-sm xs:text-base sm:text-lg lg:text-xl xl:text-lg 2xl:text-xl 3xl:text-4xl 4xl:text-5xl mb-4 xs:mb-6 sm:mb-8 lg:mb-12 xl:mb-8 2xl:mb-10 3xl:mb-16 font-medium lg:font-semibold">
           Drop your valuable feedback below:
         </p>
 
@@ -505,13 +534,13 @@ const Sect8 = () => {
           <div className="relative max-w-7xl">
             <textarea
               placeholder="Please describe your idea or suggestion clearly..."
-              className="w-full p-3 xs:p-4 sm:p-6 lg:p-8 xl:p-10 border-2 border-gray-200 hover:border-gray-300 focus:border-blue-500 rounded-lg sm:rounded-xl lg:rounded-2xl resize-none h-24 xs:h-28 sm:h-32 lg:h-40 xl:h-48 text-sm xs:text-base sm:text-lg lg:text-xl xl:text-2xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-100 placeholder-gray-400 bg-gray-50 focus:bg-white"
+              className="w-full p-3 xs:p-4 sm:p-6 lg:p-8 xl:p-6 2xl:p-8 3xl:p-10 border-2 border-gray-200 hover:border-gray-300 focus:border-blue-500 rounded-lg sm:rounded-xl lg:rounded-2xl resize-none h-24 xs:h-28 sm:h-32 lg:h-40 xl:h-32 2xl:h-40 3xl:h-48 text-sm xs:text-base sm:text-lg lg:text-xl xl:text-base 2xl:text-lg 3xl:text-2xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-100 placeholder-gray-400 bg-gray-50 focus:bg-white"
             />
           </div>
 
           <div className="flex justify-center sm:justify-start">
             <button
-              className="w-auto xs:w-auto sm:w-[18%] md:w-[22%] lg:w-[26%] xl:w-[28%] 2xl:w-[28%] min-w-[120px] xs:min-w-[140px] sm:min-w-[180px] lg:min-w-[200px] px-4 xs:px-5 sm:px-6 lg:px-8 xl:px-10 py-3 xs:py-3.5 sm:py-4 lg:py-5 xl:py-6 rounded-full text-white text-sm xs:text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="w-auto xs:w-auto sm:w-[18%] md:w-[22%] lg:w-[26%] xl:w-[24%] 2xl:w-[26%] 3xl:w-[28%] min-w-[120px] xs:min-w-[140px] sm:min-w-[180px] lg:min-w-[200px] px-4 xs:px-5 sm:px-6 lg:px-8 xl:px-6 2xl:px-8 3xl:px-10 py-3 xs:py-3.5 sm:py-4 lg:py-5 xl:py-4 2xl:py-5 3xl:py-6 rounded-full text-white text-sm xs:text-base sm:text-lg lg:text-xl xl:text-base 2xl:text-lg 3xl:text-2xl font-semibold hover:opacity-90 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
               style={{ backgroundColor: "#041D37" }}
             >
               Send Feedback
