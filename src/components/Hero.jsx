@@ -249,10 +249,15 @@ function Hero() {
 
     const setCanvasDimensions = () => {
       const dpr = window.devicePixelRatio || 1;
+      const viewportWidth = window.innerWidth;
+      let canvasHeight = window.innerHeight;
+      if (viewportWidth < 1000) {
+        canvasHeight = window.innerHeight / 2;
+      }
       canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
+      canvas.height = canvasHeight * dpr;
       canvas.style.width = `${window.innerWidth}px`;
-      canvas.style.height = `${window.innerHeight}px`;
+      canvas.style.height = `${canvasHeight}px`;
       ctx.scale(dpr, dpr);
     };
 
@@ -260,7 +265,12 @@ function Hero() {
 
     const getResponsiveValues = () => {
       const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
+      let viewportHeight;
+      if (viewportWidth < 1000) {
+        viewportHeight = window.innerHeight / 2 ;
+      } else {
+        viewportHeight = window.innerHeight;
+      }
       const minDimension = Math.min(viewportWidth, viewportHeight);
 
       // Calculate radius based on viewport dimensions
@@ -305,7 +315,10 @@ function Hero() {
       ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
 
       const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
+      let viewportHeight = window.innerHeight;
+      if (viewportWidth < 1000) {
+        viewportHeight = window.innerHeight / 2;
+      }
 
       // Calculate center position with padding to prevent clipping
       const centerX = viewportWidth / 2;
@@ -368,29 +381,34 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative  w-full min-h-screen bg-white overflow-hidden">
-      <canvas
-        ref={canvasRef}
-        className="absolute top-0 left-0 w-full h-full"
-        style={{
-          background: "white",
-          zIndex: 1,
-        }}
-      />
+    <div className="relative w-full bg-white overflow-hidden md:min-h-screen">
+      <div className="w-full absolute" style={{ height: '75vh', maxHeight: '100vh' }}>
+        <canvas
+          ref={canvasRef}
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            background: "white",
+            zIndex: 1,
+            height: '100%',
+            maxHeight: '100vh',
+          }}
+        />
+      </div>
 
-      <div className="relative z-50 flex flex-col items-center justify-center min-h-screen px-4 pt-2">
+      <div className="relative z-50 flex flex-col items-center justify-center px-4 lg:pt-16"
+        style={{ minHeight: '50vh' }}>
         <div className="text-center max-w-4xl mx-auto w-full">
           {/* Enhanced text sizing with better responsiveness for smaller screens */}
           <p
             className="text-slate-400 tracking-wide font-medium"
-            style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}
+            style={{ fontSize: "clamp(0.675rem, 3.375vw, 3.9rem)" }}
           >
             The Future of Work
           </p>
 
           <h1
             className="text-slate-900 mb-4 sm:mb-6 font-medium"
-            style={{ fontSize: "clamp(0.9rem, 4.5vw, 5.2rem)" }}
+            style={{ fontSize: "clamp(0.675rem, 3.375vw, 3.9rem)" }}
           >
             is Decentralized. <br className="sm:hidden" />
             <br className="hidden sm:block" />
@@ -399,7 +417,7 @@ function Hero() {
 
           <p
             className="text-slate-800 leading-relaxed mb-4 sm:mb-6 max-w-2xl mx-auto font-medium"
-            style={{ fontSize: "clamp(0.6rem, 2vw, 2rem)" }}
+            style={{ fontSize: "clamp(0.45rem, 1.5vw, 1.5rem)" }}
           >
             Your Gateway to the Elite Freelance Revolution.
           </p>
